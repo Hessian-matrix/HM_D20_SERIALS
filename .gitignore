@@ -1,0 +1,15 @@
+# 2026-08-04: Ignore local Sphinx build outputs and Python virtualenvs.
+build/
+build_*/
+source/_build/
+.doctrees/
+
+# 2026-08-04: Ignore local Python caches used when previewing documentation.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# 2026-08-04: Ignore editor and OS metadata.
+.DS_Store
+Thumbs.db
