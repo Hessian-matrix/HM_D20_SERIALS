@@ -1,0 +1,50 @@
+# 常用参数配置
+
+NavStarTool 的完整功能可通过菜单栏 `Help` 查看官方使用说明。本章节介绍常用配置：输出频率和 NMEA/UBX 消息输出。
+
+## 读取接收机配置
+
+点击菜单栏：
+
+```text
+Receiver -> Receiver Settings
+```
+
+首次打开 `Receiver Settings` 窗口时，可能不会显示当前配置。此时需要点击 `Read from Chip`，从芯片读取现有参数。
+
+![Receiver Settings](image/receiver_settings.png)
+
+## 设置输出频率
+
+以设置 NMEA 输出频率为 10Hz 为例：
+
+1. 在 `Receiver Settings` 中点击 `Read from Chip`。
+2. 找到 `Receiver Parameters -> Working Rate`。
+3. 下拉选择 `10`。
+4. 点击 `Send to Chip` 保存配置。
+5. 等待模块自动重启。
+
+![Working Rate](image/working_rate.png)
+
+## 配置NMEA/UBX消息输出
+
+如果外部设备只需要标准 NMEA，可在消息列表中只保留目标系统需要的语句。接入 Viobot2 时建议至少开启 GGA 和 RMC。
+
+配置路径：
+
+```text
+Receiver Parameters -> Output NMEA Message
+```
+
+在可输出的 NMEA 消息列表中勾选需要发送的语句，然后点击 `Send to Chip` 保存。
+
+![Output Message](image/output_message.png)
+
+## 配置建议
+
+| 场景 | 建议 |
+| --- | --- |
+| PC 调试 | 先保留当前固件的常用协议输出，便于观察状态 |
+| 飞控接入 | 使用无人机版固件，按飞控要求输出 UBX/u-blox 协议数据 |
+| Viobot2 接入 | 至少开启 GGA 和 RMC，输出频率建议 10Hz 或以上 |
+| 日志排查 | 保留原始协议日志，记录固件版本、串口参数和输出频率 |

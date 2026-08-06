@@ -1,14 +1,18 @@
-HM_D20_SERIALS 文档
-===================
+HM D20 RTK 文档
+======================================
 
-本文档用于整理 HM_D20 RTK 与串口相关资料，包括设备接线、串口通信、RTK
-配置流程和常见问题排查。
+本文档用于说明 HM D20 系列 RTK 设备的系统组成、基本使用、差分链路配置、行业接入方式、
+参数配置维护和常见问题排查。
 
 .. toctree::
    :maxdepth: 2
-   :caption: 章节
+   :caption: 章节:
 
+   overview
    quick_start
-   serial/index
-   rtk/index
-   faq/index
+   系统介绍/index
+   基本使用/index
+   差分链路配置/index
+   行业应用/index
+   参数配置和维护/index
+   常见问题/index
