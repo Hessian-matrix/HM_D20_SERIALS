@@ -8,8 +8,8 @@ HM D20 RTK 文档
    :maxdepth: 2
    :caption: 章节:
 
-   overview
-   quick_start
+   概述
+   快速开始
    系统介绍/index
    基本使用/index
    差分链路配置/index

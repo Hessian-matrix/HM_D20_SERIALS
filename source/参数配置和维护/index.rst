@@ -5,5 +5,5 @@
    :maxdepth: 2
    :caption: Contents:
 
-   config
-   firmware
+   常用参数配置
+   固件升级

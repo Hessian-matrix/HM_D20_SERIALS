@@ -5,5 +5,6 @@
    :maxdepth: 2
    :caption: Contents:
 
-   4g
-   lora
+   D13基站说明
+   4G差分链路配置
+   LoRa差分链路配置

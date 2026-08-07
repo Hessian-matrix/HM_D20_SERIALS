@@ -4,4 +4,4 @@
 .. toctree::
    :maxdepth: 2
 
-   troubleshooting
+   故障排查

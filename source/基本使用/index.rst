@@ -5,5 +5,5 @@
    :maxdepth: 2
    :caption: Contents:
 
-   connection
-   navstartool
+   设备连接与串口调试
+   上位机连接与状态查看
