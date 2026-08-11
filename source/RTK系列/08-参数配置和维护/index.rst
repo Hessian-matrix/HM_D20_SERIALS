@@ -5,5 +5,5 @@
    :maxdepth: 2
    :caption: Contents:
 
-   常用参数配置
-   固件升级
+   01-常用参数配置
+   02-固件升级

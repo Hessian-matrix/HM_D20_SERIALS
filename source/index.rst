@@ -1,13 +1,12 @@
-产品资料中心
+HM RTK产品资料中心
 ======================================
 
-本文档汇总黑森矩阵定位产品资料，覆盖产品系列说明、产品矩阵、
-RTK/GNSS 用户手册、软件工具和典型应用接入内容。
+本文档汇总Hessian Matrix的RTK、GNSS定位产品资料，覆盖产品矩阵、用户手册、软件工具和典型应用接入内容。
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: RTK产品资料导航:
 
-   产品系列/index
+   产品矩阵/index
    RTK系列/index
    GNSS系列/index
