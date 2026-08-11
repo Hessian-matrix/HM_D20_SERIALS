@@ -1,0 +1,29 @@
+.rst-content table.docutils {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.rst-content table.docutils th,
+.rst-content table.docutils td {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: top !important;
+}
+
+.rst-content table.docutils img {
+  max-width: 100%;
+  width: auto;
+  max-height: 110px;
+  height: auto;
+}
+
+.wy-table-responsive table.docutils {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.wy-table-responsive table.docutils th,
+.wy-table-responsive table.docutils td {
+  white-space: normal !important;
+}

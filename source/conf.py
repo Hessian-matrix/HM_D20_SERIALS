@@ -25,6 +25,7 @@ language = "zh_CN"
 html_theme = "sphinx_rtd_theme"
 html_title = "HM_D20_SERIALS 文档"
 html_static_path = ["_static"]
+html_css_files = ["custom.css"]
 html_show_sourcelink = False
 
 # 2026-08-04: 为 Markdown 标题生成锚点，便于在线文档跨页面引用。
