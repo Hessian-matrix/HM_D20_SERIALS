@@ -6,7 +6,7 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption: 资料导航:
+   :caption: RTK产品资料导航:
 
    产品系列/index
    RTK系列/index
