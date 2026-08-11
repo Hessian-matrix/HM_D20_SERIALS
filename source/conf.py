@@ -9,7 +9,6 @@ release = "0.1.0"
 # 2026-08-04: 同时支持 RST 目录页和 Markdown 正文页，便于后续迁移现有资料。
 extensions = [
     "myst_parser",
-    "sphinx_lumina_theme",
 ]
 source_suffix = {
     ".rst": "restructuredtext",
@@ -21,14 +20,27 @@ templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 language = "zh_CN"
 
-# 2026-08-11: 使用 Sphinx Lumina Theme，保留 custom.css 覆盖产品矩阵表格样式。
-html_theme = "lumina"
+# 2026-08-11: 使用 Sphinx Book Theme，保持 Read the Docs 页面风格清晰易读。
+html_theme = "sphinx_book_theme"
 html_title = "HM_D20_SERIALS 文档"
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 html_show_sourcelink = False
 html_theme_options = {
-    "disable_seo": True,
+    "repository_url": "",
+    "use_repository_button": False,
+    "use_issues_button": False,
+    "use_edit_page_button": False,
+    "home_page_in_toc": True,
+    "show_navbar_depth": 2,
+}
+
+latex_engine = "xelatex"
+latex_elements = {
+    "preamble": r"""
+\usepackage{xeCJK}
+\setCJKmainfont{Droid Sans Fallback}
+""",
 }
 
 # 2026-08-04: 为 Markdown 标题生成锚点，便于在线文档跨页面引用。
