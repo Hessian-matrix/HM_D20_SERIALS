@@ -1,6 +1,6 @@
 # 接入Viobot2
 
-D20 可作为外部 RTK 模块接入 Viobot2，为 Viobot2 提供高精度 RTK 定位数据。本章节说明 D20 与 Viobot2 的硬件连接、驱动启动、RTK 模式配置和数据验证流程。
+D20 可作为外部 RTK 定位终端接入 Viobot2，为 Viobot2 提供高精度 RTK 定位数据。本章节说明 D20 与 Viobot2 的硬件连接、驱动启动、RTK 模式配置和数据验证流程。
 
 开始集成前，先按[固件与输出协议选择](../05-基本使用/固件与输出协议选择.md)确认地面版固件，并按[D20接口与接线](../05-基本使用/D20接口与接线.md)完成硬件连接。
 
@@ -25,7 +25,7 @@ Viobot2 使用外部 RTK 时，需要在上位机设置中启用 RTK 模式。�
 
 ### USB转串口接入
 
-如果 D20 通过 USB 转 TTL 接入 Viobot2，需要先确认设备节点：
+如果 D20 通过 3.3 V USB 转 UART 模块接入 Viobot2，需要先确认设备节点：
 
 ```bash
 ls /dev/ttyUSB*
@@ -51,7 +51,7 @@ ls /dev/ttyUSB*
 git clone https://github.com/Hessian-matrix/HM_RTK_driver
 ```
 
-ROS1 环境下可按以下方式编译：
+ROS 1 环境下可按以下方式编译：
 
 ```bash
 mkdir -p HM_RTK_Driver_ws/src
@@ -125,4 +125,4 @@ Viobot2 使用 RTK/GNSS 数据时，通常通过以下方式完成时间同步�
 
 接入时应确保 D20 输出 RMC，否则系统可能缺少完整 UTC 日期时间信息。
 
-若D20自身未进入Fixed，先使用[RTK状态与Fixed验证](../05-基本使用/RTK状态与Fixed验证.md)排除差分链路问题，再检查Viobot2驱动和话题。
+若 D20 自身未进入固定解，先使用[RTK状态与固定解验证](../05-基本使用/RTK状态与Fixed验证.md)排除差分链路问题，再检查 Viobot2 驱动和话题。

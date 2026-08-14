@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # 2026-08-04: 基础项目信息，用于 Read the Docs 页面标题和版本展示。
-project = "HM_D20_SERIALS"
+project = "黑森矩阵定位产品文档"
 author = "Hessian Matrix"
 copyright = "2026, Hessian Matrix"
 release = "0.1.0"
@@ -22,7 +22,7 @@ language = "zh_CN"
 
 # 2026-08-11: 使用 Sphinx Book Theme，保持 Read the Docs 页面风格清晰易读。
 html_theme = "sphinx_book_theme"
-html_title = "HM_D20_SERIALS 文档"
+html_title = "黑森矩阵定位产品文档"
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 html_show_sourcelink = False
