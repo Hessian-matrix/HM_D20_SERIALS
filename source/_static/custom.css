@@ -1,35 +1,155 @@
-#product-matrix-table + table {
+#content {
+  --hm-accent: #e87522;
+  --hm-accent-soft: #fff5ec;
+  --hm-ink: #20252b;
+  --hm-line: #dfe3e8;
+}
+
+.documentation-entry-grid,
+.portfolio-summary {
+  width: 100%;
+}
+
+.documentation-entry-grid td {
+  width: 33.333%;
+  padding: 1rem !important;
+  vertical-align: top !important;
+  border-top: 3px solid var(--hm-accent) !important;
+  background: #fff;
+}
+
+.documentation-entry-grid td p:last-child {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.portfolio-summary th {
+  background: var(--hm-ink);
+  color: #fff;
+}
+
+.portfolio-summary td,
+.portfolio-summary th {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  vertical-align: middle !important;
+}
+
+#product-matrix-table + .pst-scrollable-table-container table {
   display: table !important;
   width: 100%;
   table-layout: fixed;
   overflow-x: visible;
 }
 
-#product-matrix-table + table th,
-#product-matrix-table + table td {
+#product-matrix-table + .pst-scrollable-table-container th,
+#product-matrix-table + .pst-scrollable-table-container td {
   white-space: normal !important;
   overflow-wrap: anywhere;
   word-break: break-word;
   vertical-align: top !important;
 }
 
-#product-matrix-table + table img {
+#product-matrix-table + .pst-scrollable-table-container img {
   max-width: 100%;
   width: auto;
   max-height: 110px;
   height: auto;
 }
 
-#product-matrix-table + table th:nth-child(1),
-#product-matrix-table + table td:nth-child(1) {
+#product-matrix-table + .pst-scrollable-table-container th:nth-child(1),
+#product-matrix-table + .pst-scrollable-table-container td:nth-child(1) {
   width: 13% !important;
 }
 
-#product-matrix-table + table th:nth-child(2),
-#product-matrix-table + table th:nth-child(3),
-#product-matrix-table + table th:nth-child(4),
-#product-matrix-table + table td:nth-child(2),
-#product-matrix-table + table td:nth-child(3),
-#product-matrix-table + table td:nth-child(4) {
+#product-matrix-table + .pst-scrollable-table-container th:nth-child(2),
+#product-matrix-table + .pst-scrollable-table-container th:nth-child(3),
+#product-matrix-table + .pst-scrollable-table-container th:nth-child(4),
+#product-matrix-table + .pst-scrollable-table-container td:nth-child(2),
+#product-matrix-table + .pst-scrollable-table-container td:nth-child(3),
+#product-matrix-table + .pst-scrollable-table-container td:nth-child(4) {
   width: 29% !important;
+}
+
+#product-matrix-table + .pst-scrollable-table-container tbody tr:has(td:first-child strong) td {
+  background: var(--pst-color-surface, #f3f4f6);
+  border-top: 1px solid var(--pst-color-border, #d1d5db);
+  border-bottom: 1px solid var(--pst-color-border, #d1d5db);
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+#product-matrix-table + .pst-scrollable-table-container tbody tr:has(td:first-child strong) td:first-child {
+  color: var(--pst-color-text-base, #1f2937);
+  font-weight: 700;
+}
+
+.product-matrix-overview {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.product-matrix-overview th,
+.product-matrix-overview td {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: top !important;
+}
+
+.product-matrix-overview td p {
+  margin: 0;
+}
+
+.product-matrix-overview td img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  max-height: 190px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.product-matrix-overview th:first-child,
+.product-matrix-overview td:first-child {
+  width: 20%;
+}
+
+.product-matrix-overview th:nth-child(2),
+.product-matrix-overview td:nth-child(2),
+.product-matrix-overview th:nth-child(3),
+.product-matrix-overview td:nth-child(3) {
+  width: 40%;
+}
+
+.product-matrix-overview td ul {
+  margin: 0.65rem 0 0 1.1rem;
+  padding-left: 0.6rem;
+}
+
+.product-matrix-overview td li {
+  margin: 0.2rem 0;
+}
+
+@media (max-width: 720px) {
+  .documentation-entry-grid {
+    min-width: 680px;
+  }
+
+  .portfolio-summary,
+  .product-matrix-overview {
+    min-width: 720px;
+  }
+
+  .product-matrix-overview td img {
+    max-width: 300px;
+  }
+
+  .pst-scrollable-table-container:has(.documentation-entry-grid),
+  .pst-scrollable-table-container:has(.portfolio-summary),
+  .pst-scrollable-table-container:has(.product-matrix-overview) {
+    max-width: 100%;
+    overflow-x: auto;
+  }
 }
