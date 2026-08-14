@@ -3,6 +3,9 @@ build/
 build_*/
 source/_build/
 .doctrees/
+.work_log/
+.local-server.pid
+.local-server.log
 
 # 2026-08-04: Ignore local Python caches used when previewing documentation.
 .venv/
