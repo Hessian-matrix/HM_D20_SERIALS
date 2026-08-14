@@ -42,23 +42,23 @@ HM 定位产品资料中心
    * - **HM-D20-4G**
      - 四臂螺旋 RTK 移动站
      - 4G 接入 CORS/NTRIP
-     - :doc:`产品选型 <产品矩阵/index>`
+     - :doc:`查看产品 <产品矩阵/产品/HM-D20-4G>`
    * - **HM-D20-LoRa**
      - 四臂螺旋 RTK 移动站套件
      - 配套 D13 LoRa 基站
-     - :doc:`RTK 快速开始 <RTK系列/01-快速开始/index>`
+     - :doc:`查看产品 <产品矩阵/产品/HM-D20-LoRa>`
    * - **HM-D13-4G**
      - 蘑菇头 RTK 移动站
      - 4G 接入 CORS/NTRIP
-     - :doc:`产品选型 <产品矩阵/index>`
+     - :doc:`查看产品 <产品矩阵/产品/HM-D13-4G>`
    * - **HM-D13-LoRa**
      - 蘑菇头 RTK 移动站套件
      - 配套 D13 LoRa 基站
-     - :doc:`RTK 快速开始 <RTK系列/01-快速开始/index>`
+     - :doc:`查看产品 <产品矩阵/产品/HM-D13-LoRa>`
    * - **HM-G51B**
      - 单频 GNSS 一体化模组
      - 普通 GNSS 定位
-     - :doc:`G51B 快速开始 <GNSS系列/G51B/G51B快速开始>`
+     - :doc:`查看产品 <产品矩阵/产品/HM-G51B>`
 
 HM-D20-LoRa 和 HM-D13-LoRa 均按套件销售，包含配套 D13 LoRa 基站及配件；基站不单独销售。
 

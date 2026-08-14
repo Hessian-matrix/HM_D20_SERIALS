@@ -38,12 +38,14 @@ RTK 系列包含两个产品系列：
        * D20 移动站
        * 4G 接入 CORS/NTRIP
        * 适合跨区域移动作业
+       * :doc:`查看 HM-D20-4G <产品/HM-D20-4G>`
      - .. image:: image/scenarios/d20-lora-ref-v2.png
           :alt: D20 移动站通过 LoRa 连接 D13 基站的示意图
 
        * D20 移动站
        * 套件含 D13 LoRa 基站及配件
        * 本地自建差分链路
+       * :doc:`查看 HM-D20-LoRa <产品/HM-D20-LoRa>`
    * - **D13 系列**
      - .. image:: image/scenarios/d13-4g-ref-v2.png
           :alt: D13 通过 4G 接入 CORS 的高精度定位示意图
@@ -51,18 +53,22 @@ RTK 系列包含两个产品系列：
        * D13 移动站
        * 4G 接入 CORS/NTRIP
        * 适合稳定安装的移动作业
+       * :doc:`查看 HM-D13-4G <产品/HM-D13-4G>`
      - .. image:: image/scenarios/d13-lora-ref.png
           :alt: D13 移动站通过 LoRa 连接 D13 基站的示意图
 
        * D13 移动站
        * 套件含 D13 LoRa 基站及配件
        * 单基站一对一或一对多
+       * :doc:`查看 HM-D13-LoRa <产品/HM-D13-LoRa>`
 
 GNSS 系列
 ~~~~~~~~~~~~~~~~
 
 GNSS 系列目前以 HM-G51B 为代表，面向不需要 RTK 差分链路的普通卫星定位和紧凑型终端集成场景，
 适用于资产追踪、车载导航、紧凑型终端和对成本、尺寸、集成复杂度更敏感的应用。
+
+* :doc:`查看 HM-G51B <产品/HM-G51B>`
 
 怎么选择
 ----------------
@@ -83,6 +89,7 @@ D13 LoRa 基站不单独销售，只随 HM-D20-LoRa 或 HM-D13-LoRa 套件提供
 ----------------
 
 * :doc:`产品对比与资料 <概述>`：查看详细参数、软件工具和资料链接。
+* :doc:`产品中心 <产品/index>`：按五个销售 SKU 查看产品介绍。
 * :doc:`../RTK系列/01-快速开始/index`：开始使用 HM-D20 或 HM-D13。
 * :doc:`../GNSS系列/G51B/G51B快速开始`：开始使用 HM-G51B。
 * :doc:`../RTK系列/index`：查看完整 RTK 用户手册。
@@ -91,4 +98,5 @@ D13 LoRa 基站不单独销售，只随 HM-D20-LoRa 或 HM-D13-LoRa 套件提供
    :maxdepth: 2
    :caption: 选型与资料:
 
+   产品中心 <产品/index>
    产品对比与资料 <概述>
