@@ -35,6 +35,7 @@
      - :doc:`查看产品 <HM-G51B>`
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    :caption: 产品页面:
 

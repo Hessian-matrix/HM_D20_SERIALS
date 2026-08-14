@@ -15,6 +15,7 @@ GNSS 定位、车载导航、资产追踪和无人机定位导航等场景。
      - :doc:`产品介绍 <../产品矩阵/产品/HM-G51B>` / :doc:`快速开始 <G51B/G51B快速开始>`
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: GNSS系列:
 

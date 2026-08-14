@@ -95,6 +95,7 @@ D13 LoRa 基站不单独销售，只随 HM-D20-LoRa 或 HM-D13-LoRa 套件提供
 * :doc:`../RTK系列/index`：查看完整 RTK 用户手册。
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: 选型与资料:
 

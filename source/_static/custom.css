@@ -39,6 +39,22 @@
   width: 100%;
 }
 
+.manual-entry-table {
+  width: 100%;
+}
+
+.manual-entry-table th {
+  background: var(--hm-ink);
+  color: #fff;
+}
+
+.manual-entry-table td,
+.manual-entry-table th {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  vertical-align: middle !important;
+}
+
 .product-center-table th {
   background: var(--hm-ink);
   color: #fff;
@@ -167,11 +183,24 @@ article h2 {
 
 @media (max-width: 720px) {
   .documentation-entry-grid {
-    min-width: 680px;
+    display: block;
+    min-width: 0;
+  }
+
+  .documentation-entry-grid tbody,
+  .documentation-entry-grid tr,
+  .documentation-entry-grid td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .documentation-entry-grid td {
+    margin-bottom: 0.75rem;
   }
 
   .portfolio-summary,
   .product-center-table,
+  .manual-entry-table,
   .product-matrix-overview {
     min-width: 720px;
   }
@@ -180,12 +209,16 @@ article h2 {
     max-width: 300px;
   }
 
-  .pst-scrollable-table-container:has(.documentation-entry-grid),
   .pst-scrollable-table-container:has(.portfolio-summary),
   .pst-scrollable-table-container:has(.product-center-table),
+  .pst-scrollable-table-container:has(.manual-entry-table),
   .pst-scrollable-table-container:has(.product-matrix-overview) {
     max-width: 100%;
     overflow-x: auto;
+  }
+
+  .pst-scrollable-table-container:has(.documentation-entry-grid) {
+    overflow: visible;
   }
 
   .sku-product-image {

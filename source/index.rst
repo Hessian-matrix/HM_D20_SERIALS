@@ -63,6 +63,7 @@ HM 定位产品资料中心
 HM-D20-LoRa 和 HM-D13-LoRa 均按套件销售，包含配套 D13 LoRa 基站及配件；基站不单独销售。
 
 .. toctree::
+   :hidden:
    :maxdepth: 2
    :caption: 产品资料导航:
 
