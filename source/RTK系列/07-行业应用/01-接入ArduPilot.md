@@ -41,6 +41,33 @@ D20 应使用无人机版固件，默认输出 10 Hz UBX 定位数据。接入�
 
 不同飞控硬件、ArduPilot 版本和端口编号对应的参数名称可能不同，应以实际飞控文档和地面站界面为准。
 
+## CUAV 7-Nano 配置示例
+
+以下界面来自 CUAV 7-Nano、ArduCopter V4.7.0-dev 和 Mission Planner 1.3.83，仅用于说明一套具体接入方式。其他飞控或固件版本的串口编号、参数名称和可选值可能不同，配置前必须先核对对应版本的飞控文档。
+
+### 接线示例
+
+![D20 接入 CUAV 7-Nano GPS 接口示意图](image/2.1-apm_connet_serial.png)
+
+图中的彩色引导线只用于表示信号对应关系，不代表交付线束颜色。连接时仍须以 D20 8-pin Pin 顺序、转接线功能标签和飞控接口定义为准。
+
+### 参数示例
+
+本示例使用 CUAV 7-Nano 的主 GPS 接口，对应 `SERIAL3`。参数值应按实际端口和飞控版本核对：
+
+| 参数 | 示例值 | 作用 |
+| --- | --- | --- |
+| `SERIAL3_PROTOCOL` | `5` | 将对应串口配置为 GPS |
+| `SERIAL3_BAUD` | `115` | ArduPilot 参数值 `115` 对应 115200 bps |
+| `GPS_AUTO_CONFIG` | `0` | 关闭飞控对 GPS 的自动配置 |
+| `GPS_AUTO_SWITCH` | `0` | 单 GPS 场景固定使用主 GPS；多 GPS 场景按实际需求配置 |
+| `GPS1_TYPE` | `2` | 将 GPS1 输入类型设置为 u-blox/UBX |
+| `GPS1_RATE_MS` | `100` | 将 GPS1 更新周期设置为 100 ms，即 10 Hz |
+
+![Mission Planner GPS 通用参数示例](image/image_gps_set.png)
+
+![Mission Planner GPS1 类型与更新率示例](image/image_gps1.png)
+
 ## 验证
 
 1. 上电后确认飞控和地面站能够识别 GPS。
