@@ -22,7 +22,7 @@ D20接入 ArduPilot 时，推荐使用无人机版固件。无人机版固件主
 - D20 `GND` 接飞控 `GND`
 - Mission Planner 通过 Mavlink 连接飞控
 
-![](./image/2.1-apm接线.png)
+![](./image/2.1-apm_connet_serial.png)
 
 
 ## 飞控参数
