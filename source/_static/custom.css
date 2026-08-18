@@ -1,4 +1,4 @@
-#content {
+:root {
   --hm-accent: #e87522;
   --hm-accent-soft: #fff5ec;
   --hm-ink: #20252b;
@@ -15,7 +15,7 @@
   padding: 1rem !important;
   vertical-align: top !important;
   border-top: 3px solid var(--hm-accent) !important;
-  background: #fff;
+  background: var(--pst-color-on-background, #fff);
 }
 
 .documentation-entry-grid td p:last-child {

@@ -31,7 +31,7 @@ HM-G51B 接收 GNSS 卫星信号并完成普通单点定位，通过 UART 向飞
 | 接收频点 | GPS L1、北斗B1、Galileo E1、QZSS L1、GLONASS G1 |
 | 跟踪通道 | 120 |
 | 定位精度 | 1.5 m CEP |
-| TTFF | 冷启动28 s；热启动1 s |
+| 启动时间 | 冷启动28 s；热启动1 s |
 | 最高更新率 | 20 Hz |
 | 输出 | UART / UBX-NAV-PVT；默认 115200 bps |
 | 工作电压 | 4.0–5.5 V；典型5 V |
