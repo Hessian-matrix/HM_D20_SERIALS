@@ -22,7 +22,7 @@ RTK使用手册
      - 4G/CORS、LoRa基站和LoRa移动站
      - :doc:`差分链路 <06-差分链路配置/index>`
    * - 接入目标平台
-     - ArduPilot、PX4 和 Viobot2 集成
+     - ArduPilot、PX4、Viobot2 和 ROS1/ROS2 集成
      - :doc:`平台接入 <07-行业应用/index>`
    * - 维护与排障
      - 参数、固件和常见问题

@@ -45,39 +45,33 @@ ls /dev/ttyUSB*
 
 ## 安装和启动RTK驱动
 
-黑森提供了 RTK 驱动仓库：
-
-```bash
-git clone https://github.com/Hessian-matrix/HM_RTK_driver
-```
+黑森提供了统一的 `D20_ros_driver` 仓库。该驱动负责读取 D20 串口、解析 NMEA 并发布 `/rtk_nmea` 和 `/d20_rtk/navsatfix`；4G CORS 或 LoRa 差分链路仍由设备内部完成，驱动不向 D20/D13 回写 RTCM：
 
 ROS 1 环境下可按以下方式编译：
 
 ```bash
-mkdir -p HM_RTK_Driver_ws/src
-cd HM_RTK_Driver_ws/src
-git clone https://github.com/Hessian-matrix/HM_RTK_driver
-cd HM_RTK_driver
-git submodule init
-git submodule update
-cd ../../
+mkdir -p d20_ros_ws/src
+cd d20_ros_ws/src
+git clone https://github.com/Hessian-matrix/D20_ros_driver.git
+cd ..
 catkin_make
+source devel/setup.bash
 ```
 
 启动驱动：
 
 ```bash
-cd HM_RTK_Driver_ws
-source ./devel/setup.bash
-roslaunch hm_rtk hm_rtk.launch
+roslaunch d20_ros_driver d20_ros_driver.launch
 ```
 
-定制版 Viobot2 若已预装 `HM_RTK`，通常只需要修改 launch 中的串口号和账号配置，然后直接启动：
+定制版 Viobot2 若已预装 `d20_ros_driver`，通常只需要修改配置文件中的串口号，然后直接启动：
 
 ```bash
-source ~/HM_RTK/devel/setup.bash
-roslaunch hm_rtk hm_rtk.launch
+source ~/d20_ros_ws/devel/setup.bash
+roslaunch d20_ros_driver d20_ros_driver.launch
 ```
+
+完整的 ROS1/ROS2 构建、配置和话题验证说明请查看[接入 ROS1 / ROS2](04-接入ROS.md)。
 
 ## 启用Viobot2 RTK模式
 
