@@ -1,10 +1,10 @@
-GNSS系列
+GNSS 系列
 ======================================
 
 GNSS 系列当前包含 HM-G51B 单频 GNSS 一体化模组，适用于紧凑型设备的
 GNSS 定位、车载导航、资产追踪和无人机定位导航等场景。
 
-.. list-table:: GNSS系列产品
+.. list-table:: GNSS 系列产品
    :header-rows: 1
 
    * - 产品
@@ -17,6 +17,6 @@ GNSS 定位、车载导航、资产追踪和无人机定位导航等场景。
 .. toctree::
    :hidden:
    :maxdepth: 2
-   :caption: GNSS系列:
+   :caption: GNSS 系列:
 
    G51B/index

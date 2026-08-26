@@ -6,6 +6,8 @@ source/_build/
 .work_log/
 .local-server.pid
 .local-server.log
+# Internal product evidence and generated sales materials must stay local.
+Specification/
 
 # 2026-08-04: Ignore local Python caches used when previewing documentation.
 .venv/

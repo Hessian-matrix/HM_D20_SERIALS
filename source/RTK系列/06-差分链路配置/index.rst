@@ -5,6 +5,6 @@
    :maxdepth: 2
    :caption: 差分链路:
 
-   LoRa基站架设 <01-D13基站说明>
-   4G/CORS配置 <02-4G差分链路配置>
-   LoRa移动站连接 <03-LoRa差分链路配置>
+   LoRa 基站架设 <01-D13基站说明>
+   4G / CORS 配置 <02-4G差分链路配置>
+   LoRa 移动站连接 <03-LoRa差分链路配置>

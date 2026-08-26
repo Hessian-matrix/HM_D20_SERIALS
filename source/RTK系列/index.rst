@@ -1,7 +1,7 @@
-RTK使用手册
+RTK 使用手册
 ======================================
 
-本手册适用于HM-D20-4G、HM-D20-LoRa、HM-D13-4G和HM-D13-LoRa。
+本手册适用于 HM-D20-4G、HM-D20-LoRa、HM-D13-4G 和 HM-D13-LoRa。
 请先按完整产品型号进入快速开始；产品定位和参数对比由产品中心单独维护。
 
 .. list-table::
@@ -13,13 +13,13 @@ RTK使用手册
      - 主要内容
      - 入口
    * - 第一次使用设备
-     - 按完整产品型号完成接线、差分链路和Fixed验证
+     - 按完整产品型号完成接线、差分链路和固定解验证
      - :doc:`快速开始 <01-快速开始/index>`
    * - 连接设备
-     - D20/D13接口、UART、固件输出和状态判断
+     - D20/D13 接口、UART、固件输出和状态判断
      - :doc:`连接与验证 <05-基本使用/index>`
    * - 配置差分链路
-     - 4G/CORS、LoRa基站和LoRa移动站
+     - 4G/CORS、LoRa 基站和 LoRa 移动站
      - :doc:`差分链路 <06-差分链路配置/index>`
    * - 接入目标平台
      - ArduPilot、PX4、Viobot2 和 ROS1/ROS2 集成
@@ -31,7 +31,7 @@ RTK使用手册
 .. toctree::
    :hidden:
    :maxdepth: 2
-   :caption: RTK使用手册:
+   :caption: RTK 使用手册:
 
    01-快速开始/index
    02-概述

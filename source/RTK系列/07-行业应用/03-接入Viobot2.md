@@ -1,8 +1,12 @@
-# 接入Viobot2
+# 接入 Viobot2
 
-D20 可作为外部 RTK 定位终端接入 Viobot2，为 Viobot2 提供高精度 RTK 定位数据。本章节说明 D20 与 Viobot2 的硬件连接、驱动启动、RTK 模式配置和数据验证流程。
+:::{admonition} 本页目标
+:class: page-summary
 
-开始集成前，先按[固件与输出协议选择](../05-基本使用/固件与输出协议选择.md)确认地面版固件，并按[D20接口与接线](../05-基本使用/D20接口与接线.md)完成硬件连接。
+将 **D20** 作为外部 RTK 定位终端接入 Viobot2，完成硬件连接、驱动启动、RTK 模式配置和数据验证。常规使用地面版固件，默认输出 **10 Hz NMEA**。
+:::
+
+开始集成前，先按[固件与输出协议选择](../05-基本使用/固件与输出协议选择.md)确认输出，并按[D20 接口与接线](../05-基本使用/D20接口与接线.md)完成硬件连接。
 
 ## 固件版本
 
@@ -14,7 +18,7 @@ D20 可作为外部 RTK 定位终端接入 Viobot2，为 Viobot2 提供高精度
 
 ## 使用要求
 
-Viobot2 通过 RTK NMEA 数据接入外部定位结果。D20 地面版固件默认输出 10 Hz NMEA，产品最高更新率为 20 Hz。接入时应至少开启以下语句：
+Viobot2 通过 RTK NMEA 数据接入外部定位结果。D20 地面版固件默认输出 10 Hz NMEA，RTK 最高更新率为 10 Hz。接入时应至少开启以下语句：
 
 - GGA：提供定位质量、经纬度、高程和卫星数。
 - RMC：提供 UTC 时间、日期、速度和航向信息。
@@ -23,7 +27,7 @@ Viobot2 使用外部 RTK 时，需要在上位机设置中启用 RTK 模式。�
 
 ## 硬件连接
 
-### USB转串口接入
+### USB 转串口接入
 
 如果 D20 通过 3.3 V USB 转 UART 模块接入 Viobot2，需要先确认设备节点：
 
@@ -43,9 +47,9 @@ ls /dev/ttyUSB*
 
 实际接线时需要确认 TX/RX 交叉连接，并保证 D20 与 Viobot2 共地。
 
-## 安装和启动RTK驱动
+## 安装和启动 RTK 驱动
 
-黑森提供了统一的 `D20_ros_driver` 仓库。该驱动负责读取 D20 串口、解析 NMEA 并发布 `/rtk_nmea` 和 `/d20_rtk/navsatfix`；4G CORS 或 LoRa 差分链路仍由设备内部完成，驱动不向 D20/D13 回写 RTCM：
+黑森提供了统一的 `D20_ros_driver` 仓库。该驱动负责读取 D20 串口、解析 NMEA 并发布 `/rtk_nmea` 和 `/d20_rtk/navsatfix`；4G CORS 或 LoRa 差分链路仍由设备内部完成：
 
 ROS 1 环境下可按以下方式编译：
 
@@ -73,7 +77,7 @@ roslaunch d20_ros_driver d20_ros_driver.launch
 
 完整的 ROS1/ROS2 构建、配置和话题验证说明请查看[接入 ROS1 / ROS2](04-接入ROS.md)。
 
-## 启用Viobot2 RTK模式
+## 启用 Viobot2 RTK 模式
 
 1. 打开 Viobot2 上位机并连接设备。
 2. 进入设置页面。
@@ -97,6 +101,12 @@ rostopic echo /baton/rtk
 
 如果 `/baton/rtk` 中 `status = 2`，表示当前 RTK 为固定解。
 
+:::{admonition} 接入完成判据
+:class: success-check
+
+`/rtk_nmea` 持续输出，Viobot2 能在 `/baton/rtk` 中解析到定位数据；设备固定时 `status = 2`。
+:::
+
 ## 输出话题
 
 开启 RTK 后，Viobot2 可输出融合后的定位相关话题：
@@ -119,4 +129,4 @@ Viobot2 使用 RTK/GNSS 数据时，通常通过以下方式完成时间同步�
 
 接入时应确保 D20 输出 RMC，否则系统可能缺少完整 UTC 日期时间信息。
 
-若 D20 自身未进入固定解，先按[RTK状态与固定解验证](../05-基本使用/RTK状态与Fixed验证.md)检查定位输出、差分配置和现场条件，再检查 Viobot2 驱动和话题。
+若 D20 自身未进入固定解，先按[RTK 状态与固定解验证](../05-基本使用/RTK状态与Fixed验证.md)检查定位输出、差分配置和现场条件，再检查 Viobot2 驱动和话题。
