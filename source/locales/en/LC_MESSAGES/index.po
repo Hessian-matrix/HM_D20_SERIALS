@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 11:47+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/index.rst:67
+msgid "产品资料导航:"
+msgstr "Product documentation:"
+
+#: ../../source/index.rst:2
+msgid "HM 定位产品资料中心"
+msgstr "Hessian Matrix Positioning Product Documentation"
+
+#: ../../source/index.rst:4
+msgid "资料中心"
+msgstr "Documentation Center"
+
+#: ../../source/index.rst:7
+msgid ""
+"按任务查找 Hessian Matrix RTK 与 GNSS 产品的 **选型、首次使用、系统集成和故障"
+"排查** 资料。"
+msgstr ""
+"Find information on Hessian Matrix RTK and GNSS products by task, including "
+"**selection, getting started, system integration, and troubleshooting**."
+
+#: ../../source/index.rst:10
+msgid "从这里开始"
+msgstr "Start Here"
+
+#: ../../source/index.rst:16
+msgid "**选择产品**"
+msgstr "**Choose a Product**"
+
+#: ../../source/index.rst:18
+msgid "查看 D20、D13 与 G51B 的定位能力、通信方式和适用场景。"
+msgstr ""
+"Check the positioning capabilities, communication methods, and applicable "
+"scenarios of D20, D13, and G51B."
+
+#: ../../source/index.rst:20
+msgid ":doc:`进入产品选型 <products/index>`"
+msgstr ":doc:`Go to Product Selection <products/index>`"
+
+#: ../../source/index.rst:21
+msgid "**首次使用**"
+msgstr "**Getting Started**"
+
+#: ../../source/index.rst:23
+msgid "按已购买的 RTK 或 GNSS 产品完成接线、配置和首次定位验证。"
+msgstr ""
+"Use the guide for your RTK or GNSS product to complete wiring, "
+"configuration, and initial positioning checks."
+
+#: ../../source/index.rst:25
+msgid ":doc:`RTK 快速开始 <rtk/getting-started/index>`"
+msgstr ":doc:`RTK Getting Started <rtk/getting-started/index>`"
+
+#: ../../source/index.rst:26
+msgid "**集成与支持**"
+msgstr "**Integration and Support**"
+
+#: ../../source/index.rst:28
+msgid "查找飞控、机器人、Viobot2 接入方法，以及参数维护和故障排查资料。"
+msgstr ""
+"Find integration guides for flight controllers, robots, and Viobot2, plus "
+"configuration, maintenance, and troubleshooting resources."
+
+#: ../../source/index.rst:30
+msgid ":doc:`查看平台接入 <rtk/integrations/index>`"
+msgstr ":doc:`View Platform Integrations <rtk/integrations/index>`"
+
+#: ../../source/index.rst:33
+msgid "产品范围"
+msgstr "Product Range"
+
+#: ../../source/index.rst:40
+msgid "产品"
+msgstr "Product"
+
+#: ../../source/index.rst:41
+msgid "产品形态"
+msgstr "Form Factor"
+
+#: ../../source/index.rst:42
+msgid "差分 / 定位方式"
+msgstr "Correction / positioning method"
+
+#: ../../source/index.rst:43
+msgid "主要入口"
+msgstr "Primary Link"
+
+#: ../../source/index.rst:44
+msgid "**HM-D20-4G**"
+msgstr "**HM-D20-4G**"
+
+#: ../../source/index.rst:45
+msgid "四臂螺旋天线一体化 RTK 接收机"
+msgstr "Integrated RTK GNSS Receiver with Quadrifilar Helix Antenna (QHA)"
+
+#: ../../source/index.rst:46 ../../source/index.rst:54
+msgid "4G 接入 CORS/NTRIP"
+msgstr "4G access to CORS/NTRIP"
+
+#: ../../source/index.rst:47
+msgid ":doc:`查看产品 <products/models/hm-d20-4g>`"
+msgstr ":doc:`View Product <products/models/hm-d20-4g>`"
+
+#: ../../source/index.rst:48
+msgid "**HM-D20-LoRa**"
+msgstr "**HM-D20-LoRa**"
+
+#: ../../source/index.rst:49
+msgid "四臂螺旋天线 RTK 定位套件"
+msgstr "RTK GNSS base-and-rover kit with a QHA-equipped D20 rover"
+
+#: ../../source/index.rst:50 ../../source/index.rst:58
+msgid "配套 D13 LoRa 基站"
+msgstr "Paired with a D13 LoRa base station"
+
+#: ../../source/index.rst:51
+msgid ":doc:`查看产品 <products/models/hm-d20-lora>`"
+msgstr ":doc:`View Product <products/models/hm-d20-lora>`"
+
+#: ../../source/index.rst:52
+msgid "**HM-D13-4G**"
+msgstr "**HM-D13-4G**"
+
+#: ../../source/index.rst:53
+msgid "紧凑型一体化 RTK 接收机"
+msgstr "Compact Integrated RTK GNSS Receiver"
+
+#: ../../source/index.rst:55
+msgid ":doc:`查看产品 <products/models/hm-d13-4g>`"
+msgstr ":doc:`View Product <products/models/hm-d13-4g>`"
+
+#: ../../source/index.rst:56
+msgid "**HM-D13-LoRa**"
+msgstr "**HM-D13-LoRa**"
+
+#: ../../source/index.rst:57
+msgid "紧凑型一体化 RTK 定位套件"
+msgstr "RTK GNSS Base-and-Rover Kit with Compact Rover"
+
+#: ../../source/index.rst:59
+msgid ":doc:`查看产品 <products/models/hm-d13-lora>`"
+msgstr ":doc:`View Product <products/models/hm-d13-lora>`"
+
+#: ../../source/index.rst:60
+msgid "**HM-G51B**"
+msgstr "**HM-G51B**"
+
+#: ../../source/index.rst:61
+msgid "单频多星座 GNSS 接收机模组"
+msgstr "Single-Band Multi-Constellation GNSS Receiver Module"
+
+#: ../../source/index.rst:62
+msgid "独立 GNSS 定位"
+msgstr "Standalone GNSS positioning"
+
+#: ../../source/index.rst:63
+msgid ":doc:`查看产品 <products/models/hm-g51b>`"
+msgstr ":doc:`View Product <products/models/hm-g51b>`"
+
+#: ../../source/index.rst:65
+msgid ""
+"HM-D20-LoRa 和 HM-D13-LoRa 均按套件销售，包含配套 D13 LoRa 基站及配件；基站不"
+"单独销售。"
+msgstr ""
+"Both HM-D20-LoRa and HM-D13-LoRa are sold as kits, including the matching "
+"D13 LoRa base station and accessories; the base station is not sold "
+"separately."

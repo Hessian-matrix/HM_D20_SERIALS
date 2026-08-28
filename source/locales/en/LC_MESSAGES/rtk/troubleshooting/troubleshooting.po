@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:1
+msgid "故障排查"
+msgstr "Troubleshooting"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:3
+msgid "排查原则"
+msgstr "Investigation Principles"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:6
+msgid ""
+"本页按**可观察现象**组织 HM-D20、HM-D13 和 HM-G51B 的常见问题。开始前先记录完"
+"整产品型号、出厂固件、连接方式和差分链路；**每次只验证一项变量**，避免在信息"
+"不完整时同时修改多项配置。"
+msgstr ""
+"This page organizes common HM-D20, HM-D13, and HM-G51B issues by "
+"**observable symptom**. Before troubleshooting, record the full model, "
+"factory firmware, connection method, and correction link. **Change and "
+"verify one variable at a time.**"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:9
+msgid "无法上电或反复重启"
+msgstr "Cannot power on or keeps restarting"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:12
+msgid ""
+"D20 误接线可能已经造成硬件损坏 D20 只能使用 5 V ±0.5 V 供电。立即断电并核对"
+"[完整 8-pin 线束定义](../operation/d20-wiring.md)：不得反接正负极，不得使用错"
+"误电压，不得将电源正极连接到 TX、RX 或其他信号线。纠正接线后仍无法上电时，请"
+"停止反复通电并联系技术支持。"
+msgstr ""
+"D20 incorrect wiring may have caused hardware damage. D20 can only be "
+"powered with 5 V ±0.5 V. Immediately cut off the power and check the "
+"[complete 8-pin wiring definition](../operation/d20-wiring.md): do not "
+"reverse the polarity, do not use the wrong voltage, and do not connect the "
+"power positive to TX, RX, or other signal lines. If it still cannot power on "
+"after correcting the wiring, stop repeatedly turning on the power and "
+"contact technical support."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:15
+msgid "**供电与极性**：D20/D13 供电应为 5 V ±0.5 V，并确认正负极连接正确。"
+msgstr ""
+"**Power Supply and Polarity**: The D20/D13 power supply should be 5 V ±0.5 "
+"V, and ensure that the positive and negative connections are correct."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:16
+msgid "**线缆与连接器**：检查是否松动或接触不良。"
+msgstr "**Cables and Connectors**: Check for looseness or poor contact."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:17
+msgid "**外部负载**：断开非必需外设后重新上电，排除外部接线短路或负载异常。"
+msgstr ""
+"**External Load**: Power on again after disconnecting non-essential "
+"peripherals to rule out external wiring short circuits or abnormal loads."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:18
+msgid ""
+"**主控端口供电**：若由飞控或主控供电，确认端口能够稳定供电；无法确认时使用独"
+"立合规电源测试。"
+msgstr ""
+"**Main Control Port Power Supply**: If powered by the flight controller or "
+"main control unit, ensure the port can supply stable power; if it cannot be "
+"confirmed, use an independent compliant power source for testing."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:20
+msgid "串口不存在或没有数据"
+msgstr "The serial port does not exist or has no data"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:22
+msgid ""
+"**UART 电平**：D20/D13 的 UART I/O 电平为 3.3 V；使用标配 USB 转 UART 转接"
+"器，或确认目标设备串口兼容该电平。"
+msgstr ""
+"**UART level**: The D20/D13 UART I/O level is 3.3 V. Use the supplied USB-to-"
+"UART adapter, or verify that the target-device serial port supports this "
+"logic level."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:23
+msgid ""
+"**设备节点**：使用标配转接器时，确认系统已识别该设备，可通过 `ls /dev/"
+"ttyUSB*` 查看。"
+msgstr ""
+"**Device node**: When using the supplied adapter, confirm that the system "
+"recognizes it with `ls /dev/ttyUSB*`."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:24
+msgid "**串口参数**：确认波特率为 `115200`，TX/RX 已交叉连接，GND 已共地。"
+msgstr ""
+"**Serial Port Parameters**: Confirm the baud rate is `115200`, TX/RX are "
+"cross-connected, and GND is common."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:25
+msgid ""
+"**端口占用与权限**：确认串口未被其他程序占用，当前用户具有串口访问权限。"
+msgstr ""
+"**Port Usage and Permissions**: Make sure the serial port is not occupied by "
+"other programs and that the current user has access permissions to the "
+"serial port."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:26
+msgid ""
+"**输出协议**：确认当前输出与目标设备一致，具体选择见[固件与输出协议选择](../"
+"operation/firmware-output.md)。"
+msgstr ""
+"**Output protocol**: Verify that the current output matches the target "
+"device; see [Selecting Firmware and Output Protocol](../operation/firmware-"
+"output.md)."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:28
+msgid "完整接线和串口检查见[设备连接与状态验证](../operation/index.rst)。"
+msgstr ""
+"For complete wiring and serial port checks, see [Device Connection and "
+"Status Verification](../operation/index.rst)."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:30
+msgid "有串口数据但没有卫星定位"
+msgstr "There is serial port data but no satellite positioning"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:32
+msgid ""
+"**测试位置**：将设备移到天空视野开阔的位置，避开室内、金属遮挡、高楼和树木。"
+msgstr ""
+"**Test Location**: Move the device to a location with an open view of the "
+"sky, away from indoors, metal obstructions, tall buildings, and trees."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:33
+msgid "**天线遮挡**：检查 GNSS 天线区域是否被平台结构或其他设备遮挡。"
+msgstr ""
+"**Antenna Obstruction**: Check whether the GNSS antenna area is blocked by "
+"the platform structure or other equipment."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:34
+msgid "**卫星状态**：确认卫星数和信号强度是否持续更新。"
+msgstr ""
+"**Satellite Status**: Confirm whether the number of satellites and signal "
+"strength are continuously updating."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:35
+msgid "**原始记录**：保存串口数据，并记录测试地点、时间和安装方式。"
+msgstr ""
+"**Original Record**: Save serial port data and record the test location, "
+"time, and installation method."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:37
+msgid "4G 版本无法获取差分数据"
+msgstr "The 4G version cannot obtain correction data"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:39
+msgid ""
+"**SIM 与网络**：确认 SIM 卡已开通数据流量，设备所在位置具有蜂窝网络覆盖。"
+msgstr ""
+"**SIM and Network**: Confirm that the SIM card has activated data services, "
+"and that the device is in an area with cellular network coverage."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:40
+msgid ""
+"**4G 天线**：HM-D20-4G 应确认外置 4G 天线安装牢靠；HM-D13-4G 的 4G 天线内置。"
+msgstr ""
+"**4G Antenna**: The HM-D20-4G should ensure that the external 4G antenna is "
+"securely installed; the 4G antenna of the HM-D13-4G is built-in."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:41
+msgid ""
+"**账号配置**：使用 JR_NTRIP_Config_Tool_V1.2 检查服务器地址、端口、挂载点、用"
+"户名和密码。"
+msgstr ""
+"**Account Configuration**: Use JR_NTRIP_Config_Tool_V1.2 to check the server "
+"address, port, mount point, username, and password."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:42
+msgid "**CORS 服务**：确认 CORS/NTRIP 当前可用，账号未过期且挂载点正确。"
+msgstr ""
+"**CORS Service**: Confirm that CORS/NTRIP is currently available, the "
+"account has not expired, and the mount point is correct."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:43
+msgid "**重新验证**：在开阔环境重新上电，观察是否能够获得差分数据。"
+msgstr ""
+"**Re-verify**: Power on again in an open environment and observe whether "
+"correction data can be obtained."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:45
+msgid "LoRa 基站与移动站无法连接"
+msgstr "LoRa base station cannot connect with rover"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:47
+msgid ""
+"**套件配对**：确认使用套件内的专用 D13 LoRa 基站硬件，基站和移动站为出厂配对"
+"组合。"
+msgstr ""
+"**Kit Pairing**: Confirm that the dedicated D13 LoRa base station hardware "
+"within the kit is used; the base station and rover are paired by the "
+"manufacturer."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:48
+msgid "**供电与天线**：确认基站和移动站均已上电，所需 LoRa 天线已正确安装。"
+msgstr ""
+"**Power Supply and Antenna**: Ensure that both the base station and the "
+"rover are powered on, and that the required LoRa antenna is properly "
+"installed."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:49
+msgid "**基站数量**：同一局部场景只开启一个基站，不要同时运行多个基站。"
+msgstr ""
+"**Number of base stations**: Only one base station should be activated in "
+"the same local operating area; do not operate multiple base stations "
+"simultaneously."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:50
+msgid "**链路视距**：减少基站和移动站之间的遮挡，并优先保持视距。"
+msgstr ""
+"**Link Line-of-Sight**: Reduce obstructions between the base station and the "
+"rover, and prioritize maintaining line-of-sight."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:51
+msgid ""
+"**配套关系变化**：记录全部产品型号和序列信息后联系技术支持，不要自行修改配对"
+"参数。"
+msgstr ""
+"**Changes in Matching Relationships**: After recording all product models "
+"and serial information, contact technical support. Do not modify pairing "
+"parameters on your own."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:53
+msgid "长时间停留在单点解或浮点解"
+msgstr "Long-term stay in single-point solution or float solution"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:55
+msgid "**天空视野**：确认移动站具有开阔天空视野，卫星数和信号质量正常。"
+msgstr ""
+"**Sky View**: Ensure that the rover has an unobstructed view of the sky, "
+"with the number of satellites and signal quality being normal."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:56
+msgid ""
+"**差分链路**：4G 版本检查 SIM、网络和 CORS/NTRIP 配置；LoRa 版本检查基站供"
+"电、天线、遮挡和配套关系。"
+msgstr ""
+"**Correction Link**: The 4G version checks the SIM, network, and CORS/NTRIP "
+"configuration; the LoRa version checks the base station power supply, "
+"antenna, obstructions, and supporting relationships."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:57
+msgid "**基站状态**：确认专用 D13 LoRa 基站已稳定架设，上电后没有被移动。"
+msgstr ""
+"**Base station status**: Confirm that the dedicated D13 LoRa base station "
+"has been stably set up and has not been moved after being powered on."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:58
+msgid "**现场环境**：排除建筑、树木、金属结构和强电磁干扰造成的遮挡或多路径。"
+msgstr ""
+"**On-site environment**: Exclude obstructions or multipath caused by "
+"buildings, trees, metal structures, and strong electromagnetic interference."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:60
+msgid ""
+"状态判断顺序见[RTK 状态与固定解验证](../operation/rtk-fixed-validation.md)。"
+msgstr ""
+"The sequence of state judgments can be found in [RTK State and Fixed "
+"Solution Validation](../operation/rtk-fixed-validation.md)."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:62
+msgid "固定解频繁丢失或位置跳变"
+msgstr "Frequent loss of fixed solutions or sudden position jumps"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:64
+msgid "**卫星环境**：检查天空视野、卫星信号和现场多路径环境。"
+msgstr ""
+"**Satellite Environment**: Check the sky view, satellite signals, and on-"
+"site multipath environment."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:65
+msgid ""
+"**差分链路变化**：检查 4G/CORS 网络与账号，或 LoRa 基站供电、天线和现场遮挡是"
+"否发生变化。"
+msgstr ""
+"**Correction Link Changes**: Check whether the 4G/CORS network and accounts, "
+"or LoRa base station power supply, antennas, and on-site obstructions have "
+"changed."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:66
+msgid "**供电与连接**：检查电源和线缆是否稳定，天线连接是否松动。"
+msgstr ""
+"**Power Supply and Connections**: Check whether the power and cables are "
+"stable, and whether the antenna connection is loose."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:67
+msgid "**LoRa 基站**：确认基站没有移动，基站与移动站之间无遮挡或弱遮挡。"
+msgstr ""
+"**LoRa base station**: Ensure that the base station has not moved, and that "
+"there is no obstruction or only weak obstruction between the base station "
+"and the rover."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:68
+msgid "**连续日志**：保存异常前后的连续串口日志，避免只截取单帧数据。"
+msgstr ""
+"**Continuous Logs**: Save the continuous serial port logs before and after "
+"the exception to avoid capturing only a single frame of data."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:70
+msgid "ArduPilot 或 PX4 无法识别设备"
+msgstr "ArduPilot or PX4 cannot recognize the device"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:72
+msgid ""
+"**设备输出**：根据飞控要求确认设备已配置 UBX 输出，默认波特率为 115200 bps。"
+msgstr ""
+"**Device Output**: Confirm that the device is configured for UBX output "
+"according to the flight controller requirements, with the default baud rate "
+"of 115200 bps."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:73
+msgid "**飞控端口**：确认实际连接端口已配置为 GPS/UBX 输入。"
+msgstr ""
+"**Flight Control Port**: Confirm that the actual connected port is "
+"configured as GPS/UBX input."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:74
+msgid ""
+"**电平与接线**：确认飞控 UART 与 D20 的 3.3 V I/O 电平兼容，TX/RX 已交叉连接"
+"并共地。"
+msgstr ""
+"**Level and Wiring**: Confirm that the flight controller UART is compatible "
+"with the D20's 3.3 V I/O level, and that TX/RX are cross-connected with a "
+"common ground."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:75
+msgid ""
+"**数据接收**：先确认飞控能够持续收到数据，再检查地面站中的 GPS 和 RTK 状态。"
+msgstr ""
+"**Data Reception**: First confirm that the flight controller can "
+"continuously receive data, then check the GPS and RTK status in the ground "
+"station."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:76
+msgid "**协议不一致**：按目标输出协议重新确认交付固件。"
+msgstr ""
+"**Protocol Inconsistency**: Reconfirm the delivered firmware according to "
+"the target output protocol."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:78
+msgid "Viobot2 无法接收到 RTK 数据"
+msgstr "Viobot2 cannot receive RTK data"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:80
+msgid "**D20 输出**：先在 PC 上确认使用地面版固件，并有 NMEA 输出。"
+msgstr ""
+"**D20 Output**: First, confirm on the PC that the ground firmware is being "
+"used and that there is NMEA output."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:81
+msgid "**驱动串口**：确认 RTK 驱动中的串口号与实际设备节点一致。"
+msgstr ""
+"**Driver Serial Port**: Confirm that the serial port number in the RTK "
+"driver matches the actual device node."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:82
+msgid "**NMEA 消息**：确认 D20 输出 GGA 和 RMC。"
+msgstr "**NMEA Message**: Confirm that D20 outputs GGA and RMC."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:83
+msgid "**Viobot2 设置**：确认上位机中已勾选 RTK 并重启设备。"
+msgstr ""
+"**Viobot2 Settings**: Make sure RTK is checked in the host PC and restart "
+"the device."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:84
+msgid "**驱动话题**：通过 `rostopic echo /rtk_nmea` 确认驱动输出。"
+msgstr ""
+"**Driver Topic**: Confirm driver output through `rostopic echo /rtk_nmea`."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:85
+msgid ""
+"**解析结果**：通过 `rostopic echo /baton/rtk` 确认 Viobot2 已解析 RTK 数据。"
+msgstr ""
+"**Analysis Result**: Confirmed that Viobot2 has parsed RTK data through "
+"`rostopic echo /baton/rtk`."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:87
+msgid "固件升级失败或升级后输出异常"
+msgstr "Firmware upgrade failed or abnormal output after upgrade"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:89
+msgid "**升级供电**：确认过程中供电稳定，串口和数据线未断开。"
+msgstr ""
+"**Upgrade Power Supply**: Ensure that the power supply is stable during the "
+"process, and that the serial port and data cable are not disconnected."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:90
+msgid ""
+"**固件选择**：确认固件对应当前产品和目标输出协议，具体选择见[固件与输出协议选"
+"择](../operation/firmware-output.md)。"
+msgstr ""
+"**Firmware selection**: Verify that the firmware matches the product and "
+"target output protocol; see [Selecting Firmware and Output Protocol](../"
+"operation/firmware-output.md)."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:91
+msgid ""
+"**升级后验收**：重新连接设备，检查卫星信息和输出协议；RTK 产品还应在开阔环境"
+"确认能否进入固定解。"
+msgstr ""
+"**Post-Upgrade Acceptance**: Reconnect the device, check the satellite "
+"information and output protocol; RTK products should also be tested in an "
+"open environment to confirm whether they can achieve a fixed solution."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:92
+msgid ""
+"**异常处理**：若工具报错、设备无法启动或输出与预期不符，保留工具日志和固件信"
+"息，不要连续尝试不同固件。"
+msgstr ""
+"**Exception Handling**: If the tool reports an error, the device fails to "
+"start, or the output does not match expectations, retain the tool logs and "
+"firmware information, and do not repeatedly attempt different firmware."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:94
+msgid "具体流程见[固件升级](../maintenance/firmware-update.md)。"
+msgstr ""
+"See [Firmware Upgrade](../maintenance/firmware-update.md) for the detailed "
+"process."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:96
+msgid "G51B 无法定位或没有输出"
+msgstr "G51B cannot be located or has no output"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:98
+msgid "**供电**：确认满足 4.0–5.5 V，极性和共地正确。"
+msgstr ""
+"**Power Supply**: Confirm it meets 4.0–5.5 V, with correct polarity and "
+"common ground."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:99
+msgid "**UART 接口**：按交付资料确认 TX/RX、电平和默认 115200 bps 波特率。"
+msgstr ""
+"**UART Interface**: Confirm TX/RX, voltage level, and the default 115200 bps "
+"baud rate according to the delivery documents."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:100
+msgid "**数据输出**：确认主机能够接收 UBX-NAV-PVT 数据。"
+msgstr "**Data Output**: Confirm that the host can receive UBX-NAV-PVT data."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:101
+msgid "**安装位置**：将天线布置在天空视野开阔的位置，避开金属遮挡和强干扰源。"
+msgstr ""
+"**Installation Location**: Place the antenna in a location with an open view "
+"of the sky, avoiding metal obstructions and strong sources of interference."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:103
+msgid "联系技术支持前准备"
+msgstr "Preparation Before Contacting Technical Support"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:105
+msgid ""
+"请尽量同时提供以下信息，便于区分供电、接口、固件、差分链路和现场环境问题："
+msgstr ""
+"Provide the following information simultaneously to facilitate the "
+"distinction between power supply, interfaces, firmware, correction links, "
+"and on-site environmental issues:"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:107
+msgid "建议一次性提供"
+msgstr "It is recommended to provide all at once"
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:110
+msgid "**设备信息**：完整产品型号、硬件版本和固件版本。"
+msgstr ""
+"**Device Information**: Complete product model, hardware version, and "
+"firmware version."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:111
+msgid "**电气与串口**：供电方式、实测电压、UART 连接方式和波特率。"
+msgstr ""
+"**Electrical and Serial Port**: Power supply method, measured voltage, UART "
+"connection method, and baud rate."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:112
+msgid "**差分链路**：4G/CORS 或 LoRa 套件组成与连接方式。"
+msgstr ""
+"**Correction Link**: Composition and connection methods of 4G/CORS or LoRa "
+"kits."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:113
+msgid "**现场照片**：设备、天线、基站和周边环境。"
+msgstr ""
+"**On-site Photos**: Equipment, antennas, base stations, and surrounding "
+"environment."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:114
+msgid "**运行证据**：连续原始串口日志，以及配置工具或地面站截图。"
+msgstr ""
+"**Operational Evidence**: Continuous original serial port logs, as well as "
+"screenshots from the configuration tool or ground station."
+
+#: ../../source/rtk/troubleshooting/troubleshooting.md:115
+msgid "**复现条件**：测试地点、时间、持续时长和问题复现步骤。"
+msgstr ""
+"**Reproduction Conditions**: Test location, time, duration, and steps to "
+"reproduce the issue."
+
+#~ msgid ""
+#~ "**输出协议**：确认当前固件与预期输出一致。D20 地面版默认 NMEA、无人机版默"
+#~ "认 UBX；D13 仅提供地面版，默认 NMEA，也可按需求配置为 UBX。"
+#~ msgstr ""
+#~ "**Output Protocol**: Confirm that the current firmware matches the "
+#~ "expected output. The D20 ground firmware defaults to NMEA, and the UAV "
+#~ "firmware defaults to UBX; the D13 only offers a ground firmware, "
+#~ "defaulting to NMEA, but can also be configured to UBX as needed."
+
+#~ msgid ""
+#~ "**固件选择**：确认固件对应当前产品和目标输出协议。D20 地面版默认 NMEA、无"
+#~ "人机版默认 UBX；D13 仅提供地面版，默认 NMEA，也可按需求配置为 UBX。实际输"
+#~ "出以交付配置为准。"
+#~ msgstr ""
+#~ "**Firmware Selection**: Confirm that the firmware corresponds to the "
+#~ "current product and the target output protocol. The D20 Ground Edition "
+#~ "defaults to NMEA, while the Drone Edition defaults to UBX; the D13 only "
+#~ "provides a Ground Edition, defaulting to NMEA, but can also be configured "
+#~ "to UBX as needed. The actual output is subject to the delivered "
+#~ "configuration."

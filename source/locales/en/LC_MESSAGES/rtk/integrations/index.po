@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/integrations/index.rst:6
+msgid "无人机应用 - ArduPilot"
+msgstr "UAV Integration - ArduPilot"
+
+#: ../../source/rtk/integrations/index.rst:6
+msgid "接入 PX4"
+msgstr "Integrate PX4"
+
+#: ../../source/rtk/integrations/index.rst:6
+msgid "接入 Viobot2"
+msgstr "Integrating with Viobot2"
+
+#: ../../source/rtk/integrations/index.rst:6
+msgid "接入 Jetson / 树莓派"
+msgstr "Integrating with Jetson / Raspberry Pi"
+
+#: ../../source/rtk/integrations/index.rst:6
+msgid "平台接入:"
+msgstr "Platform integration:"
+
+#: ../../source/rtk/integrations/index.rst:2
+msgid "平台接入"
+msgstr "Platform Integration"
+
+#: ../../source/rtk/integrations/index.rst:4
+msgid ""
+"本章提供 ArduPilot、PX4、Viobot2、Jetson 和树莓派的接入说明。Jetson 和树莓派可通过串口与 "
+"``D20_ros_driver`` 接入 ROS1/ROS2。"
+msgstr ""
+"This section covers integration with ArduPilot, PX4, Viobot2, Jetson, and "
+"Raspberry Pi. Jetson and Raspberry Pi can connect over a serial port and "
+"use ``D20_ros_driver`` with ROS1/ROS2."
+
+#~ msgid ""
+#~ "本章说明已经形成公开流程的飞控、机器人和设备平台接入。Jetson 和树莓派可通过串口与统一的 "
+#~ "``D20_ros_driver`` 接入 ROS1/ROS2；典型行业方案将作为独立内容维护。"
+#~ msgstr ""
+#~ "This chapter explains the integration of"
+#~ " flight control, robotics, and equipment"
+#~ " platforms that have an established "
+#~ "public process. Jetson and Raspberry Pi"
+#~ " can connect to ROS1/ROS2 through the"
+#~ " unified `D20_ros_driver` via serial port;"
+#~ " typical industry solutions will be "
+#~ "maintained as separate content."

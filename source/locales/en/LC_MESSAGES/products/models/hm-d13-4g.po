@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/products/models/hm-d13-4g.md:1
+msgid "HM-D13-4G"
+msgstr "HM-D13-4G"
+
+#: ../../source/products/models/hm-d13-4g.md:3
+msgid "产品定位"
+msgstr "Product overview"
+
+#: ../../source/products/models/hm-d13-4g.md:6
+msgid ""
+"**面向地面移动作业的紧凑型双频一体化 RTK 接收机。** 集成 GNSS 天线、定位计算"
+"单元与 4G 通信链路，通过蜂窝网络接入 CORS/NTRIP。"
+msgstr ""
+"**A compact dual-band integrated RTK GNSS receiver for ground-mobile "
+"applications.** It combines a GNSS antenna, positioning engine, and 4G "
+"correction link, connecting to CORS/NTRIP over a cellular network."
+
+#: ../../source/products/models/hm-d13-4g.md:9
+msgid "HM-D13-4G 一体化 RTK 接收机"
+msgstr "HM-D13-4G Integrated RTK GNSS Receiver"
+
+#: ../../source/products/models/hm-d13-4g.md:14
+msgid "核心价值"
+msgstr "Key benefits"
+
+#: ../../source/products/models/hm-d13-4g.md:16
+msgid ""
+"**紧凑型一体化设计**：GNSS 天线、定位计算单元与 4G 通信链路集成在设备内部，外"
+"部安装简洁。"
+msgstr ""
+"**Compact all-in-one design**: The GNSS antenna, positioning engine, and 4G "
+"correction link are integrated inside the device for a clean external "
+"installation."
+
+#: ../../source/products/models/hm-d13-4g.md:17
+msgid "**无需本地基站**：通过 4G 接入 CORS/NTRIP，适合跨区域和分散作业。"
+msgstr ""
+"**No local base station required**: Access CORS/NTRIP via 4G, suitable for "
+"cross-regional and distributed operations."
+
+#: ../../source/products/models/hm-d13-4g.md:18
+msgid ""
+"**单接口接入主机**：外部 5-pin GH1.25 mm 接口完成供电、UART 和 PPS 连接。"
+msgstr ""
+"**Single-interface host connection**: The external 5-pin GH1.25 mm interface "
+"completes power supply, UART, and PPS connections."
+
+#: ../../source/products/models/hm-d13-4g.md:19
+msgid ""
+"**输出灵活**：可按交付用途配置 NMEA 或 UBX；默认 10 Hz NMEA，便于接入机器人主"
+"控、PC 和通用串口设备。"
+msgstr ""
+"**Flexible output**: Supports NMEA or UBX as configured at delivery; the "
+"default 10 Hz NMEA output works with robot controllers, PCs, and general "
+"serial devices."
+
+#: ../../source/products/models/hm-d13-4g.md:21
+msgid "工作方式"
+msgstr "How it works"
+
+#: ../../source/products/models/hm-d13-4g.md:23
+msgid "![HM-D13-4G通过4G接入CORS](../images/scenarios/d13-4g-ref-v2.png)"
+msgstr ""
+"![HM-D13-4G Accessing CORS via 4G](../images/scenarios/d13-4g-ref-v2.png)"
+
+#: ../../source/products/models/hm-d13-4g.md:23
+msgid "HM-D13-4G通过4G接入CORS"
+msgstr "HM-D13-4G accesses CORS through 4G"
+
+#: ../../source/products/models/hm-d13-4g.md:25
+msgid ""
+"设备接收 GNSS 卫星信号，并通过 4G 网络获取 CORS/NTRIP 差分数据；完成 RTK 解算"
+"后，通过 5-pin GH1.25 mm 接口向外部设备输出定位结果。"
+msgstr ""
+"The device receives GNSS satellite signals and obtains CORS/NTRIP correction "
+"data via the 4G network; after completing RTK solution computation, it "
+"outputs the positioning results to external devices through a 5-pin GH1.25 "
+"mm interface."
+
+#: ../../source/products/models/hm-d13-4g.md:27
+msgid "交付组成"
+msgstr "Package contents"
+
+#: ../../source/products/models/hm-d13-4g.md:29
+msgid "HM-D13-4G 移动站。"
+msgstr "HM-D13-4G rover."
+
+#: ../../source/products/models/hm-d13-4g.md:30
+msgid ""
+"供电与串口线缆、USB-C 配置线和兼容 3.3 V UART I/O 的 USB 转 UART 转接器。"
+msgstr ""
+"Includes power and serial cables, a USB-C configuration cable, and a USB-to-"
+"UART adapter compatible with 3.3 V UART I/O."
+
+#: ../../source/products/models/hm-d13-4g.md:33
+msgid ""
+"使用前提 用户需要自行准备**有流量的 Nano-SIM 卡、可用的 CORS/NTRIP 账号和蜂窝"
+"网络覆盖**。"
+msgstr ""
+"Prerequisites Before use, the user needs to prepare **a Nano-SIM card with "
+"data, a valid CORS/NTRIP account, and cellular network coverage** on their "
+"own."
+
+#: ../../source/products/models/hm-d13-4g.md:36
+msgid "关键参数"
+msgstr "Key specifications"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "参数"
+msgstr "Parameter"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "定位类型"
+msgstr "Positioning type"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "L1/L5 双频 RTK"
+msgstr "L1/L5 Dual-Frequency RTK"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "RTK 精度"
+msgstr "RTK accuracy"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "水平 1.0 cm + 1 ppm；垂直 1.5 cm + 1 ppm"
+msgstr "Horizontal 1.0 cm + 1 ppm; Vertical 1.5 cm + 1 ppm"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "启动 / RTK 首次固定"
+msgstr "Startup / RTK time to first fix"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "冷启动 28 s；热启动 1 s；RTK 首次固定 45 s"
+msgstr "Cold start: 28 s; hot start: 1 s; RTK time to first fix: 45 s"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "输出协议"
+msgstr "Output protocol"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "NMEA 或 UBX；默认 10 Hz NMEA"
+msgstr "NMEA or UBX; default 10 Hz NMEA"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "RTK 最高更新率"
+msgstr "Maximum RTK update rate"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "10 Hz"
+msgstr "10 Hz"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "天线系统增益"
+msgstr "Antenna system gain"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "40 dB"
+msgstr "40 dB"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "主接口"
+msgstr "Primary connector"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "5-pin GH1.25 mm；UART/PPS I/O 3.3 V；默认 115200 bps"
+msgstr "5-pin GH1.25 mm; 3.3 V UART/PPS I/O; default 115200 bps"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "供电"
+msgstr "Power input"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "5 V ±0.5 V（4.5–5.5 V）"
+msgstr "5 V ±0.5 V (4.5–5.5 V)"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "工作电流"
+msgstr "Operating current"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "典型 120 mA"
+msgstr "Typical 120 mA"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "尺寸 / 重量"
+msgstr "Dimensions / weight"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "Φ152 × 67.9 mm / 255 g"
+msgstr "Φ152 × 67.9 mm / 255 g"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "工作 / 存储温度"
+msgstr "Operating / Storage Temperature"
+
+#: ../../source/products/models/hm-d13-4g.md:32
+msgid "-40–85 °C / -50–105 °C"
+msgstr "-40–85 °C / -50–105 °C"
+
+#: ../../source/products/models/hm-d13-4g.md:52
+msgid ""
+"完整 GNSS 频点、灵敏度、动态条件和 LTE 频段请查看[产品对比与资料](../"
+"comparison.md)。"
+msgstr ""
+"See [Product Comparison and Resources](../comparison.md) for complete GNSS "
+"frequencies, sensitivity, dynamic limits, and LTE bands."
+
+#: ../../source/products/models/hm-d13-4g.md:54
+msgid "外部接口"
+msgstr "Interfaces"
+
+#: ../../source/products/models/hm-d13-4g.md:56
+msgid ""
+"**5-pin GH1.25 mm**：供电、3.3 V UART 和 3.3 V PPS 信号，按固定 Pin 顺序连"
+"接。"
+msgstr ""
+"**5-pin GH1.25 mm**: Power, 3.3 V UART, and 3.3 V PPS; connect strictly by "
+"pin number."
+
+#: ../../source/products/models/hm-d13-4g.md:57
+msgid "**Nano-SIM 卡槽**：位于顶壳内部。"
+msgstr "**Nano-SIM slot**: Located inside the top casing."
+
+#: ../../source/products/models/hm-d13-4g.md:58
+msgid "**USB-C 配置口**：位于顶壳内部，使用标配配置线写入 CORS/NTRIP 账号。"
+msgstr ""
+"**USB-C Configuration Port**: Located inside the top case, use the standard "
+"configuration cable to write CORS/NTRIP accounts."
+
+#: ../../source/products/models/hm-d13-4g.md:60
+msgid ""
+"安装或更换 SIM 卡、连接配置口时需要打开顶壳；完成操作后应恢复设备结构并确认装"
+"配可靠。"
+msgstr ""
+"Open the top cover to install or replace the SIM card or access the "
+"configuration port. Reassemble the enclosure securely after the operation."
+
+#: ../../source/products/models/hm-d13-4g.md:62
+msgid "适用场景与前提"
+msgstr "Applications and requirements"
+
+#: ../../source/products/models/hm-d13-4g.md:64
+msgid ""
+"适合测绘、精准农业、智能驾驶测试、地面机器人和其他稳定安装的移动作业。现场需"
+"要蜂窝网络覆盖；SIM 卡流量和 CORS/NTRIP 服务由用户管理。"
+msgstr ""
+"Suitable for surveying, precision agriculture, autonomous driving testing, "
+"ground robots, and other stably mounted mobile operations. Cellular network "
+"coverage is required on-site; SIM card data and CORS/NTRIP services are "
+"managed by the user."
+
+#: ../../source/products/models/hm-d13-4g.md:66
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/products/models/hm-d13-4g.md:68
+msgid "[HM-D13-4G 首次使用](../../rtk/getting-started/hm-d13-4g.md)"
+msgstr "[HM-D13-4G Getting Started](../../rtk/getting-started/hm-d13-4g.md)"
+
+#: ../../source/products/models/hm-d13-4g.md:69
+msgid "[4G / CORS 配置](../../rtk/differential-links/4g-ntrip.md)"
+msgstr "[4G / CORS Configuration](../../rtk/differential-links/4g-ntrip.md)"
+
+#: ../../source/products/models/hm-d13-4g.md:70
+msgid "[D13 接口与接线](../../rtk/operation/d13-wiring.md)"
+msgstr "[D13 Interfaces and Wiring](../../rtk/operation/d13-wiring.md)"
+
+#: ../../source/products/models/hm-d13-4g.md:71
+msgid "[产品对比与资料](../comparison.md)"
+msgstr "[Product Comparison and Resources](../comparison.md)"

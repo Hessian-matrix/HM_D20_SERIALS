@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/operation/firmware-output.md:1
+msgid "固件与输出协议选择"
+msgstr "Selecting Firmware and Output Protocol"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "选择原则"
+msgstr "Selection Principles"
+
+#: ../../source/rtk/operation/firmware-output.md:6
+msgid ""
+"**4G / LoRa 表示差分数据来源，NMEA / UBX 表示对外输出协议。** D20 地面版默认 "
+"10 Hz NMEA，无人机版默认 10 Hz UBX；D13 默认输出 10 Hz NMEA，可按需求配置为 "
+"UBX。"
+msgstr ""
+"**4G / LoRa identifies the correction source, while NMEA / UBX identifies "
+"the external output protocol.** D20 ground firmware defaults to 10 Hz NMEA, "
+"and UAV firmware defaults to 10 Hz UBX. D13 defaults to 10 Hz NMEA and can "
+"be configured for UBX on request."
+
+#: ../../source/rtk/operation/firmware-output.md:9
+msgid "出厂固件选择"
+msgstr "Factory Firmware Selection"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "产品"
+msgstr "Product"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "目标设备"
+msgstr "Target device"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "固件"
+msgstr "Firmware"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "默认输出"
+msgstr "Default output"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "HM-D20"
+msgstr "HM-D20"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "ArduPilot、PX4 等飞控"
+msgstr "Flight controllers such as ArduPilot and PX4"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "无人机版"
+msgstr "UAV firmware"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "10 Hz UBX"
+msgstr "10 Hz UBX"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "Viobot2、机器人主控、PC"
+msgstr "Viobot2, robot main controller, PC"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "地面版"
+msgstr "Ground firmware"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "10 Hz NMEA"
+msgstr "10 Hz NMEA"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "HM-D13"
+msgstr "HM-D13"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "地面设备、机器人主控、PC"
+msgstr "Ground equipment, robot main control, PC"
+
+#: ../../source/rtk/operation/firmware-output.md:3
+msgid "10 Hz NMEA；可按需求配置 UBX"
+msgstr "10 Hz NMEA; UBX can be configured as needed"
+
+#: ../../source/rtk/operation/firmware-output.md:17
+msgid ""
+"RTK 最高更新率为 10 Hz，默认 10 Hz 是当前标准交付配置。修改输出前，需要确认串"
+"口带宽、消息数量和下游设备兼容性；PVT 与 RAW 原始数据的频率边界见[产品对比与"
+"资料](../../products/comparison.md)。"
+msgstr ""
+"The RTK maximum update rate is 10 Hz, and the default 10 Hz is the current "
+"standard delivery configuration. Before modifying the output, it is "
+"necessary to confirm the serial port bandwidth, the number of messages, and "
+"downstream device compatibility; the frequency boundaries of PVT and RAW "
+"data can be found in [Product Comparison and Resources](../../products/"
+"comparison.md)."
+
+#: ../../source/rtk/operation/firmware-output.md:20
+msgid ""
+"**下单时直接说明目标平台：** 说明计划接入的飞控、机器人主控或 PC，以及所需 "
+"NMEA / UBX 输出，可按用途完成出厂配置。"
+msgstr ""
+"**Specify the target platform when placing the order:** Indicate the flight "
+"controller, robot main controller, or PC you plan to connect to, as well as "
+"the required NMEA/UBX output, so that the factory configuration can be "
+"completed according to the intended use."
+
+#: ../../source/rtk/operation/firmware-output.md:24
+msgid "输出检查"
+msgstr "Output Check"
+
+#: ../../source/rtk/operation/firmware-output.md:26
+#, python-brace-format
+msgid ""
+"NMEA 输出：按{ref}`连接 NavStarTool <connect-navstartool>`或在串口控制台中确"
+"认 NMEA 语句持续刷新。"
+msgstr ""
+"NMEA output: Follow {ref}`Connecting to NavStarTool <connect-navstartool>` "
+"or check in the serial console to confirm that NMEA messages are "
+"continuously refreshing."
+
+#: ../../source/rtk/operation/firmware-output.md:27
+msgid ""
+"UBX 输出：通过目标飞控、地面站或其他兼容设备确认定位数据和状态持续更新。"
+msgstr ""
+"UBX Output: Confirm that positioning data and status are continuously "
+"updated through the target flight controller, ground station, or other "
+"compatible devices."
+
+#: ../../source/rtk/operation/firmware-output.md:28
+msgid "默认串口波特率：115200 bps。"
+msgstr "Default serial port baud rate: 115200 bps."
+
+#: ../../source/rtk/operation/firmware-output.md:30
+msgid ""
+"需要修改输出频率或消息项时，使用[常用参数配置](../maintenance/parameters."
+"md)。需要更换固件时，先确认目标平台，再按[固件升级](../maintenance/firmware-"
+"update.md)操作。"
+msgstr ""
+"When you need to modify the output frequency or message items, use [Common "
+"Parameter Configuration](../maintenance/parameters.md). When you need to "
+"replace the firmware, first confirm the target platform, then follow the "
+"[Firmware Upgrade](../maintenance/firmware-update.md) procedure."

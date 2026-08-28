@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/products/models/hm-d20-4g.md:1
+msgid "HM-D20-4G"
+msgstr "HM-D20-4G"
+
+#: ../../source/products/models/hm-d20-4g.md:3
+msgid "产品定位"
+msgstr "Product overview"
+
+#: ../../source/products/models/hm-d20-4g.md:6
+msgid ""
+"**面向无人机和紧凑型移动平台的轻量化一体化 RTK 接收机。** 设备集成四臂螺旋天"
+"线、定位计算单元与 4G 通信链路，通过 CORS/NTRIP 获取差分数据并直接输出定位结"
+"果。"
+msgstr ""
+"**A lightweight, integrated RTK GNSS receiver for UAVs and compact mobile "
+"platforms.** It combines a quadrifilar helix antenna (QHA), positioning "
+"engine, and 4G correction link, receives correction data through CORS/NTRIP, "
+"and outputs positioning data directly."
+
+#: ../../source/products/models/hm-d20-4g.md:9
+msgid "HM-D20-4G 四臂螺旋天线一体化 RTK 接收机"
+msgstr "HM-D20-4G Integrated RTK GNSS Receiver with Quadrifilar Helix Antenna"
+
+#: ../../source/products/models/hm-d20-4g.md:14
+msgid "核心价值"
+msgstr "Key benefits"
+
+#: ../../source/products/models/hm-d20-4g.md:16
+msgid ""
+"**轻量紧凑**：整机 38.2 g，外形 Φ54.5 × 53 mm，降低无人机载荷和安装空间压力。"
+msgstr ""
+"**Lightweight and compact**: At 38.2 g and Φ54.5 × 53 mm, the unit minimizes "
+"payload and installation space on UAVs."
+
+#: ../../source/products/models/hm-d20-4g.md:17
+msgid "**差分链路一体化**：通过 4G 接入 CORS/NTRIP，无需在作业区架设本地基站。"
+msgstr ""
+"**Integrated correction link**: Connects to CORS/NTRIP over 4G, eliminating "
+"the need to deploy a local base station."
+
+#: ../../source/products/models/hm-d20-4g.md:18
+msgid ""
+"**安装位置更灵活**：4G 天线采用外置 SMA 接口，可将天线布置到合适位置，减少与"
+"平台其他设备相互影响。"
+msgstr ""
+"**Flexible installation**: The external SMA 4G antenna can be positioned "
+"away from other onboard equipment to reduce interference."
+
+#: ../../source/products/models/hm-d20-4g.md:19
+msgid ""
+"**面向飞控集成**：8-pin 接口统一提供电源、UART 和磁力计信号，可按订单配置无人"
+"机或地面输出固件。"
+msgstr ""
+"**Designed for flight-controller integration**: The 8-pin connector carries "
+"power, UART, and magnetometer signals; UAV or ground firmware can be "
+"configured at delivery."
+
+#: ../../source/products/models/hm-d20-4g.md:21
+msgid "工作方式"
+msgstr "How it works"
+
+#: ../../source/products/models/hm-d20-4g.md:23
+msgid "![HM-D20-4G通过4G接入CORS](../images/scenarios/d20-4g-ref.png)"
+msgstr "![HM-D20-4G Accessing CORS via 4G](../images/scenarios/d20-4g-ref.png)"
+
+#: ../../source/products/models/hm-d20-4g.md:23
+msgid "HM-D20-4G通过4G接入CORS"
+msgstr "HM-D20-4G accesses CORS through 4G"
+
+#: ../../source/products/models/hm-d20-4g.md:25
+msgid ""
+"设备接收 GNSS 卫星信号，同时通过 4G 网络获取 CORS/NTRIP 差分数据；完成 RTK 解"
+"算后，通过 8-pin 接口向飞控、机器人主控或 PC 输出 NMEA 或 UBX 数据。"
+msgstr ""
+"The receiver combines GNSS measurements with CORS/NTRIP corrections over 4G, "
+"computes the RTK solution, and outputs NMEA or UBX through the 8-pin "
+"interface to a flight controller, robot host, or PC."
+
+#: ../../source/products/models/hm-d20-4g.md:27
+msgid "交付组成"
+msgstr "Package contents"
+
+#: ../../source/products/models/hm-d20-4g.md:29
+msgid "HM-D20-4G 移动站。"
+msgstr "HM-D20-4G rover."
+
+#: ../../source/products/models/hm-d20-4g.md:30
+msgid ""
+"8-pin 连接线缆、外置 4G 天线、USB-C 配置线和兼容 3.3 V UART I/O 的 USB 转 "
+"UART 转接器。"
+msgstr ""
+"Includes an 8-pin cable, an external 4G antenna, a USB-C configuration "
+"cable, and a USB-to-UART adapter compatible with 3.3 V UART I/O."
+
+#: ../../source/products/models/hm-d20-4g.md:33
+msgid ""
+"使用前提 用户需要自行准备**有流量的 Nano-SIM 卡、可用的 CORS/NTRIP 账号和蜂窝"
+"网络覆盖**。"
+msgstr ""
+"Prerequisites Before use, the user needs to prepare **a Nano-SIM card with "
+"data, a valid CORS/NTRIP account, and cellular network coverage** on their "
+"own."
+
+#: ../../source/products/models/hm-d20-4g.md:36
+msgid "关键参数"
+msgstr "Key specifications"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "参数"
+msgstr "Parameter"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "定位类型"
+msgstr "Positioning type"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "L1/L5 双频 RTK"
+msgstr "L1/L5 Dual-Frequency RTK"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "RTK 精度"
+msgstr "RTK accuracy"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "水平 1.0 cm + 1 ppm；垂直 1.5 cm + 1 ppm"
+msgstr "Horizontal 1.0 cm + 1 ppm; Vertical 1.5 cm + 1 ppm"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "启动 / RTK 首次固定"
+msgstr "Startup / RTK time to first fix"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "冷启动 28 s；热启动 1 s；RTK 首次固定 45 s"
+msgstr "Cold start: 28 s; hot start: 1 s; RTK time to first fix: 45 s"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "输出协议"
+msgstr "Output protocol"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "NMEA 或 UBX；地面版默认 10 Hz NMEA，无人机版默认 10 Hz UBX"
+msgstr ""
+"NMEA or UBX; the ground firmware defaults to 10 Hz NMEA, and the UAV "
+"firmware defaults to 10 Hz UBX"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "RTK 最高更新率"
+msgstr "Maximum RTK update rate"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "10 Hz"
+msgstr "10 Hz"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "天线系统增益"
+msgstr "Antenna system gain"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "40 dB"
+msgstr "40 dB"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "主接口"
+msgstr "Primary connector"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "8-pin GH1.25 mm；UART/PPS I/O 3.3 V；默认 115200 bps"
+msgstr "8-pin GH1.25 mm; 3.3 V UART/PPS I/O; default 115200 bps"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "供电"
+msgstr "Power input"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "5 V ±0.5 V（4.5–5.5 V）"
+msgstr "5 V ±0.5 V (4.5–5.5 V)"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "工作电流"
+msgstr "Operating current"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "典型 120 mA"
+msgstr "Typical 120 mA"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "尺寸 / 重量"
+msgstr "Dimensions / weight"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "Φ54.5 × 53 mm / 38.2 g"
+msgstr "Φ54.5 × 53 mm / 38.2 g"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "工作 / 存储温度"
+msgstr "Operating / Storage Temperature"
+
+#: ../../source/products/models/hm-d20-4g.md:32
+msgid "-40–85 °C / -50–105 °C"
+msgstr "-40–85 °C / -50–105 °C"
+
+#: ../../source/products/models/hm-d20-4g.md:52
+msgid ""
+"完整 GNSS 频点、灵敏度、动态条件和 LTE 频段请查看[产品对比与资料](../"
+"comparison.md)。"
+msgstr ""
+"See [Product Comparison and Resources](../comparison.md) for complete GNSS "
+"frequencies, sensitivity, dynamic limits, and LTE bands."
+
+#: ../../source/products/models/hm-d20-4g.md:54
+msgid "外部接口"
+msgstr "Interfaces"
+
+#: ../../source/products/models/hm-d20-4g.md:61
+msgid "HM-D20-4G 底部接口实物图"
+msgstr "Photo of the HM-D20-4G bottom interfaces"
+
+#: ../../source/products/models/hm-d20-4g.md:61
+msgid "HM-D20-4G 底部接口"
+msgstr "HM-D20-4G bottom interfaces"
+
+#: ../../source/products/models/hm-d20-4g.md:64
+msgid ""
+"**8-pin GH1.25 mm**：供电、3.3 V UART、3.3 V PPS 和磁力计 SCL/SDA 信号。"
+msgstr ""
+"**8-pin GH1.25 mm**: Power, 3.3 V UART, 3.3 V PPS, and magnetometer SCL/SDA "
+"signals."
+
+#: ../../source/products/models/hm-d20-4g.md:65
+msgid "**SMA**：连接外置宽频 4G 天线。"
+msgstr "**SMA**: Connect an external wideband 4G antenna."
+
+#: ../../source/products/models/hm-d20-4g.md:66
+msgid "**USB-C**：使用标配配置线连接配置工具，写入 CORS/NTRIP 账号信息。"
+msgstr ""
+"**USB-C**: Use the standard configuration cable to connect the configuration "
+"tool and enter the CORS/NTRIP account information."
+
+#: ../../source/products/models/hm-d20-4g.md:69
+msgid ""
+"8-pin 接线安全 接线前必须查看[完整 8-pin 线束定义](../../rtk/operation/d20-"
+"wiring.md)。设备只允许使用 5 V ±0.5 V 供电；正负极反接、使用错误电压或将电源"
+"正极接到 TX/RX 等信号线均可能损坏设备。"
+msgstr ""
+"8-pin wiring safety: Before wiring, check the [complete 8-pin pinout](../../"
+"rtk/operation/d20-wiring.md). Power the device only from 5 V ±0.5 V. "
+"Reversed polarity, an incorrect supply voltage, or connecting the positive "
+"supply lead to TX/RX or another signal pin may damage the device."
+
+#: ../../source/products/models/hm-d20-4g.md:72
+msgid "适用场景与前提"
+msgstr "Applications and requirements"
+
+#: ../../source/products/models/hm-d20-4g.md:74
+msgid ""
+"适合无人机测绘、低空作业、移动机器人、车载设备和紧凑型定位终端。现场需要蜂窝"
+"网络覆盖；SIM 卡流量和 CORS/NTRIP 服务由用户管理。"
+msgstr ""
+"Suitable for drone surveying and mapping, low-altitude operations, mobile "
+"robots, vehicle-mounted equipment, and compact positioning terminals. On-"
+"site cellular network coverage is required; SIM card data and CORS/NTRIP "
+"services are managed by the user."
+
+#: ../../source/products/models/hm-d20-4g.md:76
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/products/models/hm-d20-4g.md:78
+msgid "[HM-D20-4G 首次使用](../../rtk/getting-started/hm-d20-4g.md)"
+msgstr "[HM-D20-4G Getting Started](../../rtk/getting-started/hm-d20-4g.md)"
+
+#: ../../source/products/models/hm-d20-4g.md:79
+msgid "[4G / CORS 配置](../../rtk/differential-links/4g-ntrip.md)"
+msgstr "[4G / CORS Configuration](../../rtk/differential-links/4g-ntrip.md)"
+
+#: ../../source/products/models/hm-d20-4g.md:80
+msgid "[D20 接口与接线](../../rtk/operation/d20-wiring.md)"
+msgstr "[D20 Interfaces and Wiring](../../rtk/operation/d20-wiring.md)"
+
+#: ../../source/products/models/hm-d20-4g.md:81
+msgid "[产品对比与资料](../comparison.md)"
+msgstr "[Product Comparison and Resources](../comparison.md)"
+
+#~ msgid "具体配件以订单和装箱清单为准。"
+#~ msgstr "Accessories may vary by order; refer to the packing list."

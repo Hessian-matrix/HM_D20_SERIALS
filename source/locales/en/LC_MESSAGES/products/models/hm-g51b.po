@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/products/models/hm-g51b.md:1
+msgid "HM-G51B"
+msgstr "HM-G51B"
+
+#: ../../source/products/models/hm-g51b.md:3
+msgid "产品定位"
+msgstr "Product overview"
+
+#: ../../source/products/models/hm-g51b.md:6
+msgid ""
+"**面向独立 GNSS 定位和紧凑型终端集成的单频多星座 GNSS 接收机模组。** 通过 "
+"UART 输出 UBX-NAV-PVT 定位数据，不需要差分基站或 CORS 服务。"
+msgstr ""
+"**A single-band multi-constellation GNSS receiver module for standalone "
+"positioning and compact-system integration.** It outputs UBX-NAV-PVT data "
+"over UART without requiring an RTK base station or CORS service."
+
+#: ../../source/products/models/hm-g51b.md:9
+msgid "HM-G51B 单频多星座 GNSS 接收机模组"
+msgstr "HM-G51B Single-Band Multi-Constellation GNSS Receiver Module"
+
+#: ../../source/products/models/hm-g51b.md:14
+msgid "核心价值"
+msgstr "Key benefits"
+
+#: ../../source/products/models/hm-g51b.md:16
+msgid "**定位链路简洁**：无需 4G、LoRa、CORS 账号或本地基站。"
+msgstr ""
+"**Simple positioning architecture**: Requires no 4G, LoRa, CORS account, or "
+"local base station."
+
+#: ../../source/products/models/hm-g51b.md:17
+msgid "**紧凑轻量**：模组尺寸 26.5 × 35.5 × 7.1 mm，重量 10 g。"
+msgstr ""
+"**Compact and lightweight**: Measures 26.5 × 35.5 × 7.1 mm and weighs 10 g."
+
+#: ../../source/products/models/hm-g51b.md:18
+msgid ""
+"**多星座单频接收**：支持 GPS、北斗、Galileo、QZSS 和 GLONASS 的 L1 频段信号。"
+msgstr ""
+"**Multi-constellation reception**: Supports L1 signals from GPS, BeiDou, "
+"Galileo, QZSS, and GLONASS."
+
+#: ../../source/products/models/hm-g51b.md:19
+msgid ""
+"**便于主机集成**：通过 UART 输出 UBX-NAV-PVT 数据，默认波特率 115200 bps。"
+msgstr ""
+"**Straightforward host integration**: Outputs UBX-NAV-PVT over UART at a "
+"default 115200 bps."
+
+#: ../../source/products/models/hm-g51b.md:20
+msgid "**集成磁力计**：内置 QMC5883L，通过 I2C 接口连接主机。"
+msgstr ""
+"**Integrated magnetometer**: Includes a QMC5883L with an I2C interface to "
+"the host."
+
+#: ../../source/products/models/hm-g51b.md:22
+msgid "工作方式"
+msgstr "How it works"
+
+#: ../../source/products/models/hm-g51b.md:24
+msgid ""
+"HM-G51B 接收 GNSS 卫星信号并完成普通单点定位，通过 UART 向飞控、车载设备、资"
+"产定位终端或嵌入式主控输出 UBX-NAV-PVT 数据。"
+msgstr ""
+"The HM-G51B performs standard GNSS single-point positioning and outputs UBX-"
+"NAV-PVT over UART to flight controllers, in-vehicle systems, asset trackers, "
+"or embedded hosts."
+
+#: ../../source/products/models/hm-g51b.md:27
+msgid ""
+"产品边界 HM-G51B 提供普通单点定位，**不属于 RTK 差分定位产品**。需要厘米级定"
+"位时请选择 HM-D20 或 HM-D13 系列。"
+msgstr ""
+"Product scope: HM-G51B provides standard single-point positioning and **is "
+"not an RTK receiver**. For centimeter-level positioning, choose the HM-D20 "
+"or HM-D13 series."
+
+#: ../../source/products/models/hm-g51b.md:30
+msgid "交付组成"
+msgstr "Package contents"
+
+#: ../../source/products/models/hm-g51b.md:32
+msgid "HM-G51B 接收机模组。"
+msgstr "HM-G51B receiver module."
+
+#: ../../source/products/models/hm-g51b.md:33
+msgid "随交付版本提供的接口资料；具体配件以订单和装箱清单为准。"
+msgstr ""
+"Interface documentation provided with the delivery version; specific "
+"accessories are subject to the order and packing list."
+
+#: ../../source/products/models/hm-g51b.md:35
+msgid "关键参数"
+msgstr "Key specifications"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "参数"
+msgstr "Parameter"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "定位类型"
+msgstr "Positioning type"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "L1 单频 GNSS"
+msgstr "L1 Single-Frequency GNSS"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "接收频点"
+msgstr "Supported Frequencies"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "GPS L1、北斗 B1、Galileo E1、QZSS L1、GLONASS G1"
+msgstr "GPS L1, BeiDou B1, Galileo E1, QZSS L1, GLONASS G1"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "跟踪通道"
+msgstr "Tracking channels"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "120"
+msgstr "120"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "定位精度"
+msgstr "Positioning accuracy"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "1.5 m CEP"
+msgstr "1.5 m CEP"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "启动时间"
+msgstr "Startup time"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "冷启动 28 s；热启动 1 s"
+msgstr "Cold start 28 s; Hot start 1 s"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "PVT 最高更新率"
+msgstr "Maximum PVT update rate"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "20 Hz"
+msgstr "20 Hz"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "输出"
+msgstr "Output"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "UART / UBX-NAV-PVT；默认 115200 bps"
+msgstr "UART / UBX-NAV-PVT; default 115200 bps"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "磁力计"
+msgstr "Magnetometer"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "QMC5883L；I2C 接口"
+msgstr "QMC5883L; I2C interface"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "工作电压"
+msgstr "Operating voltage"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "4.0–5.5 V；典型 5 V"
+msgstr "4.0–5.5 V; typical 5 V"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "工作电流"
+msgstr "Operating current"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "@ 5 V：最小 25 mA；典型 28 mA；最大 30 mA"
+msgstr "@ 5 V: Minimum 25 mA; Typical 28 mA; Maximum 30 mA"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "尺寸 / 重量"
+msgstr "Dimensions / weight"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "26.5 × 35.5 × 7.1 mm / 10 g"
+msgstr "26.5 × 35.5 × 7.1 mm / 10 g"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "工作 / 存储温度"
+msgstr "Operating / Storage Temperature"
+
+#: ../../source/products/models/hm-g51b.md:26
+msgid "-40–85 °C / -50–105 °C"
+msgstr "-40–85 °C / -50–105 °C"
+
+#: ../../source/products/models/hm-g51b.md:52
+msgid "完整灵敏度、速度和时间参数请查看[产品对比与资料](../comparison.md)。"
+msgstr ""
+"See [Product Comparison and Resources](../comparison.md) for complete "
+"sensitivity, velocity, and timing specifications."
+
+#: ../../source/products/models/hm-g51b.md:54
+msgid "外部接口"
+msgstr "Interfaces"
+
+#: ../../source/products/models/hm-g51b.md:56
+msgid ""
+"HM-G51B 使用 6-pin MX1.25 mm 接口，提供电源、UART 和磁力计 I2C 信号；接口不提"
+"供 PPS 引脚。"
+msgstr ""
+"The HM-G51B uses a 6-pin MX1.25 mm interface, providing power, UART, and "
+"magnetometer I2C signals; the interface does not provide a PPS pin."
+
+#: ../../source/products/models/hm-g51b.md:58
+msgid "适用场景与前提"
+msgstr "Applications and requirements"
+
+#: ../../source/products/models/hm-g51b.md:60
+msgid ""
+"适合车载导航、车队管理、资产追踪、AVL/LBS、无人机普通定位和紧凑型终端。需要厘"
+"米级定位或差分链路时，应选择 HM-D20 或 HM-D13 系列。"
+msgstr ""
+"Suitable for in-vehicle navigation, fleet management, asset tracking, AVL/"
+"LBS, standard UAV positioning, and compact terminals. Choose the HM-D20 or "
+"HM-D13 series when centimeter-level positioning or a correction link is "
+"required."
+
+#: ../../source/products/models/hm-g51b.md:62
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/products/models/hm-g51b.md:64
+msgid "[HM-G51B 快速开始](../../gnss/g51b/getting-started.md)"
+msgstr "[HM-G51B Getting Started](../../gnss/g51b/getting-started.md)"
+
+#: ../../source/products/models/hm-g51b.md:65
+msgid "[产品对比与资料](../comparison.md)"
+msgstr "[Product Comparison and Resources](../comparison.md)"
+
+#: ../../source/products/models/hm-g51b.md:66
+msgid "[GNSS 系列资料](../../gnss/index.rst)"
+msgstr "[GNSS series documentation](../../gnss/index.rst)"

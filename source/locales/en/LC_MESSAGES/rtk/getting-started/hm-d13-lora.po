@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:1
+msgid "HM-D13-LoRa 首次使用"
+msgstr "HM-D13-LoRa Getting Started"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:6
+msgid ""
+"将 **HM-D13-LoRa 套件**从开箱状态运行到移动站首次获得 **RTK 固定解**。套件使"
+"用本地 LoRa 差分链路，不需要 SIM 卡或 CORS 账号。"
+msgstr ""
+"Operate the **HM-D13-LoRa kit** from the out-of-the-box state to the rover’s "
+"first acquisition of an **RTK fixed solution**. The kit uses a local LoRa "
+"correction link and does not require a SIM card or CORS account."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:9
+msgid "1. 核对套件"
+msgstr "Step 1: Check the kit"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:11
+msgid "产品配备："
+msgstr "Package includes:"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:12
+msgid "HM-D13-LoRa 移动站和 5-pin GH1.25 mm 接口线缆。"
+msgstr "HM-D13-LoRa rover and 5-pin GH1.25 mm interface cable."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:13
+msgid "兼容 3.3 V UART I/O 的 USB 转 UART 转接器。"
+msgstr "USB-to-UART adapter compatible with 3.3 V UART I/O."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:14
+msgid ""
+"配套专用 D13 LoRa 基站硬件、基站外置 LoRa 天线和封装好的 4-pin USB 线缆。"
+msgstr ""
+"Dedicated D13 LoRa base station, external base-station LoRa antenna, and "
+"sealed 4-pin USB cable."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:15
+msgid "基站安装支架及随套件提供的附件。"
+msgstr ""
+"Base station installation brackets and the accessories provided with the kit."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:17
+msgid "用户自备："
+msgstr "User provides:"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:18
+msgid "移动站和基站所需的 5 V ±0.5 V 电源。"
+msgstr "5 V ±0.5 V power supplies for the rover and base station."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:20
+msgid ""
+"基站和移动站出厂默认配对；专用 D13 LoRa 基站硬件不单独销售，也不作为移动站使"
+"用。"
+msgstr ""
+"The base station and rover are factory-paired by default; the dedicated D13 "
+"LoRa base station hardware is not sold separately and is not used as a rover."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:27
+msgid "HM-D13-LoRa 移动站主要组件与包装"
+msgstr "HM-D13-LoRa rover components and packaging"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:27
+msgid "HM-D13-LoRa 移动站主要组件"
+msgstr "HM-D13-LoRa rover components"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:35
+msgid "配套 D13 LoRa 基站主要组件与包装"
+msgstr "Included D13 LoRa base-station components and packaging"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:35
+msgid "配套 D13 LoRa 基站主要组件"
+msgstr "Included D13 LoRa base-station components"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:39
+msgid ""
+"图片用于辅助识别产品和主要组件；实际交付内容以本页文字清单和随货装箱清单为"
+"准。"
+msgstr ""
+"Images are provided to help identify the product and its major components. "
+"The written list on this page and the packing list supplied with the product "
+"define the actual contents."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:42
+msgid "2. 确认输出协议"
+msgstr "Step 2: Confirm output protocol"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:44
+msgid ""
+"D13 默认输出 10 Hz NMEA，可按需求配置为 UBX。接入前按目标设备确认交付输出协"
+"议。"
+msgstr ""
+"D13 defaults to 10 Hz NMEA and can be configured for UBX on request. Confirm "
+"the delivered output protocol before connecting the target device."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:46
+msgid "3. 架设 D13 基站"
+msgstr "Step 3: Set up the D13 base station"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:48
+msgid ""
+"按[LoRa 基站架设](../differential-links/d13-base-station.md)完成安装和供电。"
+"基站上电后保持静止；移动后需要重新上电。"
+msgstr ""
+"Follow [Setting Up the LoRa Base Station](../differential-links/d13-base-"
+"station.md) to install and power the base station. Keep it stationary after "
+"power-on; power-cycle it after any move."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:50
+msgid "4. 安装并连接移动站"
+msgstr "Step 4: Install and connect the rover"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:52
+msgid ""
+"D13 移动站使用内置 LoRa 天线。将设备安装在天空视野开阔的位置，并按[D13 接口与"
+"接线](../operation/d13-wiring.md)连接：5 V ±0.5 V 供电，3.3 V UART/PPS I/O，"
+"TX/RX 交叉连接并共地。"
+msgstr ""
+"The D13 rover has a built-in LoRa antenna. Install it with an open sky view, "
+"then follow [D13 Interfaces and Wiring](../operation/d13-wiring.md): supply "
+"5 V ±0.5 V, use 3.3 V UART/PPS I/O, cross TX/RX, and connect ground."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:54
+msgid "5. 查看定位输出"
+msgstr "Step 5: Check positioning output"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:56
+#, python-brace-format
+msgid ""
+"串口默认 115200 bps。按{ref}`连接 NavStarTool <connect-navstartool>`或使用目"
+"标设备确认当前配置的协议持续输出，常规地面版为 10 Hz NMEA。"
+msgstr ""
+"The serial port defaults to 115200 bps. Follow {ref}`Connecting to "
+"NavStarTool <connect-navstartool>` or use the target device to verify "
+"continuous output in the configured protocol. Standard ground firmware "
+"outputs 10 Hz NMEA."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:58
+msgid "6. 验证 RTK 固定解"
+msgstr "Step 6: Verify RTK Fixed Solution"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:60
+msgid ""
+"按[LoRa 移动站连接](../differential-links/lora.md)和[RTK 状态与固定解验证]"
+"(../operation/rtk-fixed-validation.md)，使用与当前输出协议兼容的工具检查定位"
+"输出和解状态。"
+msgstr ""
+"Follow [Connecting a LoRa Rover](../differential-links/lora.md) and "
+"[Checking RTK Status and the Fixed Solution](../operation/rtk-fixed-"
+"validation.md). Use a tool compatible with the current output protocol."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:62
+msgid "首次使用完成判据"
+msgstr "Getting Started success criteria"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:65
+msgid "**基站稳定工作，移动站持续输出定位数据并进入 RTK 固定解。**"
+msgstr ""
+"**The base station remains stable, and the rover outputs positioning data "
+"continuously and reaches an RTK fixed solution.**"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:68
+msgid ""
+"若无法进入固定解，检查基站是否被移动、基站天线和供电、链路遮挡、移动站位置和"
+"天空视野，再进入[故障排查](../troubleshooting/troubleshooting.md)。"
+msgstr ""
+"If it is not possible to achieve a fixed solution, check whether the base "
+"station has been moved, the base station antenna and power supply, any link "
+"obstructions, the rover position, and sky visibility, then proceed to "
+"[Troubleshooting](../troubleshooting/troubleshooting.md)."
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:70
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:72
+msgid "[上位机连接与串口调试](../operation/host-tool.md)"
+msgstr "[Host Connection and Serial Port Debugging](../operation/host-tool.md)"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:73
+msgid "[平台接入](../integrations/index.rst)"
+msgstr "[Platform Integration](../integrations/index.rst)"
+
+#: ../../source/rtk/getting-started/hm-d13-lora.md:74
+msgid "[常用参数配置](../maintenance/parameters.md)"
+msgstr "[Common Parameter Configuration](../maintenance/parameters.md)"
+
+#~ msgid "基站上电后保持静止。若移动过基站，需要重新上电。"
+#~ msgstr ""
+#~ "Keep the base station stationary after power-on. If it is moved, power-"
+#~ "cycle it before use."

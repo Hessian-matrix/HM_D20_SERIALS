@@ -1,3 +1,5 @@
 # 本地自动重建和预览依赖；Read the Docs 生产构建不安装此文件。
 -r requirements.txt
 sphinx-autobuild==2021.3.14
+sphinx-intl==2.3.2
+polib==1.2.0

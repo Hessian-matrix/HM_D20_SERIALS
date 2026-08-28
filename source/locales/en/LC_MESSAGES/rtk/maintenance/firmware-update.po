@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 23:24+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/maintenance/firmware-update.md:1
+msgid "固件升级"
+msgstr "Firmware Update"
+
+#: ../../source/rtk/maintenance/firmware-update.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/maintenance/firmware-update.md:6
+#, python-brace-format
+msgid ""
+"使用{ref}`NavStarTool <connect-navstartool>`为 **D20 或 D13** 升级固件。升级"
+"前先确认目标硬件、使用平台和所需输出协议。"
+msgstr ""
+"Use {ref}`NavStarTool <connect-navstartool>` to upgrade the firmware for "
+"**D20 or D13**. Before upgrading, confirm the target hardware, the platform "
+"in use, and the required output protocol."
+
+#: ../../source/rtk/maintenance/firmware-update.md:10
+msgid ""
+"升级期间保持连接和供电 升级过程中必须保持 **5 V ±0.5 V 供电稳定**，不要拔出串"
+"口、移动线缆或关闭上位机。中断写入可能导致设备无法正常启动。"
+msgstr ""
+"Keep Connection and Power During Upgrade During the upgrade process, **a "
+"stable 5 V ±0.5 V power supply** must be maintained. Do not unplug the "
+"serial port, move cables, or turn off the host PC. Interrupting the writing "
+"may cause the device to fail to start properly."
+
+#: ../../source/rtk/maintenance/firmware-update.md:13
+msgid "升级步骤"
+msgstr "Upgrade Steps"
+
+#: ../../source/rtk/maintenance/firmware-update.md:15
+msgid "点击菜单栏："
+msgstr "Click the menu bar:"
+
+#: ../../source/rtk/maintenance/firmware-update.md:21
+msgid ""
+"在弹出的窗口中选择 `Cus Network Files`，填写升级渠道信息，并设置公开升级渠道 "
+"key："
+msgstr ""
+"In the pop-up window, select `Cus Network Files`, fill in the upgrade "
+"channel information, and set the public upgrade channel key:"
+
+#: ../../source/rtk/maintenance/firmware-update.md:27
+msgid "选择正确固件后，点击 `Send` 开始写入固件。"
+msgstr ""
+"After selecting the correct firmware, click `Send` to start writing the "
+"firmware."
+
+#: ../../source/rtk/maintenance/firmware-update.md:29
+msgid "![Firmware Upgrade](../images/firmware-upgrade.png)"
+msgstr "![Firmware Upgrade](../images/firmware-upgrade.png)"
+
+#: ../../source/rtk/maintenance/firmware-update.md:29
+msgid "Firmware Upgrade"
+msgstr "Firmware Upgrade"
+
+#: ../../source/rtk/maintenance/firmware-update.md:31
+msgid "![Firmware Channel](../images/firmware-channel.png)"
+msgstr "![Firmware Channel](../images/firmware-channel.png)"
+
+#: ../../source/rtk/maintenance/firmware-update.md:31
+msgid "Firmware Channel"
+msgstr "Firmware Channel"
+
+#: ../../source/rtk/maintenance/firmware-update.md:33
+msgid "注意事项"
+msgstr "Important"
+
+#: ../../source/rtk/maintenance/firmware-update.md:35
+msgid "升级前确认固件版本适用于当前 D20 或 D13 硬件版本。"
+msgstr ""
+"Before upgrading, confirm that the firmware version is applicable to the "
+"current D20 or D13 hardware version."
+
+#: ../../source/rtk/maintenance/firmware-update.md:36
+msgid "升级过程中保持 5 V ±0.5 V 供电稳定。"
+msgstr "Maintain a stable 5 V ±0.5 V power supply during the upgrade process."
+
+#: ../../source/rtk/maintenance/firmware-update.md:37
+msgid "不要在升级过程中移动线缆、断开串口或关闭上位机。"
+msgstr ""
+"Do not move cables, disconnect the serial port, or turn off the host PC "
+"during the upgrade process."
+
+#: ../../source/rtk/maintenance/firmware-update.md:38
+msgid ""
+"升级完成后重新连接设备，确认卫星信息和协议输出正常；RTK 产品还应在开阔环境确"
+"认能够进入固定解。"
+msgstr ""
+"After the upgrade is complete, reconnect the device and confirm that the "
+"satellite information and protocol output are normal; RTK products should "
+"also be tested in an open environment to confirm that they can achieve a "
+"fixed solution."
+
+#: ../../source/rtk/maintenance/firmware-update.md:40
+msgid "升级完成判据"
+msgstr "Firmware update success criteria"
+
+#: ../../source/rtk/maintenance/firmware-update.md:43
+msgid ""
+"设备能够正常重启，卫星信息和目标协议持续输出；RTK 产品在开阔环境能够重新进入"
+"固定解。"
+msgstr ""
+"The device can restart normally, and satellite information and target "
+"protocol continue to be output; the RTK product can regain a fixed solution "
+"in open environments."
+
+#: ../../source/rtk/maintenance/firmware-update.md:46
+msgid ""
+"固件用途和默认输出见[固件与输出协议选择](../operation/firmware-output.md)。"
+msgstr ""
+"For firmware usage and default output, see [Selecting Firmware and Output "
+"Protocol](../operation/firmware-output.md)."

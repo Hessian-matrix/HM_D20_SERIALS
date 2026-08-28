@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 15:53+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:1
+msgid "4G / CORS 配置"
+msgstr "4G / CORS Configuration"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:6
+msgid ""
+"为 **HM-D20-4G 或 HM-D13-4G** 写入 CORS/NTRIP 账号，使设备能够通过蜂窝网络获"
+"得差分数据。用户需准备有流量的 SIM 卡、正确账号和蜂窝网络覆盖。"
+msgstr ""
+"Write the CORS/NTRIP account for **HM-D20-4G or HM-D13-4G** so that the "
+"device can receive correction data via the cellular network. Users need to "
+"prepare a SIM card with data, the correct account, and cellular network "
+"coverage."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:9
+msgid "准备工作"
+msgstr "Before You Begin"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:11
+msgid "HM-D20-4G 或 HM-D13-4G。"
+msgstr "HM-D20-4G or HM-D13-4G."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:12
+msgid "已开通数据流量的 SIM 卡。"
+msgstr "A SIM card with data service activated."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:13
+msgid "HM-D20-4G 使用的外置 SMA 4G 天线；HM-D13-4G 的 4G 天线内置。"
+msgstr ""
+"The HM-D20-4G uses an external SMA 4G antenna; the HM-D13-4G has a built-in "
+"4G antenna."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:14
+msgid "产品标配的 USB-C 配置线。"
+msgstr "The product comes standard with a USB-C configuration cable."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:15
+msgid "HM-D20-4G、HM-D13-4G 共用的 JR_NTRIP_Config_Tool_V1.2。"
+msgstr "JR_NTRIP_Config_Tool_V1.2 shared by HM-D20-4G and HM-D13-4G."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:16
+msgid "CORS/NTRIP 账号信息，包括服务器地址、端口、挂载点、账号和密码。"
+msgstr ""
+"CORS/NTRIP account information, including server address, port, mount point, "
+"account, and password."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:18
+msgid "产品差异"
+msgstr "Product difference"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "产品"
+msgstr "Product"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "4G 天线"
+msgstr "4G antenna"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "SIM 卡与配置口"
+msgstr "SIM card and configuration port"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "HM-D20-4G"
+msgstr "HM-D20-4G"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "外置 SMA 天线"
+msgstr "External SMA antenna"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "使用 Nano-SIM 卡；USB-C 配置口位于设备外部"
+msgstr ""
+"Uses a Nano-SIM card; USB-C configuration port located on the outside of the "
+"device"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "HM-D13-4G"
+msgstr "HM-D13-4G"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "天线内置"
+msgstr "Built-in antenna"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:3
+msgid "Nano-SIM 卡槽和 USB-C 配置口位于顶壳内部"
+msgstr "The Nano-SIM card slot and USB-C port are located inside the top case."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:25
+msgid "配置步骤"
+msgstr "Configuration Steps"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:27
+msgid "安装 Nano-SIM 卡；HM-D13-4G 卡槽位于顶壳内部。"
+msgstr ""
+"Install the Nano-SIM card; the HM-D13-4G card slot is located inside the top "
+"cover."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:28
+msgid "使用 HM-D20-4G 时安装外置 SMA 4G 天线；HM-D13-4G 无需安装外置 4G 天线。"
+msgstr ""
+"When using HM-D20-4G, install an external SMA 4G antenna; HM-D13-4G does not "
+"require the installation of an external 4G antenna."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:29
+msgid ""
+"使用标配 USB-C 配置线连接 PC 和设备配置口；HM-D13-4G 的配置口位于顶壳内部。"
+msgstr ""
+"Use the standard USB-C configuration cable to connect the PC and the device "
+"configuration port; the configuration port of the HM-D13-4G is located "
+"inside the top cover."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:30
+msgid ""
+"打开 JR_NTRIP_Config_Tool_V1.2。HM-D20-4G 与 HM-D13-4G 使用相同的配置流程。"
+msgstr ""
+"Open JR_NTRIP_Config_Tool_V1.2. HM-D20-4G and HM-D13-4G use the same "
+"configuration process."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:31
+msgid "点击 `Auto-Select Target Device` 自动选择配置端口。"
+msgstr ""
+"Click `Auto-Select Target Device` to automatically select the configuration "
+"port."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:32
+msgid "点击连接，确认底部日志区域显示连接成功。"
+msgstr ""
+"Click the connection and confirm that the bottom log area shows the "
+"connection was successful."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:33
+msgid "在 `NTRIP Server Configuration` 区域填写 CORS/NTRIP 账号信息。"
+msgstr ""
+"Fill in the CORS/NTRIP account information in the `NTRIP Server "
+"Configuration` area."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:34
+msgid "点击 `Send Config 1 (Server Settings)` 写入配置。"
+msgstr "Click `Send Config 1 (Server Settings)` to write the configuration."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:35
+msgid "日志区域返回 `OK` 后，配置完成。"
+msgstr "After the log area returns `OK`, the configuration is complete."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:37
+msgid "![4G NTRIP 配置](../images/ntrip-config.png)"
+msgstr "![4G NTRIP Configuration](../images/ntrip-config.png)"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:37
+msgid "4G NTRIP 配置"
+msgstr "4G NTRIP Configuration"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:39
+msgid "固定解验证"
+msgstr "Fixed solution verification"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:41
+msgid ""
+"完成配置后，按[D20 接口](../operation/d20-wiring.md)或[D13 接口](../"
+"operation/d13-wiring.md)连接移动站并上电。"
+msgstr ""
+"After completing the configuration, connect the rover using the [D20 "
+"interface](../operation/d20-wiring.md) or [D13 interface](../operation/d13-"
+"wiring.md) and power it on."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:43
+msgid ""
+"按[RTK 状态与固定解验证](../operation/rtk-fixed-validation.md)检查定位输出和"
+"解状态。若无法进入固定解，优先检查 SIM 卡状态、网络覆盖、CORS/NTRIP 账号、4G "
+"天线和天空视野。"
+msgstr ""
+"Follow [Checking RTK Status and the Fixed Solution](../operation/rtk-fixed-"
+"validation.md) to verify positioning output and solution status. If the "
+"receiver does not reach a fixed solution, check the SIM, cellular coverage, "
+"CORS/NTRIP account, 4G antenna, and sky view first."
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:45
+msgid "4G 差分配置完成判据"
+msgstr "4G correction setup success criteria"
+
+#: ../../source/rtk/differential-links/4g-ntrip.md:48
+msgid ""
+"配置工具写入返回 `OK`；移动站定位数据持续输出，并在开阔环境进入 **RTK 固定解"
+"**。"
+msgstr ""
+"The configuration tool writes back `OK`; the rover's positioning data is "
+"continuously output, and it enters **RTK fixed solution** in open "
+"environments."

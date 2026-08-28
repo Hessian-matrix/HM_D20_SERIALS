@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/overview.md:1
+msgid "RTK 工作方式与手册结构"
+msgstr "RTK Operation and Guide Structure"
+
+#: ../../source/rtk/overview.md:3
+msgid "先理解两个选择维度"
+msgstr "First, understand the two dimensions of choice"
+
+#: ../../source/rtk/overview.md:6
+msgid ""
+"**产品形态**选择 D20 轻量化四臂螺旋一体化接收机或 D13 紧凑型一体化接收机；**"
+"差分链路**选择 4G 或 LoRa。4G 版本为移动站，LoRa 版本按移动站套件交付，并包含"
+"配套 D13 LoRa 基站及附件。"
+msgstr ""
+"**Form factor**: choose the lightweight D20 integrated receiver with a "
+"quadrifilar helix antenna (QHA), or the compact D13 integrated receiver. "
+"**Correction link**: choose 4G or LoRa. The 4G version is a rover; the LoRa "
+"version is delivered as a base-and-rover kit that includes a dedicated D13 "
+"LoRa base station and accessories."
+
+#: ../../source/rtk/overview.md:9
+msgid "共同工作方式"
+msgstr "Ways of working together"
+
+#: ../../source/rtk/overview.md:11
+msgid "设备接收 GPS、北斗、Galileo、QZSS、GLONASS 和 IRNSS 卫星信号。"
+msgstr ""
+"The device receives GPS, BeiDou, Galileo, QZSS, GLONASS, and IRNSS satellite "
+"signals."
+
+#: ../../source/rtk/overview.md:12
+msgid "设备通过 4G/CORS 或本地 LoRa 链路获得差分数据。"
+msgstr ""
+"The device obtains correction data through a 4G/CORS or local LoRa link."
+
+#: ../../source/rtk/overview.md:13
+msgid "设备内部完成 RTK 解算。"
+msgstr "The device completes RTK solution computation internally."
+
+#: ../../source/rtk/overview.md:14
+msgid "设备通过 UART 向飞控、机器人主控、Viobot2 或 PC 输出定位结果。"
+msgstr ""
+"The device outputs positioning results to the flight controller, robot main "
+"controller, Viobot2, or PC via UART."
+
+#: ../../source/rtk/overview.md:16
+msgid "LoRa 差分数据在基站和移动站内部链路中传输，不作为外部用户接口。"
+msgstr ""
+"LoRa correction data is transmitted within the internal links of the base "
+"station and rover and is not used as an external user interface."
+
+#: ../../source/rtk/overview.md:18
+msgid "4G 与 LoRa"
+msgstr "4G and LoRa"
+
+#: ../../source/rtk/overview.md:3
+msgid "选择"
+msgstr "Choose"
+
+#: ../../source/rtk/overview.md:3
+msgid "4G 版本"
+msgstr "4G version"
+
+#: ../../source/rtk/overview.md:3
+msgid "LoRa 版本"
+msgstr "LoRa Version"
+
+#: ../../source/rtk/overview.md:3
+msgid "差分来源"
+msgstr "Correction source"
+
+#: ../../source/rtk/overview.md:3
+msgid "CORS/NTRIP 服务"
+msgstr "CORS/NTRIP Service"
+
+#: ../../source/rtk/overview.md:3
+msgid "套件内 D13 LoRa 基站"
+msgstr "D13 LoRa base station in the kit"
+
+#: ../../source/rtk/overview.md:3
+msgid "网络要求"
+msgstr "Network requirements"
+
+#: ../../source/rtk/overview.md:3
+msgid "需要蜂窝网络、SIM 卡和 CORS 账号"
+msgstr "Requires cellular network, SIM card, and CORS account"
+
+#: ../../source/rtk/overview.md:3
+msgid "不依赖公网"
+msgstr "Does not rely on the public internet"
+
+#: ../../source/rtk/overview.md:3
+msgid "现场设备"
+msgstr "On-site equipment"
+
+#: ../../source/rtk/overview.md:3
+msgid "单个移动站"
+msgstr "Single rover"
+
+#: ../../source/rtk/overview.md:3
+msgid "移动站 + 配套基站"
+msgstr "Rover + supporting base station"
+
+#: ../../source/rtk/overview.md:3
+msgid "适合场景"
+msgstr "Suitable scenarios"
+
+#: ../../source/rtk/overview.md:3
+msgid "跨区域、分散作业"
+msgstr "Cross-regional, dispersed operations"
+
+#: ../../source/rtk/overview.md:3
+msgid "固定区域、自建链路"
+msgstr "Fixed area, self-built link"
+
+#: ../../source/rtk/overview.md:27
+msgid "输出固件"
+msgstr "Output firmware"
+
+#: ../../source/rtk/overview.md:29
+msgid "通信版本决定差分数据从哪里来，固件版本决定定位结果如何向下游输出："
+msgstr ""
+"The communication version determines where the correction data comes from, "
+"and the firmware version determines how the positioning results are output "
+"to downstream."
+
+#: ../../source/rtk/overview.md:31
+msgid "D20 地面版默认 10 Hz NMEA，面向 Viobot2、机器人主控和 PC。"
+msgstr ""
+"D20 ground firmware defaults to 10 Hz NMEA, aimed at Viobot2, robot main "
+"control, and PC."
+
+#: ../../source/rtk/overview.md:32
+msgid "D20 无人机版默认 10 Hz UBX，面向 ArduPilot、PX4 等飞控。"
+msgstr ""
+"The D20 UAV firmware defaults to 10 Hz UBX, designed for flight controllers "
+"such as ArduPilot and PX4."
+
+#: ../../source/rtk/overview.md:33
+msgid "D13 默认输出 10 Hz NMEA，可按需求配置为 UBX。"
+msgstr "D13 defaults to 10 Hz NMEA and can be configured for UBX on request."
+
+#: ../../source/rtk/overview.md:36
+msgid ""
+"不要混淆通信版本与输出协议 **4G / LoRa** 决定差分数据来源，**NMEA / UBX** 决"
+"定定位结果的对外输出格式，两者可以独立选择。"
+msgstr ""
+"Do not confuse the communication version with the output protocol. **4G / "
+"LoRa** determines the source of correction data, while **NMEA / UBX** "
+"determines the output format of positioning results. The two can be chosen "
+"independently."
+
+#: ../../source/rtk/overview.md:39
+msgid ""
+"详细选择和修改边界见[固件与输出协议选择](operation/firmware-output.md)。"
+msgstr ""
+"For detailed selection and modification of boundaries, see [Selecting "
+"Firmware and Output Protocol](operation/firmware-output.md)."
+
+#: ../../source/rtk/overview.md:41
+msgid "手册结构"
+msgstr "Manual Structure"
+
+#: ../../source/rtk/overview.md:35
+msgid "用户任务"
+msgstr "User Task"
+
+#: ../../source/rtk/overview.md:35
+msgid "入口"
+msgstr "Entrance"
+
+#: ../../source/rtk/overview.md:35
+msgid "第一次使用设备"
+msgstr "Using the device for the first time"
+
+#: ../../source/rtk/overview.md:35
+msgid "[按产品型号选择快速开始](getting-started/index.rst)"
+msgstr "[Getting Started by Product Model](getting-started/index.rst)"
+
+#: ../../source/rtk/overview.md:35
+msgid "查看接口、接线和输出状态"
+msgstr "Check interfaces, wiring, and output status"
+
+#: ../../source/rtk/overview.md:35
+msgid "[设备连接与状态验证](operation/index.rst)"
+msgstr "[Device Connection and Status Verification](operation/index.rst)"
+
+#: ../../source/rtk/overview.md:35
+msgid "配置 CORS 或搭建 LoRa 链路"
+msgstr "Configure CORS or build a LoRa link"
+
+#: ../../source/rtk/overview.md:35
+msgid "[差分链路配置](differential-links/index.rst)"
+msgstr "[Correction Link Setup](differential-links/index.rst)"
+
+#: ../../source/rtk/overview.md:35
+msgid "接入 ArduPilot、PX4 或 Viobot2"
+msgstr "Access ArduPilot, PX4, or Viobot2"
+
+#: ../../source/rtk/overview.md:35
+msgid "[平台接入](integrations/index.rst)"
+msgstr "[Platform Integration](integrations/index.rst)"
+
+#: ../../source/rtk/overview.md:35
+msgid "修改参数或升级固件"
+msgstr "Modify parameters or upgrade firmware"
+
+#: ../../source/rtk/overview.md:35
+msgid "[参数配置和维护](maintenance/index.rst)"
+msgstr "[Parameter Configuration and Maintenance](maintenance/index.rst)"
+
+#: ../../source/rtk/overview.md:35
+msgid "定位或链路异常"
+msgstr "Positioning or link abnormality"
+
+#: ../../source/rtk/overview.md:35
+msgid "[常见问题](troubleshooting/index.rst)"
+msgstr "[Frequently Asked Questions](troubleshooting/index.rst)"
+
+#: ../../source/rtk/overview.md:52
+msgid ""
+"产品定位、交付组成和关键规格请查看[产品中心](../products/models/index.rst)；"
+"完整横向参数请查看[产品对比与资料](../products/comparison.md)。"
+msgstr ""
+"See [Products](../products/models/index.rst) for product positioning, "
+"package contents, and key specifications. See [Product Comparison and "
+"Resources](../products/comparison.md) for the complete comparison."

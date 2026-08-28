@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/operation/index.rst:7
+msgid "RTK 状态与固定解验证"
+msgstr "RTK Status and Fixed-Solution Verification"
+
+#: ../../source/rtk/operation/index.rst:7
+msgid "连接与验证:"
+msgstr "Connection and verification:"
+
+#: ../../source/rtk/operation/index.rst:2
+msgid "设备连接与状态验证"
+msgstr "Device Connection and Status Verification"
+
+#: ../../source/rtk/operation/index.rst:4
+msgid ""
+"本章集中说明 D20/D13 共用的接口、串口、固件输出和 RTK 状态验证方法。 完整的首"
+"次使用顺序请从对应产品型号的快速开始进入。"
+msgstr ""
+"This section covers the interfaces, serial connection, firmware output, and "
+"RTK status common to D20 and D13. For the complete setup sequence, start "
+"with the Getting Started guide for the exact product model."

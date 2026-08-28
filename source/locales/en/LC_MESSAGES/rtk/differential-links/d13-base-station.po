@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 10:34+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:1
+msgid "LoRa 基站架设"
+msgstr "Setting Up the LoRa Base Station"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:6
+msgid ""
+"完成 LoRa 套件中**专用 D13 基站**的安装、供电与稳定架设。该基站不单独销售，也不作为移动站使用；移动站连接见[LoRa "
+"移动站连接](lora.md)。"
+msgstr ""
+"Complete the installation, power supply, and stable setup of the "
+"**dedicated D13 base station** in the LoRa kit. This base station is not "
+"sold separately and is not used as a rover; connections for the rover can"
+" be found at [Connecting a LoRa Rover](lora.md)."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:9
+msgid "设备用途"
+msgstr "Equipment Use"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:11
+msgid ""
+"专用 D13 LoRa 基站负责接收卫星信号并通过 LoRa 链路向 D20 或 D13 "
+"移动站发送内部差分数据。基站和移动站出厂默认配对，上电自动连接。"
+msgstr ""
+"The dedicated D13 LoRa base station is responsible for receiving "
+"satellite signals and sending internal correction data to D20 or D13 "
+"rovers via the LoRa link. The base station and rovers are factory-paired "
+"by default and automatically connect when powered on."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:18
+msgid "专用 D13 LoRa 基站实物图"
+msgstr "Photo of the dedicated D13 LoRa base station"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:18
+msgid "专用 D13 LoRa 基站"
+msgstr "Dedicated D13 LoRa base station"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:21
+msgid "工作频率：默认 915 MHz。"
+msgstr "Operating frequency: default 915 MHz."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:22
+msgid "拓扑：一个局部场景只允许一个基站，可一对一或一对多，最多连接 4096 个移动站，不支持多对多。"
+msgstr ""
+"Topology: A local scenario allows only one base station, can be one-to-"
+"one or one-to-many, connects up to 4096 rovers, and does not support "
+"many-to-many."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:23
+msgid "距离：最远约 6 km。"
+msgstr "Distance: Approximately 6 km at the farthest."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:25
+msgid "适用场景"
+msgstr "Applicable Scenarios"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:27
+msgid "园区机器人。"
+msgstr "Park robots."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:28
+msgid "农机作业。"
+msgstr "Agricultural machinery operation."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:29
+msgid "低空无人机。"
+msgstr "Low-altitude drone."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:30
+msgid "临时测量和固定区域高精度定位。"
+msgstr "Temporary measurement and high-precision positioning of fixed areas."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:32
+msgid "安装要求"
+msgstr "Installation requirements"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "要求"
+msgstr "Requirement"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "安装位置"
+msgstr "Installation location"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "开阔、无遮挡、尽量远离高楼和树木"
+msgstr "Open, unobstructed, and try to stay away from tall buildings and trees"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "固定方式"
+msgstr "Fixing method"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "三脚架加支杆固定，保持设备稳定"
+msgstr "Tripod with support rod for stabilization, keeping the equipment steady"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "天线安装"
+msgstr "Antenna Installation"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "D13 基站和 LoRa 数据天线需牢固安装"
+msgstr "Securely install the D13 base station and LoRa data antenna"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "USB 连接"
+msgstr "USB connection"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "使用配套的封装 4-pin USB 线缆；接 USB 电源可直接供电，接电脑可供电并进行 USB 串口通信"
+msgstr ""
+"Use the matching sealed 4-pin USB cable; it can be powered directly when "
+"connected to a USB power source, and when connected to a computer, it can"
+" provide power and perform USB serial communication."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "工作状态"
+msgstr "Work status"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:13
+msgid "上电后保持静止，不要移动基站"
+msgstr "Keep still after powering on, do not move the base station"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:42
+msgid "安装步骤"
+msgstr "Installation Steps"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:44
+msgid "选择开阔地面并架设三脚架。"
+msgstr "Choose an open area and set up a tripod."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:45
+msgid "安装支杆和垫片，固定好结构。"
+msgstr "Install the support rods and spacers, and secure the structure."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:46
+msgid "将专用 D13 LoRa 基站硬件固定在支杆顶部。"
+msgstr ""
+"Secure the dedicated D13 LoRa base station hardware at the top of the "
+"pole."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:47
+msgid "连接基站外置 LoRa 天线，并调整到合适朝向。"
+msgstr ""
+"Connect the base station's external LoRa antenna and adjust it to the "
+"appropriate orientation."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:48
+msgid "检查基站本体、支杆和三脚架均已可靠固定。"
+msgstr "Check that the base station body, pole, and tripod are all securely fixed."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:49
+msgid "将配套 USB 线缆连接基站，再接入 USB 电源；需要查看基站数据时可直接连接电脑进行 USB 串口通信。"
+msgstr ""
+"Connect the matching USB cable to the base station, then plug in the USB "
+"power; when you need to check the base station data, you can directly "
+"connect it to a computer for USB serial communication."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:50
+msgid "上电后保持基站位置不变；如果移动过基站，应重新上电。"
+msgstr ""
+"Keep the base station in the same position after powering on; if the base"
+" station has been moved, it should be powered on again."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:52
+msgid "提示"
+msgstr "Tip"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:55
+msgid "LoRa 基站和移动站出厂默认配对，上电自动连接。差分数据在 LoRa 链路内部传输，不需要用户配置外部差分协议。"
+msgstr ""
+"The LoRa base station and rover are paired by default at the factory and "
+"automatically connect when powered on. Correction data is transmitted "
+"within the LoRa link and does not require users to configure an external "
+"correction-data protocol."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:59
+msgid "只使用配套 USB 线缆 基站内部接口线不向用户开放。不要拆开线缆、改接内部导线或使用非配套转接线，以免因错误供电或信号线误接损坏设备。"
+msgstr ""
+"Only use the provided USB cable. The internal interface cables of the "
+"base station are not accessible to users. Do not dismantle the cables, "
+"rewire internal wires, or use non-provided adapter cables, to avoid "
+"damaging the device due to incorrect power supply or misconnection of "
+"signal lines."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:62
+msgid "使用提示"
+msgstr "Usage Instructions"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:64
+msgid "基站上电后不要移动位置。"
+msgstr "Do not move the base station after powering it on."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:65
+msgid "基站与移动站之间应尽量保持视距或弱遮挡。"
+msgstr ""
+"There should be line-of-sight or minimal obstruction between the base "
+"station and the rover whenever possible."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:66
+msgid "现场如有强电磁干扰、金属遮挡或高压线路，应优先调整站点位置。"
+msgstr ""
+"If there is strong electromagnetic interference, metal obstruction, or "
+"high-voltage lines on site, the station location should be adjusted as a "
+"priority."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:67
+msgid "同一区域不要同时开启多个基站。"
+msgstr "Do not operate multiple base stations in the same area at the same time."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:69
+msgid "基站架设完成判据"
+msgstr "Base Station Setup Completion Criteria"
+
+#: ../../source/rtk/differential-links/d13-base-station.md:72
+msgid "基站位于开阔位置，结构、外置 LoRa 天线和供电连接牢靠；上电后位置保持不变，同一区域没有开启其他基站。"
+msgstr ""
+"The base station is located in an open area, with its structure, external"
+" LoRa antenna, and power connections secure; after being powered on, its "
+"position remains unchanged, and no other base stations have been "
+"activated in the same area."
+
+#: ../../source/rtk/differential-links/d13-base-station.md:75
+msgid "完成架设后，继续执行[LoRa 移动站连接](lora.md)。"
+msgstr ""
+"After completing the setup, continue to execute [Connecting a LoRa "
+"Rover](lora.md)."

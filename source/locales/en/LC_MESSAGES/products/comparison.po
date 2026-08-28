@@ -1,0 +1,694 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/products/comparison.md:1
+msgid "产品对比与资料"
+msgstr "Product Comparison and Resources"
+
+#: ../../source/products/comparison.md:3
+msgid "本页用途"
+msgstr "Purpose"
+
+#: ../../source/products/comparison.md:6
+msgid ""
+"这里集中提供**完整公开参数对比、软件工具和资料入口**。快速选择产品请先查看[产"
+"品选型](index.rst)；首次使用和具体操作请进入相应产品手册。"
+msgstr ""
+"This page provides **complete public specification comparisons, software "
+"tools, and documentation links**. Start with [Product Selection](index.rst) "
+"to choose a product; use the corresponding user guide for getting started and "
+"operation."
+
+#: ../../source/products/comparison.md:9
+msgid "产品参数对比"
+msgstr "Product specifications"
+
+#: ../../source/products/comparison.md:12
+msgid ""
+"表格说明 “—”表示参数不适用于对应产品，不表示数据缺失。HM-D20-LoRa 和 HM-D13-"
+"LoRa 均为包含 D13 LoRa 基站及配件的套件，基站不单独销售。"
+msgstr ""
+"Table note: \"—\" indicates that the parameter is not applicable to the "
+"corresponding product and does not indicate missing data. HM-D20-LoRa and HM-"
+"D13-LoRa are both kits that include the D13 LoRa base station and "
+"accessories; the base station is not sold separately."
+
+#: ../../source/products/comparison.md:11
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/products/comparison.md:11
+msgid "HM-D20 系列"
+msgstr "HM-D20 Series"
+
+#: ../../source/products/comparison.md:11
+msgid "HM-D13 系列"
+msgstr "HM-D13 Series"
+
+#: ../../source/products/comparison.md:11
+#: ../../source/products/comparison.md:68
+msgid "HM-G51B"
+msgstr "HM-G51B"
+
+#: ../../source/products/comparison.md:11
+msgid "**基本信息**"
+msgstr "**Basic Information**"
+
+#: ../../source/products/comparison.md:11
+msgid "产品型号"
+msgstr "Product Model"
+
+#: ../../source/products/comparison.md:11
+msgid "HM-D20-4G<br>HM-D20-LoRa"
+msgstr "HM-D20-4G<br>HM-D20-LoRa"
+
+#: ../../source/products/comparison.md:11
+msgid "HM-D13-4G<br>HM-D13-LoRa"
+msgstr "HM-D13-4G<br>HM-D13-LoRa"
+
+#: ../../source/products/comparison.md:11
+msgid "产品形态"
+msgstr "Form Factor"
+
+#: ../../source/products/comparison.md:11
+msgid "四臂螺旋天线<br>一体化双频 RTK 接收机"
+msgstr ""
+"Quadrifilar Helix Antenna (QHA)<br>Integrated Dual-Band RTK GNSS Receiver"
+
+#: ../../source/products/comparison.md:11
+msgid "紧凑型内置天线<br>一体化双频 RTK 接收机"
+msgstr ""
+"Compact Enclosure with Internal Antenna<br>Integrated Dual-Band RTK GNSS "
+"Receiver"
+
+#: ../../source/products/comparison.md:11
+msgid "单频多星座 GNSS 接收机模组"
+msgstr "Single-Band Multi-Constellation GNSS Receiver Module"
+
+#: ../../source/products/comparison.md:11
+msgid "工作角色"
+msgstr "Role"
+
+#: ../../source/products/comparison.md:11
+msgid "4G/LoRa 移动站"
+msgstr "4G/LoRa rover"
+
+#: ../../source/products/comparison.md:11
+msgid "4G/LoRa 移动站<br>LoRa 套件含专用 D13 LoRa 基站"
+msgstr "4G/LoRa rover<br>LoRa kit includes dedicated D13 LoRa base station"
+
+#: ../../source/products/comparison.md:11
+msgid "独立 GNSS 定位"
+msgstr "Standalone GNSS positioning"
+
+#: ../../source/products/comparison.md:11
+msgid "主接口"
+msgstr "Primary connector"
+
+#: ../../source/products/comparison.md:11
+msgid "8-pin GH1.25 mm"
+msgstr "8-pin GH1.25 mm"
+
+#: ../../source/products/comparison.md:11
+msgid "5-pin GH1.25 mm"
+msgstr "5-pin GH1.25 mm"
+
+#: ../../source/products/comparison.md:11
+msgid "6-pin MX1.25 mm"
+msgstr "6-pin MX1.25 mm"
+
+#: ../../source/products/comparison.md:11
+msgid "尺寸"
+msgstr "Dimensions"
+
+#: ../../source/products/comparison.md:11
+msgid "Φ54.5 × 53 mm"
+msgstr "Φ54.5 × 53 mm"
+
+#: ../../source/products/comparison.md:11
+msgid "Φ152 × 67.9 mm"
+msgstr "Φ152 × 67.9 mm"
+
+#: ../../source/products/comparison.md:11
+msgid "26.5 × 35.5 × 7.1 mm"
+msgstr "26.5 × 35.5 × 7.1 mm"
+
+#: ../../source/products/comparison.md:11
+msgid "重量"
+msgstr "Weight"
+
+#: ../../source/products/comparison.md:11
+msgid "4G：38.2 g<br>LoRa 移动站：38.2 g<br>LoRa 基站：515 g"
+msgstr "4G: 38.2 g<br>LoRa rover: 38.2 g<br>LoRa base station: 515 g"
+
+#: ../../source/products/comparison.md:11
+msgid "4G：255 g<br>LoRa 移动站：236 g<br>LoRa 基站：515 g"
+msgstr "4G: 255 g<br>LoRa rover: 236 g<br>LoRa base station: 515 g"
+
+#: ../../source/products/comparison.md:11
+msgid "10 g"
+msgstr "10 g"
+
+#: ../../source/products/comparison.md:11
+msgid "**GNSS 特性**"
+msgstr "**GNSS Features**"
+
+#: ../../source/products/comparison.md:11
+msgid "定位类型"
+msgstr "Positioning type"
+
+#: ../../source/products/comparison.md:11
+msgid "L1/L5 双频 RTK"
+msgstr "L1/L5 Dual-Frequency RTK"
+
+#: ../../source/products/comparison.md:11
+msgid "L1 单频 GNSS"
+msgstr "L1 Single-Frequency GNSS"
+
+#: ../../source/products/comparison.md:11
+msgid "接收频点"
+msgstr "Supported Frequencies"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"GPS：L1/L5<br>北斗：B1/B2A/B2I<br>Galileo：E1/E5<br>QZSS：L1/L5<br>GLONASS："
+"G1<br>IRNSS：L5<br>支持 SBAS"
+msgstr ""
+"GPS: L1/L5<br>BeiDou: B1/B2A/B2I<br>Galileo: E1/E5<br>QZSS: L1/"
+"L5<br>GLONASS: G1<br>IRNSS: L5<br>Supports SBAS"
+
+#: ../../source/products/comparison.md:11
+msgid "GPS：L1<br>北斗：B1<br>Galileo：E1<br>QZSS：L1<br>GLONASS：G1"
+msgstr "GPS: L1<br>BeiDou: B1<br>Galileo: E1<br>QZSS: L1<br>GLONASS: G1"
+
+#: ../../source/products/comparison.md:11
+msgid "天线系统增益"
+msgstr "Antenna system gain"
+
+#: ../../source/products/comparison.md:11
+msgid "40 dB"
+msgstr "40 dB"
+
+#: ../../source/products/comparison.md:11
+msgid "—"
+msgstr "—"
+
+#: ../../source/products/comparison.md:11
+msgid "跟踪通道"
+msgstr "Tracking channels"
+
+#: ../../source/products/comparison.md:11
+msgid "200"
+msgstr "200"
+
+#: ../../source/products/comparison.md:11
+msgid "120"
+msgstr "120"
+
+#: ../../source/products/comparison.md:11
+msgid "精度"
+msgstr "Accuracy"
+
+#: ../../source/products/comparison.md:11
+msgid "水平：1.0 cm + 1 ppm<br>垂直：1.5 cm + 1 ppm"
+msgstr "Horizontal: 1.0 cm + 1 ppm<br>Vertical: 1.5 cm + 1 ppm"
+
+#: ../../source/products/comparison.md:11
+msgid "1.5 m CEP"
+msgstr "1.5 m CEP"
+
+#: ../../source/products/comparison.md:11
+msgid "速度精度"
+msgstr "Velocity Accuracy"
+
+#: ../../source/products/comparison.md:11
+msgid "0.05 m/s"
+msgstr "0.05 m/s"
+
+#: ../../source/products/comparison.md:11
+msgid "捕获 / 跟踪灵敏度"
+msgstr "Capture / Tracking Sensitivity"
+
+#: ../../source/products/comparison.md:11
+msgid "-148 / -163 dBm"
+msgstr "-148 / -163 dBm"
+
+#: ../../source/products/comparison.md:11
+msgid "1PPS"
+msgstr "1PPS"
+
+#: ../../source/products/comparison.md:11
+msgid "20 ns；3.3 V I/O"
+msgstr "20 ns; 3.3 V I/O"
+
+#: ../../source/products/comparison.md:11
+msgid "冷启动时间"
+msgstr "Cold-start TTFF"
+
+#: ../../source/products/comparison.md:11
+msgid "28 s"
+msgstr "28 s"
+
+#: ../../source/products/comparison.md:11
+msgid "热启动时间"
+msgstr "Hot-start TTFF"
+
+#: ../../source/products/comparison.md:11
+msgid "1 s"
+msgstr "1 s"
+
+#: ../../source/products/comparison.md:11
+msgid "RTK 首次固定"
+msgstr "RTK time to first fix"
+
+#: ../../source/products/comparison.md:11
+msgid "45 s"
+msgstr "45 s"
+
+#: ../../source/products/comparison.md:11
+msgid "最高更新率"
+msgstr "Maximum update rate"
+
+#: ../../source/products/comparison.md:11
+msgid "RTK：10 Hz<br>PVT：10 Hz<br>RAW：10 Hz"
+msgstr "RTK: 10 Hz<br>PVT: 10 Hz<br>RAW: 10 Hz"
+
+#: ../../source/products/comparison.md:11
+msgid "PVT：20 Hz"
+msgstr "PVT: 20 Hz"
+
+#: ../../source/products/comparison.md:11
+msgid "默认输出"
+msgstr "Default output"
+
+#: ../../source/products/comparison.md:11
+msgid "地面版：10 Hz NMEA<br>无人机版：10 Hz UBX"
+msgstr "Ground firmware: 10 Hz NMEA<br>UAV firmware: 10 Hz UBX"
+
+#: ../../source/products/comparison.md:11
+msgid "10 Hz NMEA<br>可按需求配置 UBX"
+msgstr "10 Hz NMEA<br>UBX configurable on request"
+
+#: ../../source/products/comparison.md:11
+msgid "UBX-NAV-PVT，默认 115200 bps"
+msgstr "UBX-NAV-PVT, default 115200 bps"
+
+#: ../../source/products/comparison.md:11
+msgid "**差分与通信**"
+msgstr "**Corrections and Communications**"
+
+#: ../../source/products/comparison.md:11
+msgid "4G 链路"
+msgstr "4G Link"
+
+#: ../../source/products/comparison.md:11
+msgid "CORS/NTRIP<br>Nano-SIM<br>外置 SMA 4G 天线<br>外部 USB-C 配置口"
+msgstr ""
+"CORS/NTRIP<br>Nano-SIM<br>External SMA 4G Antenna<br>External USB-C "
+"Configuration Port"
+
+#: ../../source/products/comparison.md:11
+msgid "CORS/NTRIP<br>Nano-SIM<br>内置 4G 天线<br>USB-C 配置口位于顶壳内部"
+msgstr ""
+"CORS/NTRIP<br>Nano-SIM<br>Built-in 4G antenna<br>USB-C configuration port "
+"located inside the top shell"
+
+#: ../../source/products/comparison.md:11
+msgid "LTE 频段"
+msgstr "LTE frequency band"
+
+#: ../../source/products/comparison.md:11
+msgid "B1/B2/B3/B4/B5/B7/B8/B12/B18/B19/B20/B26/B28/B38/B40/B41/B66"
+msgstr "B1/B2/B3/B4/B5/B7/B8/B12/B18/B19/B20/B26/B28/B38/B40/B41/B66"
+
+#: ../../source/products/comparison.md:11
+msgid "同左"
+msgstr "Same as D20"
+
+#: ../../source/products/comparison.md:11
+msgid "LoRa 工作频率"
+msgstr "LoRa operating frequency"
+
+#: ../../source/products/comparison.md:11
+msgid "默认 915 MHz"
+msgstr "Default 915 MHz"
+
+#: ../../source/products/comparison.md:11
+msgid "LoRa 套件"
+msgstr "LoRa Kit"
+
+#: ../../source/products/comparison.md:11
+msgid "D20 移动站 + 专用 D13 LoRa 基站及配件"
+msgstr "D20 rover + dedicated D13 LoRa base station and accessories"
+
+#: ../../source/products/comparison.md:11
+msgid "D13 移动站 + 专用 D13 LoRa 基站及配件"
+msgstr "D13 rover + dedicated D13 LoRa base station and accessories"
+
+#: ../../source/products/comparison.md:11
+msgid "LoRa 拓扑"
+msgstr "LoRa Topology"
+
+#: ../../source/products/comparison.md:11
+msgid "单基站<br>一对一 / 一对多<br>最多 4096 个移动站"
+msgstr "Single base station<br>One-to-one / one-to-many<br>Up to 4096 rovers"
+
+#: ../../source/products/comparison.md:11
+msgid "LoRa 距离"
+msgstr "LoRa distance"
+
+#: ../../source/products/comparison.md:11
+msgid "最远约 6 km"
+msgstr "Up to approximately 6 km"
+
+#: ../../source/products/comparison.md:11
+msgid "**接口与协议**"
+msgstr "**Interfaces and Protocols**"
+
+#: ../../source/products/comparison.md:11
+msgid "RTK 设备 UART/PPS I/O 电平"
+msgstr "RTK receiver UART/PPS I/O level"
+
+#: ../../source/products/comparison.md:11
+msgid "3.3 V"
+msgstr "3.3 V"
+
+#: ../../source/products/comparison.md:11
+msgid "默认波特率"
+msgstr "Default Baud Rate"
+
+#: ../../source/products/comparison.md:11
+msgid "115200 bps"
+msgstr "115200 bps"
+
+#: ../../source/products/comparison.md:11
+msgid "对外输出协议"
+msgstr "External Output Protocol"
+
+#: ../../source/products/comparison.md:11
+msgid "NMEA 或 UBX<br>按订单用途配置"
+msgstr "NMEA or UBX<br>Configured for the intended application"
+
+#: ../../source/products/comparison.md:11
+msgid "UBX-NAV-PVT"
+msgstr "UBX-NAV-PVT"
+
+#: ../../source/products/comparison.md:11
+msgid "磁力计"
+msgstr "Magnetometer"
+
+#: ../../source/products/comparison.md:11
+msgid "QMC5883L<br>SCL/SDA 接口<br>标准校准"
+msgstr "QMC5883L<br>SCL/SDA Interface<br>Standard Calibration"
+
+#: ../../source/products/comparison.md:11
+msgid "QMC5883L<br>SCL/SDA 接口"
+msgstr "QMC5883L<br>SCL/SDA Interface"
+
+#: ../../source/products/comparison.md:11
+msgid "**电气与环境**"
+msgstr "**Electrical and Environmental**"
+
+#: ../../source/products/comparison.md:11
+msgid "工作电压"
+msgstr "Operating voltage"
+
+#: ../../source/products/comparison.md:11
+msgid "5 V ±0.5 V<br>4.5–5.5 V"
+msgstr "5 V ±0.5 V<br>4.5–5.5 V"
+
+#: ../../source/products/comparison.md:11
+msgid "4.0–5.5 V<br>典型 5 V"
+msgstr "4.0–5.5 V<br>Typical 5 V"
+
+#: ../../source/products/comparison.md:11
+msgid "工作电流"
+msgstr "Operating current"
+
+#: ../../source/products/comparison.md:11
+msgid "4G：典型 120 mA<br>LoRa：典型 80 mA"
+msgstr "4G: Typical 120 mA<br>LoRa: Typical 80 mA"
+
+#: ../../source/products/comparison.md:11
+msgid "@ 5 V<br>最小 25 mA<br>典型 28 mA<br>最大 30 mA"
+msgstr "@ 5 V<br>Minimum 25 mA<br>Typical 28 mA<br>Maximum 30 mA"
+
+#: ../../source/products/comparison.md:11
+msgid "工作温度"
+msgstr "Operating Temperature"
+
+#: ../../source/products/comparison.md:11
+msgid "-40–85 °C"
+msgstr "-40–85 °C"
+
+#: ../../source/products/comparison.md:11
+msgid "存储温度"
+msgstr "Storage Temperature"
+
+#: ../../source/products/comparison.md:11
+msgid "-50–105 °C"
+msgstr "-50–105 °C"
+
+#: ../../source/products/comparison.md:11
+msgid "定位动态条件"
+msgstr "Positioning Dynamic Conditions"
+
+#: ../../source/products/comparison.md:11
+msgid "高度：50,000 m<br>速度：500 m/s<br>加速度：≤4 g"
+msgstr "Altitude: 50,000 m<br>Speed: 500 m/s<br>Acceleration: ≤4 g"
+
+#: ../../source/products/comparison.md:11
+msgid "**应用与资料**"
+msgstr "**Applications and Resources**"
+
+#: ../../source/products/comparison.md:11
+msgid "典型场景"
+msgstr "Typical scenario"
+
+#: ../../source/products/comparison.md:11
+msgid "无人机<br>精准农业<br>智能驾驶<br>车载导航<br>机器人 / Viobot2 / PC"
+msgstr ""
+"Drones<br>Precision Agriculture<br>Intelligent Driving<br>In-car "
+"Navigation<br>Robots / Viobot2 / PC"
+
+#: ../../source/products/comparison.md:11
+msgid "测绘<br>精准农业<br>智能驾驶<br>固定区域作业<br>自建基站 / 多移动站"
+msgstr ""
+"Surveying and mapping<br>Precision agriculture<br>Intelligent "
+"driving<br>Fixed-area operations<br>Self-built base station / multiple rovers"
+
+#: ../../source/products/comparison.md:11
+msgid "车载导航<br>车队管理<br>资产追踪 / AVL/LBS<br>无人机<br>紧凑终端"
+msgstr ""
+"In-vehicle Navigation<br>Fleet Management<br>Asset Tracking / AVL/"
+"LBS<br>Drone<br>Compact Terminal"
+
+#: ../../source/products/comparison.md:11
+msgid "文档入口"
+msgstr "Documentation"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[HM-D20-4G](models/hm-d20-4g.md)<br>[HM-D20-LoRa](models/hm-d20-lora.md)"
+msgstr ""
+"[HM-D20-4G](models/hm-d20-4g.md)<br>[HM-D20-LoRa](models/hm-d20-lora.md)"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[HM-D13-4G](models/hm-d13-4g.md)<br>[HM-D13-LoRa](models/hm-d13-lora.md)"
+msgstr ""
+"[HM-D13-4G](models/hm-d13-4g.md)<br>[HM-D13-LoRa](models/hm-d13-lora.md)"
+
+#: ../../source/products/comparison.md:11
+msgid "[HM-G51B](models/hm-g51b.md)"
+msgstr "[HM-G51B](models/hm-g51b.md)"
+
+#: ../../source/products/comparison.md:11
+msgid "购买链接"
+msgstr "Purchase link"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[HM-D20 独立站购买](https://myrobotproject.com/product/helical-antenna-rtk-"
+"module-hm-d20/)"
+msgstr ""
+"[HM-D20 Independent Site Purchase](https://myrobotproject.com/product/"
+"helical-antenna-rtk-module-hm-d20/)"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[HM-D13 独立站购买](https://myrobotproject.com/product/multiband-rtk-survey-"
+"module-hm-d13/)"
+msgstr ""
+"[HM-D13 Independent Site Purchase](https://myrobotproject.com/product/"
+"multiband-rtk-survey-module-hm-d13/)"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[HM-G51B 独立站购买](https://myrobotproject.com/product/gnss-antenna-module-"
+"hm-g51b/)"
+msgstr ""
+"[HM-G51B Independent Site Purchase](https://myrobotproject.com/product/gnss-"
+"antenna-module-hm-g51b/)"
+
+#: ../../source/products/comparison.md:64
+msgid "产品图片"
+msgstr "Product images"
+
+#: ../../source/products/comparison.md:11
+#: ../../source/products/comparison.md:68
+msgid "HM-D20"
+msgstr "HM-D20"
+
+#: ../../source/products/comparison.md:11
+#: ../../source/products/comparison.md:68
+msgid "HM-D13"
+msgstr "HM-D13"
+
+#: ../../source/products/comparison.md:11
+msgid "![HM-D20](./images/photos/d20-product.jpg)"
+msgstr "![HM-D20](./images/photos/d20-product.jpg)"
+
+#: ../../source/products/comparison.md:11
+msgid "![HM-D13](./images/photos/d13-4g-product.jpg)"
+msgstr "![HM-D13](./images/photos/d13-4g-product.jpg)"
+
+#: ../../source/products/comparison.md:11
+msgid "![HM-G51B](./images/g51b.png)"
+msgstr "![HM-G51B](./images/g51b.png)"
+
+#: ../../source/products/comparison.md:70
+msgid "软件与资料"
+msgstr "Software and Resources"
+
+#: ../../source/products/comparison.md:74
+msgid "软件工具"
+msgstr "Software tools"
+
+#: ../../source/products/comparison.md:11
+msgid "名称"
+msgstr "Name"
+
+#: ../../source/products/comparison.md:11
+msgid "用途"
+msgstr "Purpose"
+
+#: ../../source/products/comparison.md:11
+msgid "链接"
+msgstr "Link"
+
+#: ../../source/products/comparison.md:11
+msgid "NavStarTool"
+msgstr "NavStarTool"
+
+#: ../../source/products/comparison.md:11
+msgid "上位机软件，可用于调试、状态查看、参数配置"
+msgstr ""
+"Host PC software, can be used for debugging, status viewing, and parameter "
+"configuration"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/"
+"blob/main/NavStarTool_260703_cust_En.zip)"
+msgstr ""
+"[NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/"
+"blob/main/NavStarTool_260703_cust_En.zip)"
+
+#: ../../source/products/comparison.md:11
+msgid "JR_NTRIP_Config_Tool_V1.2"
+msgstr "JR_NTRIP_Config_Tool_V1.2"
+
+#: ../../source/products/comparison.md:11
+msgid "HM-D20-4G、HM-D13-4G 的 CORS/NTRIP 配置工具"
+msgstr "CORS/NTRIP Configuration Tool for HM-D20-4G and HM-D13-4G"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[JR_NTRIP_Config_Tool](https://github.com/myrobotproject/RTK_Interface-"
+"Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar)"
+msgstr ""
+"[JR_NTRIP_Config_Tool](https://github.com/myrobotproject/RTK_Interface-"
+"Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar)"
+
+#: ../../source/products/comparison.md:11
+msgid "D20_ros_driver"
+msgstr "D20_ros_driver"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"Jetson/树莓派接入 D20/D13 的 ROS1/ROS2 驱动，解析 NMEA 或 UBX 并发布 "
+"`NavSatFix` 与原始 NMEA 话题"
+msgstr ""
+"Jetson/Raspberry Pi access D20/D13 ROS1/ROS2 drivers, parse NMEA or UBX and "
+"publish `NavSatFix` and raw NMEA topics"
+
+#: ../../source/products/comparison.md:11
+msgid "[D20_ros_driver](https://github.com/Hessian-matrix/D20_ros_driver)"
+msgstr "[D20_ros_driver](https://github.com/Hessian-matrix/D20_ros_driver)"
+
+#: ../../source/products/comparison.md:83
+msgid "配置和说明文档"
+msgstr "Configuration and documentation"
+
+#: ../../source/products/comparison.md:11
+msgid "RTK Interface Description"
+msgstr "RTK Interface Description"
+
+#: ../../source/products/comparison.md:11
+msgid "RTK 接口说明、NavStarTool 相关配置资料"
+msgstr "RTK Interface Description, NavStarTool Related Configuration Data"
+
+#: ../../source/products/comparison.md:11
+msgid ""
+"[RTK Interface Description](https://github.com/myrobotproject/RTK_Interface-"
+"Description)"
+msgstr ""
+"[RTK Interface Description](https://github.com/myrobotproject/RTK_Interface-"
+"Description)"
+
+#: ../../source/products/comparison.md:11
+msgid "GNSS_NavStarTool User Guide"
+msgstr "GNSS_NavStarTool User Guide"
+
+#: ../../source/products/comparison.md:11
+msgid "NavStarTool 功能说明和操作指导"
+msgstr "NavStarTool Function Description and Operation Guide"
+
+#: ../../source/products/comparison.md:11
+#, python-format
+msgid ""
+"[GNSS_NavStarTool User Guide](https://github.com/myrobotproject/"
+"RTK_Interface-Description/blob/main/GNSS_NavStarTool%20User%20Guide%20en.pdf)"
+msgstr ""
+"[GNSS_NavStarTool User Guide](https://github.com/myrobotproject/"
+"RTK_Interface-Description/blob/main/GNSS_NavStarTool%20User%20Guide%20en.pdf)"
+
+#~ msgid "20 ns"
+#~ msgstr "20 ns"
+
+#~ msgid "10 Hz"
+#~ msgstr "10 Hz"
+
+#~ msgid "PVT 最高更新率"
+#~ msgstr "Maximum PVT update rate"
+
+#~ msgid "RAW 原始数据最高更新率"
+#~ msgstr "RAW Maximum Update Rate of Original Data"

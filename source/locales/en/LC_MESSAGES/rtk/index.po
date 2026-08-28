@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/index.rst:31
+msgid "RTK 使用手册:"
+msgstr "RTK User Manual:"
+
+#: ../../source/rtk/index.rst:2
+msgid "RTK 使用手册"
+msgstr "RTK User Manual"
+
+#: ../../source/rtk/index.rst:4
+msgid ""
+"本手册适用于 HM-D20-4G、HM-D20-LoRa、HM-D13-4G 和 HM-D13-LoRa。 请先按完整产"
+"品型号进入快速开始；产品定位和参数对比请查看 :doc:`产品中心 <../products/"
+"index>`。"
+msgstr ""
+"This guide covers HM-D20-4G, HM-D20-LoRa, HM-D13-4G, and HM-D13-LoRa. Start "
+"with the Getting Started guide for the exact model. See :doc:`Products <../"
+"products/index>` for product descriptions and specification comparisons."
+
+#: ../../source/rtk/index.rst:12
+msgid "当前任务"
+msgstr "Current task"
+
+#: ../../source/rtk/index.rst:13
+msgid "主要内容"
+msgstr "Main Content"
+
+#: ../../source/rtk/index.rst:14
+msgid "入口"
+msgstr "Entrance"
+
+#: ../../source/rtk/index.rst:15
+msgid "第一次使用设备"
+msgstr "Using the device for the first time"
+
+#: ../../source/rtk/index.rst:16
+msgid "按完整产品型号完成接线、差分链路和固定解验证"
+msgstr ""
+"Complete wiring, correction link, and fixed solution verification according "
+"to the full product model"
+
+#: ../../source/rtk/index.rst:17
+msgid ":doc:`快速开始 <getting-started/index>`"
+msgstr ":doc:`Getting Started <getting-started/index>`"
+
+#: ../../source/rtk/index.rst:18
+msgid "连接设备"
+msgstr "Connect Device"
+
+#: ../../source/rtk/index.rst:19
+msgid "D20/D13 接口、UART、固件输出和状态判断"
+msgstr "D20/D13 interface, UART, firmware output, and status judgment"
+
+#: ../../source/rtk/index.rst:20
+msgid ":doc:`连接与验证 <operation/index>`"
+msgstr ":doc:`Connection and Authentication <operation/index>`"
+
+#: ../../source/rtk/index.rst:21
+msgid "配置差分链路"
+msgstr "Configure correction link"
+
+#: ../../source/rtk/index.rst:22
+msgid "4G/CORS、LoRa 基站和 LoRa 移动站"
+msgstr "4G/CORS, LoRa base station and LoRa rover"
+
+#: ../../source/rtk/index.rst:23
+msgid ":doc:`差分链路 <differential-links/index>`"
+msgstr ":doc:`Correction Links <differential-links/index>`"
+
+#: ../../source/rtk/index.rst:24
+msgid "接入目标平台"
+msgstr "Connect to the target platform"
+
+#: ../../source/rtk/index.rst:25
+msgid "ArduPilot、PX4、Viobot2 和 ROS1/ROS2 集成"
+msgstr "Integration of ArduPilot, PX4, Viobot2, and ROS1/ROS2"
+
+#: ../../source/rtk/index.rst:26
+msgid ":doc:`平台接入 <integrations/index>`"
+msgstr ":doc:`Platform Integration <integrations/index>`"
+
+#: ../../source/rtk/index.rst:27
+msgid "维护与排障"
+msgstr "Maintenance and Troubleshooting"
+
+#: ../../source/rtk/index.rst:28
+msgid "参数、固件和常见问题"
+msgstr "Parameters, Firmware, and Frequently Asked Questions"
+
+#: ../../source/rtk/index.rst:29
+msgid ":doc:`故障排查 <troubleshooting/index>`"
+msgstr ":doc:`Troubleshooting <troubleshooting/index>`"

@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 23:24+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/getting-started/index.rst:7
+msgid "快速开始:"
+msgstr "Getting Started:"
+
+#: ../../source/rtk/getting-started/index.rst:2
+msgid "快速开始"
+msgstr "Getting Started"
+
+#: ../../source/rtk/getting-started/index.rst:4
+msgid ""
+"请选择设备铭牌或订单中的完整产品型号。每个流程只覆盖一个硬件和差分链路组合， "
+"从核对配件开始，以持续输出定位数据并进入 RTK 固定解为完成判据。"
+msgstr ""
+"Select the full model number from the device label or order. Each guide "
+"covers one hardware and correction-link combination, from checking the "
+"package contents to continuous positioning output and an RTK fixed solution."

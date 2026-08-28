@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/maintenance/parameters.md:1
+msgid "常用参数配置"
+msgstr "Common Parameter Settings"
+
+#: ../../source/rtk/maintenance/parameters.md:3
+msgid "本页范围"
+msgstr "Scope of this page"
+
+#: ../../source/rtk/maintenance/parameters.md:6
+#, python-brace-format
+msgid ""
+"使用{ref}`NavStarTool <connect-navstartool>`调整**输出频率**和当前固件支持的 "
+"**NMEA / UBX 消息项**。完整功能可通过菜单栏 `Help` 查看官方使用说明。"
+msgstr ""
+"Use {ref}`NavStarTool <connect-navstartool>` to adjust **output frequency** "
+"and the **NMEA / UBX message items** supported by the current firmware. Full "
+"functionality can be viewed in the official user manual through the `Help` "
+"menu."
+
+#: ../../source/rtk/maintenance/parameters.md:10
+msgid ""
+"修改前先记录当前配置 先确认目标平台和当前出厂输出，并使用 `Read from Chip` 读"
+"取现有参数。选择原则见[固件与输出协议选择](../operation/firmware-output.md)。"
+msgstr ""
+"Before making modifications, first record the current configuration, confirm "
+"the target platform and current factory output, and use `Read from Chip` to "
+"read the existing parameters. See [Selecting Firmware and Output Protocol]"
+"(../operation/firmware-output.md) for selection principles."
+
+#: ../../source/rtk/maintenance/parameters.md:13
+msgid "读取接收机配置"
+msgstr "Read receiver configuration"
+
+#: ../../source/rtk/maintenance/parameters.md:15
+msgid "点击菜单栏："
+msgstr "Click the menu bar:"
+
+#: ../../source/rtk/maintenance/parameters.md:21
+msgid ""
+"首次打开 `Receiver Settings` 窗口时，可能不会显示当前配置。此时需要点击界面中"
+"的 `Read from Chip`，从设备读取现有参数。"
+msgstr ""
+"The `Receiver Settings` window may not show the current configuration when "
+"first opened. Click `Read from Chip` to load the existing parameters from "
+"the device."
+
+#: ../../source/rtk/maintenance/parameters.md:23
+msgid "![Receiver Settings](../images/receiver-settings.png)"
+msgstr "![Receiver Settings](../images/receiver-settings.png)"
+
+#: ../../source/rtk/maintenance/parameters.md:23
+msgid "Receiver Settings"
+msgstr "Receiver Settings"
+
+#: ../../source/rtk/maintenance/parameters.md:25
+msgid "设置输出频率"
+msgstr "Set output frequency"
+
+#: ../../source/rtk/maintenance/parameters.md:27
+msgid "以设置 NMEA 输出频率为 10 Hz 为例："
+msgstr "Taking setting the NMEA output frequency to 10 Hz as an example:"
+
+#: ../../source/rtk/maintenance/parameters.md:29
+msgid "在 `Receiver Settings` 中点击 `Read from Chip`。"
+msgstr "Click 'Read from Chip' in 'Receiver Settings'."
+
+#: ../../source/rtk/maintenance/parameters.md:30
+msgid "找到 `Receiver Parameters -> Working Rate`。"
+msgstr "Find `Receiver Parameters -> Working Rate`."
+
+#: ../../source/rtk/maintenance/parameters.md:31
+msgid "下拉选择 `10`。"
+msgstr "Dropdown select `10`."
+
+#: ../../source/rtk/maintenance/parameters.md:32
+msgid "点击 `Send to Chip` 保存配置。"
+msgstr "Click `Send to Chip` to save the configuration."
+
+#: ../../source/rtk/maintenance/parameters.md:33
+msgid "等待设备自动重启。"
+msgstr "Waiting for the device to automatically restart."
+
+#: ../../source/rtk/maintenance/parameters.md:35
+msgid "![Working Rate](../images/working-rate.png)"
+msgstr "![Working Rate](../images/working-rate.png)"
+
+#: ../../source/rtk/maintenance/parameters.md:35
+msgid "Working Rate"
+msgstr "Working Rate"
+
+#: ../../source/rtk/maintenance/parameters.md:37
+msgid "配置当前固件的输出消息"
+msgstr "Configure the output messages of the current firmware"
+
+#: ../../source/rtk/maintenance/parameters.md:39
+msgid ""
+"D20 地面版默认 10 Hz NMEA，无人机版默认 10 Hz UBX；D13 默认输出 10 Hz NMEA，"
+"可按需求配置为 UBX。本页操作用于调整当前固件支持的消息项，不更改固件的用途配"
+"置。"
+msgstr ""
+"The D20 ground firmware defaults to 10 Hz NMEA, and the UAV firmware "
+"defaults to 10 Hz UBX. D13 defaults to 10 Hz NMEA and can be configured for "
+"UBX on request. The settings on this page adjust messages supported by the "
+"current firmware; they do not change the firmware profile."
+
+#: ../../source/rtk/maintenance/parameters.md:41
+msgid ""
+"如果外部设备只需要标准 NMEA，可在消息列表中只保留目标系统需要的语句。接入 "
+"Viobot2 时建议至少开启 GGA 和 RMC。"
+msgstr ""
+"If the external device only requires standard NMEA, you can keep only the "
+"sentences needed by the target system in the message list. It is recommended "
+"to enable at least GGA and RMC when connecting Viobot2."
+
+#: ../../source/rtk/maintenance/parameters.md:43
+msgid "配置路径："
+msgstr "Configuration Path:"
+
+#: ../../source/rtk/maintenance/parameters.md:49
+msgid ""
+"在可输出的 NMEA 消息列表中勾选需要发送的语句，然后点击 `Send to Chip` 保存。"
+msgstr ""
+"Check the sentences you want to send from the list of outputtable NMEA "
+"messages, and then click `Send to Chip` to save."
+
+#: ../../source/rtk/maintenance/parameters.md:51
+msgid "![Output Message](../images/output-message.png)"
+msgstr "![Output Message](../images/output-message.png)"
+
+#: ../../source/rtk/maintenance/parameters.md:51
+msgid "Output Message"
+msgstr "Output Message"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "配置完成判据"
+msgstr "Configuration success criteria"
+
+#: ../../source/rtk/maintenance/parameters.md:56
+msgid ""
+"设备重启后持续输出目标协议，实际刷新率和消息项与配置一致，下游设备能够正常解"
+"析。"
+msgstr ""
+"After the device restarts, it continuously outputs the target protocol, with "
+"the actual refresh rate and message items consistent with the configuration, "
+"and the downstream device can parse it normally."
+
+#: ../../source/rtk/maintenance/parameters.md:59
+msgid "配置建议"
+msgstr "Configuration Recommendations"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "场景"
+msgstr "Scene"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "建议"
+msgstr "Suggestion"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "PC 调试"
+msgstr "PC debugging"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "先保留当前固件的常用协议输出，便于观察状态"
+msgstr ""
+"First retain the common protocol outputs of the current firmware to "
+"facilitate status observation"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "D20 飞控接入"
+msgstr "D20 Flight Control Access"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "按飞控要求配置 UBX 输出；D20 无人机版默认 10 Hz"
+msgstr ""
+"Configure UBX output according to flight control requirements; D20 UAV "
+"firmware defaults to 10 Hz"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "Viobot2 接入"
+msgstr "Viobot2 Integration"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "至少开启 GGA 和 RMC；地面版默认 10 Hz，RTK 最高 10 Hz"
+msgstr ""
+"At least enable GGA and RMC; the ground firmware defaults to 10 Hz, RTK up "
+"to 10 Hz"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "日志排查"
+msgstr "Log troubleshooting"
+
+#: ../../source/rtk/maintenance/parameters.md:53
+msgid "保留原始协议日志，记录固件版本、串口参数和输出频率"
+msgstr ""
+"Keep the original protocol log, recording the firmware version, serial port "
+"parameters, and output frequency"

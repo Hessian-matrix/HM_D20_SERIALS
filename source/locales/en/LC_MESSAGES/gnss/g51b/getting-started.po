@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/gnss/g51b/getting-started.md:1
+msgid "HM-G51B 快速开始"
+msgstr "HM-G51B Getting Started"
+
+#: ../../source/gnss/g51b/getting-started.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/gnss/g51b/getting-started.md:6
+msgid ""
+"完成 **HM-G51B** 的供电、UART 连接和首次独立 GNSS 定位验证。接收机模组支持 "
+"L1 频段信号处理，通过 UART 输出 UBX-NAV-PVT，默认波特率为 `115200`。"
+msgstr ""
+"Power the **HM-G51B**, connect its UART, and verify the first standalone "
+"GNSS position. The receiver module processes L1-band signals and outputs UBX-"
+"NAV-PVT over UART at a default baud rate of `115200`."
+
+#: ../../source/gnss/g51b/getting-started.md:10
+msgid ""
+"产品边界 G51B 提供独立 GNSS 定位，不需要 CORS/NTRIP 或 D13 基站。需要厘米级定"
+"位时，应选择 D20 或 D13 系列。完整参数见[产品对比与资料](../../products/"
+"comparison.md)。"
+msgstr ""
+"Product scope: G51B provides standalone GNSS positioning without CORS/NTRIP "
+"or a D13 base station. Choose the D20 or D13 series for centimeter-level "
+"positioning. See [Product Comparison and Resources](../../products/"
+"comparison.md) for complete specifications."
+
+#: ../../source/gnss/g51b/getting-started.md:13
+msgid "准备设备"
+msgstr "Prepare equipment"
+
+#: ../../source/gnss/g51b/getting-started.md:15
+msgid "G51B 接收机模组。"
+msgstr "G51B receiver module."
+
+#: ../../source/gnss/g51b/getting-started.md:16
+msgid "4.0–5.5 V 电源，典型 5 V。"
+msgstr "4.0–5.5 V power supply, typically 5 V."
+
+#: ../../source/gnss/g51b/getting-started.md:17
+msgid "与 G51B 接口电平兼容的 USB 转 UART 模块，或目标设备 UART 串口。"
+msgstr ""
+"USB to UART module compatible with G51B interface levels, or the target "
+"device's UART serial port."
+
+#: ../../source/gnss/g51b/getting-started.md:18
+#, python-brace-format
+msgid "PC 端 {ref}`NavStarTool <software-tools>` 上位机。"
+msgstr "PC-side {ref}`NavStarTool <software-tools>` host PC."
+
+#: ../../source/gnss/g51b/getting-started.md:19
+msgid "能够保证天空视野的安装位置。"
+msgstr "An installation position that can ensure a clear view of the sky."
+
+#: ../../source/gnss/g51b/getting-started.md:21
+msgid "连接供电和串口"
+msgstr "Connect power and serial port"
+
+#: ../../source/gnss/g51b/getting-started.md:23
+msgid ""
+"HM-G51B 使用 6-pin MX1.25 mm 接口，提供电源、UART 和磁力计 I2C 信号，不提供 "
+"PPS 引脚。按随产品提供的接口资料完成连接："
+msgstr ""
+"HM-G51B uses a 6-pin MX1.25 mm interface for power, UART, and magnetometer "
+"I2C signals. It has no PPS pin. Follow the supplied interface documentation:"
+
+#: ../../source/gnss/g51b/getting-started.md:25
+msgid "供电范围为 4.0–5.5 V，典型 5 V；上电前确认电压和极性。"
+msgstr ""
+"Supply 4.0–5.5 V (5 V typical); verify voltage and polarity before power-on."
+
+#: ../../source/gnss/g51b/getting-started.md:26
+msgid "UART TX/RX 交叉连接，并与 USB 转 UART 模块或目标设备共地。"
+msgstr ""
+"Cross TX/RX and connect ground to the USB-to-UART module or target device."
+
+#: ../../source/gnss/g51b/getting-started.md:27
+msgid "UART I/O 电平以交付版本的接口资料为准。"
+msgstr ""
+"Use the UART I/O level specified in the supplied interface documentation."
+
+#: ../../source/gnss/g51b/getting-started.md:29
+msgid "安装位置"
+msgstr "Installation location"
+
+#: ../../source/gnss/g51b/getting-started.md:31
+msgid ""
+"G51B 需要接收 GNSS 卫星信号。安装时应尽量保证天线朝向天空，避开金属遮挡、高"
+"楼、树木和强电磁干扰区域。"
+msgstr ""
+"The G51B needs to receive GNSS satellite signals. During installation, the "
+"antenna should be oriented towards the sky as much as possible, avoiding "
+"metal obstructions, tall buildings, trees, and areas with strong "
+"electromagnetic interference."
+
+#: ../../source/gnss/g51b/getting-started.md:33
+msgid ""
+"在无人机、车载或资产定位终端中使用时，应优先将天线布置在设备上方或外壳开阔位"
+"置，避免被电池、金属结构件或大功率无线模块遮挡。"
+msgstr ""
+"When used in drones, vehicle-mounted, or asset positioning terminals, the "
+"antenna should preferably be placed on top of the device or in an open part "
+"of the casing, avoiding obstruction by batteries, metal structural parts, or "
+"high-power wireless modules."
+
+#: ../../source/gnss/g51b/getting-started.md:35
+msgid "连接上位机"
+msgstr "Connect to the host PC"
+
+#: ../../source/gnss/g51b/getting-started.md:37
+#, python-brace-format
+msgid "下载并打开 {ref}`NavStarTool <software-tools>`。"
+msgstr "Download and open {ref}`NavStarTool <software-tools>`."
+
+#: ../../source/gnss/g51b/getting-started.md:38
+msgid "选择 G51B 对应的串口号。"
+msgstr "Select the serial port number corresponding to G51B."
+
+#: ../../source/gnss/g51b/getting-started.md:39
+msgid "波特率选择 `115200`。"
+msgstr "Set the baud rate to `115200`."
+
+#: ../../source/gnss/g51b/getting-started.md:40
+msgid "点击连接。"
+msgstr "Click the link."
+
+#: ../../source/gnss/g51b/getting-started.md:41
+msgid "查看卫星数、经纬高、定位状态和 UBX-NAV-PVT 数据输出。"
+msgstr ""
+"Check the number of satellites, latitude and longitude height, positioning "
+"status, and UBX-NAV-PVT data output."
+
+#: ../../source/gnss/g51b/getting-started.md:43
+msgid "验证定位输出"
+msgstr "Verify positioning output"
+
+#: ../../source/gnss/g51b/getting-started.md:45
+msgid "首次定位"
+msgstr "First positioning"
+
+#: ../../source/gnss/g51b/getting-started.md:47
+msgid ""
+"G51B 热启动时间约 1 秒，冷启动时间约 28 秒。首次上电或长时间断电后，定位时间"
+"可能受天空视野、卫星环境和安装位置影响。"
+msgstr ""
+"G51B hot-start TTFF is approximately 1 second, and cold-start TTFF is "
+"approximately 28 seconds. After the first power-on or an extended power-off, positioning "
+"time may be affected by sky view, satellite environment, and installation "
+"location."
+
+#: ../../source/gnss/g51b/getting-started.md:49
+msgid "输出检查"
+msgstr "Output Check"
+
+#: ../../source/gnss/g51b/getting-started.md:51
+msgid ""
+"正常工作时，上位机或目标设备中应持续接收到定位数据。若无法获得稳定定位，应优"
+"先检查以下项目："
+msgstr ""
+"During normal operation, the host PC or target device should continuously "
+"receive positioning data. If stable positioning cannot be obtained, the "
+"following items should be checked first:"
+
+#: ../../source/gnss/g51b/getting-started.md:53
+msgid "供电电压是否稳定。"
+msgstr "Verify that the supply voltage is stable."
+
+#: ../../source/gnss/g51b/getting-started.md:54
+msgid "TX/RX 是否交叉连接。"
+msgstr "Verify that TX and RX are crossed."
+
+#: ../../source/gnss/g51b/getting-started.md:55
+msgid "串口波特率是否为 `115200`。"
+msgstr "Is the serial port baud rate `115200`?"
+
+#: ../../source/gnss/g51b/getting-started.md:56
+msgid "天线位置是否开阔。"
+msgstr "Is the antenna location open?"
+
+#: ../../source/gnss/g51b/getting-started.md:57
+msgid "设备附近是否存在明显遮挡或强干扰。"
+msgstr "Check for significant obstructions or interference near the device."
+
+#: ../../source/gnss/g51b/getting-started.md:59
+msgid "首次使用完成判据"
+msgstr "Getting Started success criteria"
+
+#: ../../source/gnss/g51b/getting-started.md:62
+msgid ""
+"上位机或目标设备持续接收到 UBX-NAV-PVT 定位数据，经纬度、高程和定位状态正常更"
+"新。"
+msgstr ""
+"The host PC or target device continuously receives UBX-NAV-PVT positioning "
+"data, with latitude, longitude, altitude, and positioning status updating "
+"normally."
+
+#: ../../source/gnss/g51b/getting-started.md:65
+msgid "配置管理"
+msgstr "Configuration Management"
+
+#: ../../source/gnss/g51b/getting-started.md:67
+msgid ""
+"需要修改输出频率或消息项时，先确认 UBX-NAV-PVT 输出要求，再使用配套工具配置；"
+"PVT 最高更新率为 20 Hz。"
+msgstr ""
+"Before changing the update rate or message set, confirm the UBX-NAV-PVT "
+"requirements and use the supplied tool. The maximum PVT update rate is 20 Hz."
+
+#: ../../source/gnss/g51b/getting-started.md:69
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/gnss/g51b/getting-started.md:71
+msgid ""
+"需要查看产品定位和选型信息，可进入 [HM-G51B 产品页](../../products/models/hm-"
+"g51b.md)。"
+msgstr ""
+"To view product positioning and model selection information, you can go to "
+"the [HM-G51B Product Page](../../products/models/hm-g51b.md)."
+
+#: ../../source/gnss/g51b/getting-started.md:72
+#, python-brace-format
+msgid "需要调试或配置接收机参数，可使用 {ref}`NavStarTool <software-tools>`。"
+msgstr ""
+"Use {ref}`NavStarTool <software-tools>` to inspect or configure receiver "
+"parameters."
+
+#~ msgid "使用前确认"
+#~ msgstr "Check before use"
+
+#~ msgid "确认产品能力"
+#~ msgstr "Confirm product capability"
+
+#~ msgid ""
+#~ "G51B 为单频多星座 GNSS 接收机模组，支持 GPS L1、北斗 B1、Galileo E1、QZSS "
+#~ "L1 和 GLONASS G1。接收机模组具备 120 个跟踪通道，PVT 最高更新率为 20 Hz，"
+#~ "定位精度为 1.5 m CEP。"
+#~ msgstr ""
+#~ "G51B is a single-band multi-constellation GNSS receiver module supporting "
+#~ "GPS L1, BeiDou B1, Galileo E1, QZSS L1, and GLONASS G1. It provides 120 "
+#~ "tracking channels, a maximum PVT update rate of 20 Hz, and 1.5 m CEP "
+#~ "positioning accuracy."
+
+#~ msgid "关键参数"
+#~ msgstr "Key specifications"
+
+#~ msgid "项目"
+#~ msgstr "Item"
+
+#~ msgid "参数"
+#~ msgstr "Parameter"
+
+#~ msgid "接收频点"
+#~ msgstr "Supported Frequencies"
+
+#~ msgid "GPS L1、北斗 B1、Galileo E1、QZSS L1、GLONASS G1"
+#~ msgstr "GPS L1, BeiDou B1, Galileo E1, QZSS L1, GLONASS G1"
+
+#~ msgid "跟踪通道"
+#~ msgstr "Tracking channels"
+
+#~ msgid "120"
+#~ msgstr "120"
+
+#~ msgid "定位精度"
+#~ msgstr "Positioning accuracy"
+
+#~ msgid "1.5 m CEP"
+#~ msgstr "1.5 m CEP"
+
+#~ msgid "速度精度"
+#~ msgstr "Velocity Accuracy"
+
+#~ msgid "0.05 m/s"
+#~ msgstr "0.05 m/s"
+
+#~ msgid "捕获 / 跟踪灵敏度"
+#~ msgstr "Capture / Tracking Sensitivity"
+
+#~ msgid "-148 / -163 dBm"
+#~ msgstr "-148 / -163 dBm"
+
+#~ msgid "启动时间"
+#~ msgstr "Startup time"
+
+#~ msgid "冷启动 28 s；热启动 1 s"
+#~ msgstr "Cold start 28 s; Hot start 1 s"
+
+#~ msgid "PVT 最高更新率"
+#~ msgstr "Maximum PVT update rate"
+
+#~ msgid "20 Hz"
+#~ msgstr "20 Hz"
+
+#~ msgid "输出"
+#~ msgstr "Output"
+
+#~ msgid "UART / UBX-NAV-PVT；默认 115200 bps"
+#~ msgstr "UART / UBX-NAV-PVT; default 115200 bps"
+
+#~ msgid "磁力计"
+#~ msgstr "Magnetometer"
+
+#~ msgid "QMC5883L；I2C 接口"
+#~ msgstr "QMC5883L; I2C interface"
+
+#~ msgid "工作电压"
+#~ msgstr "Operating voltage"
+
+#~ msgid "4.0–5.5 V；典型 5 V"
+#~ msgstr "4.0–5.5 V; typical 5 V"
+
+#~ msgid "工作电流"
+#~ msgstr "Operating current"
+
+#~ msgid "@ 5 V：最小 25 mA；典型 28 mA；最大 30 mA"
+#~ msgstr "@ 5 V: Minimum 25 mA; Typical 28 mA; Maximum 30 mA"
+
+#~ msgid "尺寸 / 重量"
+#~ msgstr "Dimensions / weight"
+
+#~ msgid "26.5 × 35.5 × 7.1 mm / 10 g"
+#~ msgstr "26.5 × 35.5 × 7.1 mm / 10 g"
+
+#~ msgid "工作 / 存储温度"
+#~ msgstr "Operating / Storage Temperature"
+
+#~ msgid "-40–85 °C / -50–105 °C"
+#~ msgstr "-40–85 °C / -50–105 °C"
+
+#~ msgid "供电要求"
+#~ msgstr "Power supply requirements"
+
+#~ msgid "串口接线"
+#~ msgstr "Serial port wiring"
+
+#~ msgid ""
+#~ "HM-G51B 使用 6-pin MX1.25 mm 接口，提供电源、UART 和磁力计 I2C 信号，不提"
+#~ "供 PPS 引脚。首次调试应根据随产品提供的接口资料连接电源、GND 和 UART。供电"
+#~ "范围为 4.0–5.5 V，典型值为 5 V；UART TX/RX 需要交叉连接，并与 USB 转 UART "
+#~ "模块或目标设备共地。接口 IO 电平应以交付版本的接口资料为准。"
+#~ msgstr ""
+#~ "The HM-G51B uses a 6-pin MX1.25 mm interface, providing power, UART, and "
+#~ "magnetometer I2C signals, but does not provide a PPS pin. For initial "
+#~ "debugging, power, GND, and UART should be connected according to the "
+#~ "interface documentation provided with the product. The power supply range "
+#~ "is 4.0–5.5 V, with a typical value of 5 V; UART TX/RX needs to be cross-"
+#~ "connected and share a common ground with the USB-to-UART module or target "
+#~ "device. The interface IO level should be based on the interface "
+#~ "documentation of the delivered version."

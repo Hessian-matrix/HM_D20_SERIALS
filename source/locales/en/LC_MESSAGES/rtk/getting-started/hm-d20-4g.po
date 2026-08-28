@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:1
+msgid "HM-D20-4G 首次使用"
+msgstr "HM-D20-4G Getting Started"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:6
+msgid ""
+"将 **HM-D20-4G** 从开箱状态运行到首次获得 **RTK 固定解**。开始前需准备可用的 "
+"Nano-SIM 卡和 CORS/NTRIP 账号，并确认现场有蜂窝网络覆盖。"
+msgstr ""
+"Set up **HM-D20-4G** from unpacking through its first **RTK fixed "
+"solution**. Before starting, prepare an active Nano-SIM card, a CORS/NTRIP "
+"account, and cellular coverage at the site."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:9
+msgid "1. 核对设备与配件"
+msgstr "Step 1: Check the equipment and accessories"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:11
+msgid "产品标配："
+msgstr "Standard Product Configuration:"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:12
+msgid "HM-D20-4G 移动站。"
+msgstr "HM-D20-4G rover."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:13
+msgid "8-pin GH1.25 mm 连接线。"
+msgstr "8-pin GH1.25 mm connector cable."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:14
+msgid "外置 4G 天线。"
+msgstr "External 4G antenna."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:15
+msgid "USB-C 配置线。"
+msgstr "USB-C configuration cable."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:16
+msgid "兼容 3.3 V UART I/O 的 USB 转 UART 转接器。"
+msgstr "USB-to-UART adapter compatible with 3.3 V UART I/O."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:18
+msgid "用户自备："
+msgstr "User provides:"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:19
+msgid "5 V ±0.5 V 电源。"
+msgstr "5 V ±0.5 V power supply."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:20
+msgid "有流量的 Nano-SIM 卡。"
+msgstr "Nano-SIM card with data."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:21
+msgid "CORS/NTRIP 账号。"
+msgstr "CORS/NTRIP account."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:28
+msgid "HM-D20-4G 主要组件与包装"
+msgstr "HM-D20-4G major components and packaging"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:28
+msgid "HM-D20-4G 主要组件"
+msgstr "HM-D20-4G major components"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:32
+msgid ""
+"图片用于辅助识别产品和主要组件；实际交付内容以本页文字清单和随货装箱清单为"
+"准。"
+msgstr ""
+"Images are provided to help identify the product and its major components. "
+"The written list on this page and the packing list supplied with the product "
+"define the actual contents."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:35
+msgid "2. 确认输出固件"
+msgstr "Step 2: Confirm the output firmware"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:37
+msgid "接入 ArduPilot、PX4 等飞控：使用无人机版固件，默认输出 10 Hz UBX。"
+msgstr ""
+"For ArduPilot, PX4, and similar flight controllers, use the UAV firmware; it "
+"defaults to 10 Hz UBX."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:38
+msgid "接入机器人、Viobot2 或 PC：使用地面版固件，默认输出 10 Hz NMEA。"
+msgstr ""
+"For robots, Viobot2, or a PC, use the ground firmware; it defaults to 10 Hz "
+"NMEA."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:40
+msgid ""
+"固件由订单用途确定。需要调整时，先阅读[固件与输出协议选择](../operation/"
+"firmware-output.md)。"
+msgstr ""
+"The firmware is determined by the order purpose. When adjustments are "
+"needed, first read [Selecting Firmware and Output Protocol](../operation/"
+"firmware-output.md)."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:42
+msgid "3. 安装 4G 天线"
+msgstr "Step 3: Install the 4G antenna"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:44
+msgid ""
+"断电状态下，将外置 4G 天线连接到 SMA 接口并拧紧。天线可以布置到机臂或其他合适"
+"位置，避免紧贴大功率设备、金属遮挡或平台内部强干扰源。"
+msgstr ""
+"When powered off, connect the external 4G antenna to the SMA interface and "
+"tighten it. The antenna can be positioned on the arm or other suitable "
+"locations, avoiding close proximity to high-power equipment, metal "
+"obstructions, or strong interference sources inside the platform."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:46
+msgid "4. 写入 CORS 账号"
+msgstr "Step 4: Enter CORS account"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:48
+msgid ""
+"使用标配 USB-C 配置线连接设备配置口和 PC，按[4G / CORS 配置](../differential-"
+"links/4g-ntrip.md)写入服务器、端口、挂载点、账号和密码，并确认工具返回成功。"
+msgstr ""
+"Connect the configuration port to the PC with the supplied USB-C cable. "
+"Follow [4G / CORS Setup](../differential-links/4g-ntrip.md) to enter the "
+"server, port, mount point, username, and password, then verify a successful "
+"response."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:50
+msgid "5. 连接供电与 UART"
+msgstr "Step 5: Connect power and UART"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:53
+msgid ""
+"接线错误会损坏设备 保持设备断电并按[完整 8-pin 定义](../operation/d20-wiring."
+"md)逐线核对。设备供电为 5 V ±0.5 V，UART/PPS I/O 为 3.3 V；禁止按导线颜色判"
+"断、反接电源或把 5 V 接入信号线。"
+msgstr ""
+"Wiring errors can damage the device. Keep it powered off and verify every "
+"wire against the [complete 8-pin pinout](../operation/d20-wiring.md). Supply "
+"5 V ±0.5 V; UART/PPS I/O is 3.3 V. Do not rely on wire colors, reverse the "
+"supply, or connect 5 V to a signal pin."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:56
+msgid "按[D20 接口与接线](../operation/d20-wiring.md)完成连接："
+msgstr ""
+"Complete the connection as described in [D20 Interfaces and Wiring](../"
+"operation/d20-wiring.md):"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:58
+msgid "Pin 6（5 V）接 5 V ±0.5 V 电源正极，Pin 1（GND）接电源负极并共地。"
+msgstr ""
+"Pin 6 (5 V) is connected to the positive terminal of a 5 V ±0.5 V power "
+"supply, and Pin 1 (GND) is connected to the negative terminal of the power "
+"supply with a common ground."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:59
+msgid "设备 TX 接外部 RX，设备 RX 接外部 TX。"
+msgstr "Device TX connects to external RX, device RX connects to external TX."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:60
+msgid "仅使用定位时，SCL/SDA 可不连接。"
+msgstr "When using positioning only, SCL/SDA may not be connected."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:61
+msgid "再次核对 Pin 顺序、信号、电压和极性后上电。"
+msgstr ""
+"Power on after rechecking the pin order, signals, voltage, and polarity."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:63
+msgid "6. 查看定位输出"
+msgstr "Step 6: Check positioning output"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:65
+#, python-brace-format
+msgid ""
+"串口默认 115200 bps。使用地面版固件时，按{ref}`连接 NavStarTool <connect-"
+"navstartool>`或使用串口终端确认 10 Hz NMEA 持续输出；使用无人机版固件时，通过"
+"目标飞控及其地面站确认 UBX 定位数据和 GPS 状态持续更新。"
+msgstr ""
+"The serial port defaults to 115200 bps. When using the ground firmware, "
+"follow {ref}`Connecting to NavStarTool <connect-navstartool>` or use a "
+"serial terminal to verify continuous 10 Hz NMEA output; when using the UAV "
+"firmware, verify continuous updates of UBX positioning data and GPS status "
+"through the target flight controller and its ground station."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:67
+msgid "7. 验证 RTK 固定解"
+msgstr "Step 7: Verify RTK Fixed Solution"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:69
+msgid ""
+"将设备放置在天空视野开阔的位置，然后按[RTK 状态与固定解验证](../operation/"
+"rtk-fixed-validation.md)检查定位输出和解状态。"
+msgstr ""
+"Place the device with an open sky view, then follow [Checking RTK Status and "
+"the Fixed Solution](../operation/rtk-fixed-validation.md) to verify "
+"positioning output and solution status."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:71
+msgid "首次使用完成判据"
+msgstr "Getting Started success criteria"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:74
+msgid "**定位数据持续输出，并进入 RTK 固定解。**"
+msgstr ""
+"**Positioning output remains continuous and reaches an RTK fixed solution.**"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:77
+msgid ""
+"若无法进入固定解，检查 4G 天线、Nano-SIM 卡流量、网络覆盖、CORS 账号、天线视"
+"野和供电，再进入[故障排查](../troubleshooting/troubleshooting.md)。"
+msgstr ""
+"If unable to obtain a fixed solution, check the 4G antenna, Nano-SIM card "
+"data, network coverage, CORS account, antenna line of sight, and power "
+"supply, then proceed to [Troubleshooting](../troubleshooting/troubleshooting."
+"md)."
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:79
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:81
+msgid "[无人机应用 - ArduPilot](../integrations/ardupilot.md)"
+msgstr "[Drone Applications - ArduPilot](../integrations/ardupilot.md)"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:82
+msgid "[接入 PX4](../integrations/px4.md)"
+msgstr "[Connect to PX4](../integrations/px4.md)"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:83
+msgid "[接入 Viobot2](../integrations/viobot2.md)"
+msgstr "[Integrate Viobot2](../integrations/viobot2.md)"
+
+#: ../../source/rtk/getting-started/hm-d20-4g.md:84
+msgid "[常用参数配置](../maintenance/parameters.md)"
+msgstr "[Common Parameter Configuration](../maintenance/parameters.md)"
+
+#~ msgid ""
+#~ "**定位数据持续输出，设备显示 RTK 固定解。** 进入固定解即可判断 CORS 差分通"
+#~ "信链路正常。"
+#~ msgstr ""
+#~ "**Positioning data continues to be output, and the device shows an RTK "
+#~ "fixed solution.** Entering a fixed solution allows you to determine that "
+#~ "the CORS correction link is functioning properly."

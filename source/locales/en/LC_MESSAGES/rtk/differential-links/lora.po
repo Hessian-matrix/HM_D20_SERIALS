@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 15:53+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/differential-links/lora.md:1
+msgid "LoRa 移动站连接"
+msgstr "Connecting a LoRa Rover"
+
+#: ../../source/rtk/differential-links/lora.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/differential-links/lora.md:6
+msgid ""
+"在专用 D13 LoRa 基站完成架设后，连接 **D20 或 D13 移动站**并验证 RTK 固定解。"
+"HM-D20-LoRa 和 HM-D13-LoRa 均按包含基站及配件的套件交付。"
+msgstr ""
+"After the dedicated D13 LoRa base station is set up, connect **D20 or D13 "
+"rovers** and verify the RTK fixed solution. Both HM-D20-LoRa and HM-D13-LoRa "
+"are delivered as kits including the base station and accessories."
+
+#: ../../source/rtk/differential-links/lora.md:9
+msgid "准备工作"
+msgstr "Before You Begin"
+
+#: ../../source/rtk/differential-links/lora.md:11
+msgid "D20 LoRa 或 D13 LoRa 移动站。"
+msgstr "D20 LoRa or D13 LoRa rover."
+
+#: ../../source/rtk/differential-links/lora.md:12
+msgid "套件内的专用 D13 LoRa 基站硬件及配件。"
+msgstr "Dedicated D13 LoRa base station hardware and accessories in the kit."
+
+#: ../../source/rtk/differential-links/lora.md:13
+msgid "D20 移动站和 D13 基站使用的 LoRa 天线；D13 移动站天线内置。"
+msgstr ""
+"LoRa antennas used by the D20 rover and the D13 base station; the D13 rover "
+"antenna is built-in."
+
+#: ../../source/rtk/differential-links/lora.md:14
+msgid "基站供电设备，例如充电宝或 5 V ±0.5 V 电源。"
+msgstr ""
+"Base station power supply equipment, such as a power bank or a 5 V ±0.5 V "
+"power supply."
+
+#: ../../source/rtk/differential-links/lora.md:15
+msgid "用于接收移动站串口数据的飞控、主控或 PC。"
+msgstr ""
+"For receiving serial data from the rover, the flight controller, main "
+"controller, or PC."
+
+#: ../../source/rtk/differential-links/lora.md:17
+msgid "基站前提"
+msgstr "Base station requirements"
+
+#: ../../source/rtk/differential-links/lora.md:19
+msgid ""
+"专用 D13 LoRa 基站硬件随套件提供，不单独销售，也不作为移动站使用。基站和移动"
+"站出厂默认配对，上电自动连接。开始连接移动站前，先完成[LoRa 基站架设](d13-"
+"base-station.md)。"
+msgstr ""
+"The dedicated D13 LoRa base station hardware is provided with the kit, not "
+"sold separately, and is not used as a rover. The base station and rover are "
+"paired by default at the factory and automatically connect when powered on. "
+"Before starting to connect the rover, first complete the [Setting Up the "
+"LoRa Base Station](d13-base-station.md)."
+
+#: ../../source/rtk/differential-links/lora.md:22
+msgid ""
+"开始前确认 基站已经稳定架设并保持静止；同一区域只开启一个基站；移动站与基站使"
+"用套件内的出厂配对组合。"
+msgstr ""
+"Before starting, confirm that the base station has been stably set up and "
+"remains stationary; only one base station should be activated in the same "
+"area; the rover and base station should use the factory-paired combination "
+"from the kit."
+
+#: ../../source/rtk/differential-links/lora.md:25
+msgid "移动站连接"
+msgstr "Mobile site connection"
+
+#: ../../source/rtk/differential-links/lora.md:27
+msgid ""
+"使用 D20 移动站时，将 LoRa 天线安装到 SMA 接口；D13 移动站使用内置 LoRa 天"
+"线。"
+msgstr ""
+"When using the D20 rover, install the LoRa antenna on the SMA interface; the "
+"D13 rover uses a built-in LoRa antenna."
+
+#: ../../source/rtk/differential-links/lora.md:28
+msgid ""
+"按[D20 接口](../operation/d20-wiring.md)或[D13 接口](../operation/d13-wiring."
+"md)连接移动站供电和 UART。"
+msgstr ""
+"Connect the rover power supply and UART according to the [D20 interface](../"
+"operation/d20-wiring.md) or [D13 interface](../operation/d13-wiring.md)."
+
+#: ../../source/rtk/differential-links/lora.md:29
+msgid "确认 D13 基站已上电并保持静止。"
+msgstr ""
+"Confirm that the D13 base station is powered on and remains stationary."
+
+#: ../../source/rtk/differential-links/lora.md:30
+msgid "确认移动站与基站之间尽量无遮挡或弱遮挡。"
+msgstr ""
+"Ensure that there is minimal or weak obstruction between the rover and the "
+"base station."
+
+#: ../../source/rtk/differential-links/lora.md:31
+msgid "在上位机或目标设备中确认移动站持续输出与固件匹配的定位数据。"
+msgstr ""
+"Confirm in the host PC or target device that the rover continuously outputs "
+"positioning data that matches the firmware."
+
+#: ../../source/rtk/differential-links/lora.md:32
+msgid "等待移动站自动接收差分数据并进入固定解。"
+msgstr ""
+"Wait for the rover to automatically receive correction data and enter a "
+"fixed solution."
+
+#: ../../source/rtk/differential-links/lora.md:34
+msgid "状态验证"
+msgstr "Status Verification"
+
+#: ../../source/rtk/differential-links/lora.md:36
+msgid ""
+"按[RTK 状态与固定解验证](../operation/rtk-fixed-validation.md)检查移动站的定"
+"位输出和解状态。"
+msgstr ""
+"Follow [Checking RTK Status and the Fixed Solution](../operation/rtk-fixed-"
+"validation.md) to verify rover output and solution status."
+
+#: ../../source/rtk/differential-links/lora.md:38
+msgid ""
+"若固定解不稳定，优先检查基站是否移动、移动站天线、基站供电、LoRa 链路遮挡和天"
+"空视野。"
+msgstr ""
+"If the fixed solution is unstable, first check whether the base station is "
+"moving, the rover antenna, the base station power supply, LoRa link "
+"blockage, and the sky view."
+
+#: ../../source/rtk/differential-links/lora.md:40
+msgid "LoRa 差分链路完成判据"
+msgstr "LoRa correction link success criteria"
+
+#: ../../source/rtk/differential-links/lora.md:43
+msgid "移动站定位数据持续输出，并在开阔环境进入 **RTK 固定解**。"
+msgstr ""
+"The rover outputs positioning data continuously and reaches an **RTK fixed "
+"solution** with an open sky view."

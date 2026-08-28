@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/integrations/ardupilot.md:1
+msgid "无人机应用 - ArduPilot"
+msgstr "UAV Integration - ArduPilot"
+
+#: ../../source/rtk/integrations/ardupilot.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/integrations/ardupilot.md:6
+msgid ""
+"将 **D20** 接入 ArduPilot 飞控，并在地面站中持续查看 GPS 与 RTK 状态。常规使"
+"用无人机版固件，默认输出 **10 Hz UBX** 定位数据。"
+msgstr ""
+"Connect the **D20** to the ArduPilot flight controller, and continuously "
+"monitor the GPS and RTK status in the ground station. Use the standard drone "
+"firmware, which outputs **10 Hz UBX** positioning data by default."
+
+#: ../../source/rtk/integrations/ardupilot.md:9
+msgid ""
+"根据现场条件选择 4G 或 LoRa 差分链路。固件选择见[固件与输出协议选择](../"
+"operation/firmware-output.md)，完整 Pin 定义见[D20 接口与接线](../operation/"
+"d20-wiring.md)。"
+msgstr ""
+"Choose a 4G or LoRa correction link for the site. See [Selecting Firmware "
+"and Output Protocol](../operation/firmware-output.md) and [D20 Interfaces "
+"and Wiring](../operation/d20-wiring.md)."
+
+#: ../../source/rtk/integrations/ardupilot.md:11
+msgid "硬件连接"
+msgstr "Hardware connection"
+
+#: ../../source/rtk/integrations/ardupilot.md:14
+msgid ""
+"先核对 D20 8-pin 线束，再连接飞控电源 保持设备和飞控断电，并按[完整 8-pin 定"
+"义](../operation/d20-wiring.md)逐线核对。D20 供电为 5 V ±0.5 V，UART/PPS I/O "
+"为 3.3 V；反接电源或把 5 V 接入信号线可能损坏设备。"
+msgstr ""
+"Check the D20 8-pin harness before connecting flight-controller power. Keep "
+"both devices powered off and verify every wire against the [complete 8-pin "
+"pinout](../operation/d20-wiring.md). Supply 5 V ±0.5 V; UART/PPS I/O is 3.3 "
+"V. Reversed supply polarity or 5 V on a signal pin may damage the device."
+
+#: ../../source/rtk/integrations/ardupilot.md:17
+msgid "将 D20 安装在无人机顶部、天空视野开阔的位置。"
+msgstr ""
+"Install the D20 on the top of the drone, in a position with an unobstructed "
+"view of the sky."
+
+#: ../../source/rtk/integrations/ardupilot.md:18
+msgid "将通信天线固定牢靠，避开桨叶、碳板、大电流线缆和强干扰源。"
+msgstr ""
+"Secure the communication antenna firmly, avoiding blades, carbon plates, "
+"high-current cables, and strong sources of interference."
+
+#: ../../source/rtk/integrations/ardupilot.md:19
+msgid "D20 TX 接飞控 GPS/UART RX，D20 RX 接飞控 GPS/UART TX。"
+msgstr ""
+"Connect D20 TX to the flight controller GPS/UART RX, and D20 RX to the "
+"flight controller GPS/UART TX."
+
+#: ../../source/rtk/integrations/ardupilot.md:20
+msgid "D20 GND 与飞控 GND 共地。"
+msgstr "D20 GND shares a ground with the flight controller GND."
+
+#: ../../source/rtk/integrations/ardupilot.md:22
+msgid ""
+"若飞控提供明确 Pin 定义的标准 6-pin GPS/UART 接口，可以使用配套的 D20 8-pin "
+"转飞控 6-pin 转接线。连接前必须同时核对转接线两端 Pin 顺序、D20 8-pin 定义和"
+"飞控接口定义；接口外形匹配不代表线序一定匹配。"
+msgstr ""
+"If the flight controller has a clearly defined standard 6-pin GPS/UART port, "
+"use the supplied D20 8-pin-to-6-pin adapter cable. Before connecting, verify "
+"the pin order at both ends, the D20 8-pin pinout, and the flight-controller "
+"port definition. Matching connector shapes do not guarantee matching pin "
+"assignments."
+
+#: ../../source/rtk/integrations/ardupilot.md:24
+msgid "飞控侧配置"
+msgstr "Flight controller configuration"
+
+#: ../../source/rtk/integrations/ardupilot.md:26
+msgid "飞控侧应启用实际连接 D20 的 GPS/UART 端口，并按以下边界配置："
+msgstr ""
+"The flight control side should enable the GPS/UART port actually connected "
+"to D20 and configure it according to the following boundaries:"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "要求"
+msgstr "Requirement"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "串口用途"
+msgstr "Serial port use"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "GPS"
+msgstr "GPS"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "波特率"
+msgstr "Baud rate"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "115200 bps"
+msgstr "115200 bps"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "输入协议"
+msgstr "Input Protocol"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "UBX"
+msgstr "UBX"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "定位更新率"
+msgstr "Location update rate"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "默认 10 Hz"
+msgstr "Default 10 Hz"
+
+#: ../../source/rtk/integrations/ardupilot.md:35
+msgid ""
+"不同飞控硬件、ArduPilot 版本和端口编号对应的参数名称可能不同，应以实际飞控文"
+"档和地面站界面为准。"
+msgstr ""
+"The parameter names corresponding to different flight control hardware, "
+"ArduPilot versions, and port numbers may vary, and should be based on the "
+"actual flight control documentation and ground station interface."
+
+#: ../../source/rtk/integrations/ardupilot.md:37
+msgid "CUAV 7-Nano 配置示例"
+msgstr "CUAV 7-Nano Configuration Example"
+
+#: ../../source/rtk/integrations/ardupilot.md:39
+msgid ""
+"以下界面来自 CUAV 7-Nano、ArduCopter V4.7.0-dev 和 Mission Planner 1.3.83，仅"
+"用于说明一套具体接入方式。其他飞控或固件版本的串口编号、参数名称和可选值可能"
+"不同，配置前必须先核对对应版本的飞控文档。"
+msgstr ""
+"The following interface is from CUAV 7-Nano, ArduCopter V4.7.0-dev, and "
+"Mission Planner 1.3.83, and is only used to illustrate a specific connection "
+"method. The serial port numbers, parameter names, and optional values of "
+"other flight controllers or firmware versions may differ, and the "
+"corresponding flight controller documentation must be checked before "
+"configuration."
+
+#: ../../source/rtk/integrations/ardupilot.md:41
+msgid "接线示例"
+msgstr "Wiring Example"
+
+#: ../../source/rtk/integrations/ardupilot.md:43
+msgid "![D20 接入 CUAV 7-Nano GPS 接口示意图](../images/ardupilot-serial.png)"
+msgstr ""
+"![D20 Connection to CUAV 7-Nano GPS Interface Diagram](../images/ardupilot-"
+"serial.png)"
+
+#: ../../source/rtk/integrations/ardupilot.md:43
+msgid "D20 接入 CUAV 7-Nano GPS 接口示意图"
+msgstr "D20 Connection Diagram to CUAV 7-Nano GPS Interface"
+
+#: ../../source/rtk/integrations/ardupilot.md:45
+msgid ""
+"图中的彩色引导线只用于表示信号对应关系，不代表交付线束颜色。连接时仍须以 D20 "
+"8-pin Pin 顺序、转接线功能标签和飞控接口定义为准。"
+msgstr ""
+"The colored guide lines in the diagram are only used to indicate signal "
+"correspondences and do not represent the colors of the delivered wiring "
+"harness. When connecting, you must still follow the D20 8-pin pin sequence, "
+"the adapter cable function labels, and the flight control interface "
+"definitions."
+
+#: ../../source/rtk/integrations/ardupilot.md:47
+msgid "参数示例"
+msgstr "Parameter Example"
+
+#: ../../source/rtk/integrations/ardupilot.md:49
+msgid ""
+"本示例使用 CUAV 7-Nano 的主 GPS 接口，对应 `SERIAL3`。参数值应按实际端口和飞"
+"控版本核对："
+msgstr ""
+"This example uses the main GPS interface of the CUAV 7-Nano, corresponding "
+"to `SERIAL3`. The parameter values should be checked according to the actual "
+"port and flight controller version:"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "参数"
+msgstr "Parameter"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "示例值"
+msgstr "Example value"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "作用"
+msgstr "Function"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`SERIAL3_PROTOCOL`"
+msgstr "`SERIAL3_PROTOCOL`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`5`"
+msgstr "`5`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "将对应串口配置为 GPS"
+msgstr "Configure the corresponding serial port as GPS"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`SERIAL3_BAUD`"
+msgstr "`SERIAL3_BAUD`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`115`"
+msgstr "`115`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "ArduPilot 参数值 `115` 对应 115200 bps"
+msgstr "The ArduPilot parameter value `115` corresponds to 115200 bps"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`GPS_AUTO_CONFIG`"
+msgstr "`GPS_AUTO_CONFIG`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`0`"
+msgstr "`0`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "关闭飞控对 GPS 的自动配置"
+msgstr "Disable automatic GPS configuration in the flight controller"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`GPS_AUTO_SWITCH`"
+msgstr "`GPS_AUTO_SWITCH`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "单 GPS 场景固定使用主 GPS；多 GPS 场景按实际需求配置"
+msgstr ""
+"In a single GPS scenario, use the main GPS exclusively; in multiple GPS "
+"scenarios, configure according to actual needs."
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`GPS1_TYPE`"
+msgstr "`GPS1_TYPE`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`2`"
+msgstr "`2`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "将 GPS1 输入类型设置为 u-blox/UBX"
+msgstr "Set GPS1 input type to u-blox/UBX"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`GPS1_RATE_MS`"
+msgstr "`GPS1_RATE_MS`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "`100`"
+msgstr "`100`"
+
+#: ../../source/rtk/integrations/ardupilot.md:13
+msgid "将 GPS1 更新周期设置为 100 ms，即 10 Hz"
+msgstr "Set the GPS1 update period to 100 ms, that is, 10 Hz"
+
+#: ../../source/rtk/integrations/ardupilot.md:60
+msgid ""
+"![Mission Planner GPS 通用参数示例](../images/mission-planner-gps-settings."
+"png)"
+msgstr ""
+"![Mission Planner GPS General Parameter Example](../images/mission-planner-"
+"gps-settings.png)"
+
+#: ../../source/rtk/integrations/ardupilot.md:60
+msgid "Mission Planner GPS 通用参数示例"
+msgstr "Mission Planner GPS General Parameter Example"
+
+#: ../../source/rtk/integrations/ardupilot.md:62
+msgid ""
+"![Mission Planner GPS1 类型与更新率示例](../images/mission-planner-gps1.png)"
+msgstr ""
+"![Mission Planner GPS1 Type and Update Rate Example](../images/mission-"
+"planner-gps1.png)"
+
+#: ../../source/rtk/integrations/ardupilot.md:62
+msgid "Mission Planner GPS1 类型与更新率示例"
+msgstr "Mission Planner GPS1 Type and Update Rate Example"
+
+#: ../../source/rtk/integrations/ardupilot.md:64
+msgid "验证"
+msgstr "Verify"
+
+#: ../../source/rtk/integrations/ardupilot.md:66
+msgid "确认飞控和地面站能够识别 GPS，定位数据持续更新。"
+msgstr ""
+"Verify that the flight controller and ground station recognize the GPS and "
+"update positioning data continuously."
+
+#: ../../source/rtk/integrations/ardupilot.md:67
+msgid "在开阔环境确认进入 RTK 固定解。"
+msgstr "Verify an RTK fixed solution with an open sky view."
+
+#: ../../source/rtk/integrations/ardupilot.md:68
+msgid "解锁飞行前确认定位稳定、无异常跳变。"
+msgstr "Before arming, verify stable positioning with no abnormal jumps."
+
+#: ../../source/rtk/integrations/ardupilot.md:70
+msgid "接入完成判据"
+msgstr "Integration success criteria"
+
+#: ../../source/rtk/integrations/ardupilot.md:73
+msgid "飞控持续识别 GPS，开阔环境进入 **RTK 固定解**，且解锁飞行前状态稳定。"
+msgstr ""
+"The flight controller continuously recognizes the GPS, reaches an **RTK "
+"fixed solution** with an open sky view, and remains stable before arming."
+
+#: ../../source/rtk/integrations/ardupilot.md:76
+msgid ""
+"若飞控无法识别 D20，先检查无人机版固件、115200 bps 波特率、3.3 V UART 电平兼"
+"容性和 TX/RX 接线。有定位输出但无法进入固定解时，按[RTK 状态与固定解验证](../"
+"operation/rtk-fixed-validation.md)检查差分配置和现场条件。"
+msgstr ""
+"If the flight controller cannot recognize D20, first check the drone's "
+"firmware, 115200 bps baud rate, 3.3 V UART level compatibility, and TX/RX "
+"wiring. If there is positioning output but it cannot achieve a fixed "
+"solution, follow [Checking RTK Status and the Fixed Solution](../operation/"
+"rtk-fixed-validation.md) to check the correction setup and field conditions."
+
+#~ msgid ""
+#~ "名称说明 APM 是历史上常见的硬件或项目称呼；本文统一使用当前软件项目名称 "
+#~ "**ArduPilot**。"
+#~ msgstr ""
+#~ "Name Explanation APM is a common historical hardware or project name; "
+#~ "this article uniformly uses the current software project name "
+#~ "**ArduPilot**."
+
+#~ msgid "固件版本"
+#~ msgstr "Firmware Version"
+
+#~ msgid "D20 固件"
+#~ msgstr "D20 Firmware"
+
+#~ msgid "无人机版固件"
+#~ msgstr "UAV Firmware"
+
+#~ msgid "主要输出协议"
+#~ msgstr "Main Output Protocol"
+
+#~ msgid "默认 10 Hz UBX"
+#~ msgstr "Default 10 Hz UBX"
+
+#~ msgid "差分链路"
+#~ msgstr "Correction link"
+
+#~ msgid "按现场条件选择 4G 版本或 LoRa 版本"
+#~ msgstr ""
+#~ "Choose the 4G version or the LoRa version according to the on-site "
+#~ "conditions"
+
+#~ msgid ""
+#~ "D20 供电为 5 V ±0.5 V，UART IO 电平为 3.3 V。连接前确认飞控端口的供电能力"
+#~ "和 UART 电平兼容。"
+#~ msgstr ""
+#~ "The D20 is powered by 5 V ±0.5 V, and the UART IO level is 3.3 V. Confirm "
+#~ "the power supply capability and UART level compatibility of the flight "
+#~ "controller port before connecting."
+
+#~ msgid "确认卫星数、经纬度、高程和速度持续更新。"
+#~ msgstr ""
+#~ "Confirm that the number of satellites, latitude and longitude, altitude, "
+#~ "and speed are continuously updated."

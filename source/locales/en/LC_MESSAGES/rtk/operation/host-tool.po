@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/operation/host-tool.md:1
+msgid "上位机连接与串口调试"
+msgstr "Host PC Connection and Serial Debugging"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/operation/host-tool.md:6
+msgid ""
+"完成 D20、D13 的通用 UART 连接，并使用 **NavStarTool、串口控制台或 Linux 命令"
+"**确认定位数据持续输出。接线前先确认[D20 接口](d20-wiring.md)或[D13 接口]"
+"(d13-wiring.md)。"
+msgstr ""
+"Complete the universal UART connection for D20 and D13, and use "
+"**NavStarTool, serial console, or Linux commands** to verify continuous "
+"output of positioning data. Before wiring, first confirm the [D20 interface]"
+"(d20-wiring.md) or [D13 interface](d13-wiring.md)."
+
+#: ../../source/rtk/operation/host-tool.md:9
+msgid "串口参数"
+msgstr "Serial port parameters"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "项目"
+msgstr "Item"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "默认值"
+msgstr "Default value"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "波特率"
+msgstr "Baud rate"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "115200 bps"
+msgstr "115200 bps"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "数据位"
+msgstr "Data bit"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "8"
+msgstr "8"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "停止位"
+msgstr "Stop bit"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "1"
+msgstr "1"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "校验"
+msgstr "Verification"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "None"
+msgstr "None"
+
+#: ../../source/rtk/operation/host-tool.md:3
+msgid "流控"
+msgstr "Flow control"
+
+#: ../../source/rtk/operation/host-tool.md:19
+msgid ""
+"D20、D13 均标配 USB 转 UART 转接器，转接器与设备外部 UART 均使用 3.3 V I/O 电"
+"平。若改用目标设备串口，也必须兼容 3.3 V UART I/O，且不能使用 RS232 电气接"
+"口。"
+msgstr ""
+"Every D20 and D13 product includes a USB-to-UART adapter. Both the adapter "
+"and the device UART use 3.3 V I/O. Any alternative target-device serial port "
+"must also support 3.3 V UART I/O; do not use an RS232 electrical interface."
+
+#: ../../source/rtk/operation/host-tool.md:22
+msgid "连接 NavStarTool"
+msgstr "Connect NavStarTool"
+
+#: ../../source/rtk/operation/host-tool.md:25
+#, python-brace-format
+msgid ""
+"获取 NavStarTool 尚未安装时，前往{ref}`软件工具下载 <software-tools>`获取 "
+"NavStarTool，再返回本节完成连接。"
+msgstr ""
+"If NavStarTool is not installed, go to {ref}`Software Tools Download "
+"<software-tools>` to get NavStarTool, then return to this section to "
+"complete the connection."
+
+#: ../../source/rtk/operation/host-tool.md:28
+msgid "完成供电、TX/RX 交叉连接和共地。"
+msgstr "Complete power supply, TX/RX cross-connection, and common ground."
+
+#: ../../source/rtk/operation/host-tool.md:29
+msgid "打开 NavStarTool，选择设备对应串口。"
+msgstr ""
+"Open NavStarTool and select the serial port corresponding to the device."
+
+#: ../../source/rtk/operation/host-tool.md:30
+msgid "波特率选择`115200`，点击连接。"
+msgstr "Select the baud rate `115200` and click connect."
+
+#: ../../source/rtk/operation/host-tool.md:31
+msgid "确认卫星数、经纬高、轨迹和原始数据持续刷新。"
+msgstr ""
+"Confirm the number of satellites, latitude, longitude, altitude, trajectory, "
+"and continuous refresh of raw data."
+
+#: ../../source/rtk/operation/host-tool.md:33
+msgid "![NavStarTool主界面](../images/navstar-main.png)"
+msgstr "![NavStarTool Main Interface](../images/navstar-main.png)"
+
+#: ../../source/rtk/operation/host-tool.md:33
+msgid "NavStarTool主界面"
+msgstr "NavStarTool Main Interface"
+
+#: ../../source/rtk/operation/host-tool.md:35
+msgid ""
+"使用星空图查看卫星分布、CN0 窗口查看信号强度、轨迹图查看定位变化、NMEA 信息窗"
+"口检查输出。UBX 输出使用目标飞控、地面站或其他兼容工具验证。"
+msgstr ""
+"Use the sky plot for satellite distribution, the CN0 window for signal "
+"strength, the trajectory plot for position changes, and the NMEA window for "
+"output. Verify UBX output with the target flight controller, ground station, "
+"or another compatible tool."
+
+#: ../../source/rtk/operation/host-tool.md:37
+msgid "串口控制台"
+msgstr "Serial Console"
+
+#: ../../source/rtk/operation/host-tool.md:39
+msgid "可通过`Receiver -> Console`打开控制台。没有持续数据时，依次检查："
+msgstr ""
+"You can open the console through `Receiver -> Console`. When there is no "
+"continuous data, check the following in order:"
+
+#: ../../source/rtk/operation/host-tool.md:41
+msgid "串口号和波特率。"
+msgstr "Serial port number and baud rate."
+
+#: ../../source/rtk/operation/host-tool.md:42
+msgid "TX/RX 是否交叉连接。"
+msgstr "Verify that TX and RX are crossed."
+
+#: ../../source/rtk/operation/host-tool.md:43
+msgid "设备和调试器是否共地。"
+msgstr "Are the device and the debugger sharing the same ground?"
+
+#: ../../source/rtk/operation/host-tool.md:44
+msgid "供电电压和极性。"
+msgstr "Power supply voltage and polarity."
+
+#: ../../source/rtk/operation/host-tool.md:45
+msgid "当前固件是否输出预期协议。"
+msgstr "Does the current firmware output the expected protocol?"
+
+#: ../../source/rtk/operation/host-tool.md:47
+msgid "Linux 下确认串口"
+msgstr "Confirming the serial port in Linux"
+
+#: ../../source/rtk/operation/host-tool.md:49
+msgid "连接产品标配的 USB 转 UART 转接器后，可使用以下命令确认设备节点："
+msgstr ""
+"After connecting the supplied USB-to-UART adapter, use the following "
+"commands to identify the device node:"
+
+#: ../../source/rtk/operation/host-tool.md:56
+msgid "例如设备节点为`/dev/ttyUSB0`时："
+msgstr "For example, when the device node is `/dev/ttyUSB0`:"
+
+#: ../../source/rtk/operation/host-tool.md:62
+msgid "出现持续数据表示串口链路已建立；协议含义和刷新率由出厂固件决定。"
+msgstr ""
+"Continuous data confirms the serial link. The factory firmware determines "
+"the output protocol and update rate."
+
+#: ../../source/rtk/operation/host-tool.md:64
+msgid "串口连接完成判据"
+msgstr "Completion criteria"
+
+#: ../../source/rtk/operation/host-tool.md:67
+msgid ""
+"目标工具中持续出现定位数据，串口号、`115200` 波特率和输出协议均与当前交付配置"
+"一致。"
+msgstr ""
+"The target tool shows continuous positioning data using the correct serial "
+"port, `115200` baud rate, and delivered output protocol."
+
+#: ../../source/rtk/operation/host-tool.md:70
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/rtk/operation/host-tool.md:72
+msgid ""
+"输出协议不符合目标设备要求：查看[固件与输出协议选择](firmware-output.md)。"
+msgstr ""
+"The output protocol does not meet the requirements of the target device: see "
+"[Selecting Firmware and Output Protocol](firmware-output.md)."
+
+#: ../../source/rtk/operation/host-tool.md:73
+msgid ""
+"已有数据但未进入固定解：查看[RTK状态与固定解验证](rtk-fixed-validation.md)。"
+msgstr ""
+"Data exists but has not reached a fixed solution: see [RTK Status and Fixed "
+"Solution Validation](rtk-fixed-validation.md)."
+
+#: ../../source/rtk/operation/host-tool.md:74
+msgid "串口仍无法连接：进入[故障排查](../troubleshooting/troubleshooting.md)。"
+msgstr ""
+"Serial connection still fails: see [Troubleshooting](../troubleshooting/"
+"troubleshooting.md)."
+
+#~ msgid ""
+#~ "D20、D13 外部 UART IO 电平为 3.3 V。USB 转 UART 模块或目标设备必须兼容 "
+#~ "3.3 V IO 电平，且不能使用 RS232 电气接口。"
+#~ msgstr ""
+#~ "The external UART IO levels of D20 and D13 are 3.3 V. The USB to UART "
+#~ "module or target device must be compatible with 3.3 V IO levels and "
+#~ "cannot use RS232 electrical interfaces."

@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:1
+msgid "HM-D20-LoRa 首次使用"
+msgstr "HM-D20-LoRa Getting Started"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:6
+msgid ""
+"将 **HM-D20-LoRa 套件**从开箱状态运行到移动站首次获得 **RTK 固定解**。套件使"
+"用本地 LoRa 差分链路，不需要 SIM 卡或 CORS 账号。"
+msgstr ""
+"Use this guide to take the **HM-D20-LoRa kit** from unboxing to the rover's "
+"first **RTK fixed solution**. Its local LoRa correction link requires no SIM "
+"card or CORS account."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:9
+msgid "1. 核对套件"
+msgstr "Step 1: Check the kit"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:11
+msgid "产品配备："
+msgstr "Package includes:"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:12
+msgid "HM-D20-LoRa 移动站、8-pin 连接线和外置 LoRa 天线。"
+msgstr "HM-D20-LoRa rover, 8-pin cable, and external LoRa antenna."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:13
+msgid "兼容 3.3 V UART I/O 的 USB 转 UART 转接器。"
+msgstr "USB-to-UART adapter compatible with 3.3 V UART I/O."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:14
+msgid ""
+"配套专用 D13 LoRa 基站硬件、基站外置 LoRa 天线和封装好的 4-pin USB 线缆。"
+msgstr ""
+"Dedicated D13 LoRa base station, external base-station LoRa antenna, and "
+"sealed 4-pin USB cable."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:15
+msgid ""
+"基站安装支架及随套件提供的附件。基站和移动站出厂默认配对，上电自动连接。"
+msgstr ""
+"Base-station mounting hardware and kit accessories. The base station and "
+"rover are factory-paired and connect automatically at power-on."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:17
+msgid "用户自备："
+msgstr "User provides:"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:18
+msgid "移动站和基站所需的 5 V ±0.5 V 电源。"
+msgstr "5 V ±0.5 V power supplies for the rover and base station."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:25
+msgid "HM-D20-LoRa 移动站主要组件与包装"
+msgstr "HM-D20-LoRa rover components and packaging"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:25
+msgid "HM-D20-LoRa 移动站主要组件"
+msgstr "HM-D20-LoRa rover components"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:33
+msgid "配套 D13 LoRa 基站主要组件与包装"
+msgstr "Included D13 LoRa base-station components and packaging"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:33
+msgid "配套 D13 LoRa 基站主要组件"
+msgstr "Included D13 LoRa base-station components"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:37
+msgid ""
+"图片用于辅助识别产品和主要组件；实际交付内容以本页文字清单和随货装箱清单为"
+"准。"
+msgstr ""
+"Images are provided to help identify the product and its major components. "
+"The written list on this page and the packing list supplied with the product "
+"define the actual contents."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:40
+msgid "2. 确认输出固件"
+msgstr "Step 2: Confirm the output firmware"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:42
+msgid "接入 ArduPilot、PX4 等飞控：使用无人机版固件，默认输出 10 Hz UBX。"
+msgstr ""
+"For ArduPilot, PX4, and similar flight controllers, use the UAV firmware; it "
+"defaults to 10 Hz UBX."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:43
+msgid "接入机器人、Viobot2 或 PC：使用地面版固件，默认输出 10 Hz NMEA。"
+msgstr ""
+"For robots, Viobot2, or a PC, use the ground firmware; it defaults to 10 Hz "
+"NMEA."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:45
+msgid "具体选择请查看[固件与输出协议选择](../operation/firmware-output.md)。"
+msgstr ""
+"See [Selecting Firmware and Output Protocol](../operation/firmware-output."
+"md) for details."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:47
+msgid "3. 架设 D13 基站"
+msgstr "Step 3: Set up the D13 base station"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:49
+msgid ""
+"按[LoRa 基站架设](../differential-links/d13-base-station.md)完成安装和供电。"
+"基站上电后保持静止；移动后需要重新上电。"
+msgstr ""
+"Follow [Setting Up the LoRa Base Station](../differential-links/d13-base-"
+"station.md) to install and power the base station. Keep it stationary after "
+"power-on; power-cycle it after any move."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:51
+msgid "4. 安装移动站天线"
+msgstr "Step 4: Install the rover antenna"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:53
+msgid ""
+"断电状态下，将 D20 外置 LoRa 天线连接到 SMA 接口并拧紧。移动站与基站之间尽量"
+"保持无遮挡或弱遮挡。"
+msgstr ""
+"With power off, connect and tighten the D20 external LoRa antenna on the SMA "
+"connector. Keep the path between the rover and base station as unobstructed "
+"as possible."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:55
+msgid "5. 连接移动站"
+msgstr "Step 5: Connect the rover"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:58
+msgid ""
+"接线错误会损坏设备 保持设备断电并按[完整 8-pin 定义](../operation/d20-wiring."
+"md)逐线核对。设备供电为 5 V ±0.5 V，UART/PPS I/O 为 3.3 V；禁止按导线颜色判"
+"断、反接电源或把 5 V 接入信号线。"
+msgstr ""
+"Wiring errors can damage the device. Keep it powered off and verify every "
+"wire against the [complete 8-pin pinout](../operation/d20-wiring.md). Supply "
+"5 V ±0.5 V; UART/PPS I/O is 3.3 V. Do not rely on wire colors, reverse the "
+"supply, or connect 5 V to a signal pin."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:61
+msgid ""
+"按[D20 接口与接线](../operation/d20-wiring.md)完成 5 V ±0.5 V 供电、共地和 "
+"TX/RX 交叉连接，逐线复核后再上电。"
+msgstr ""
+"Following [D20 Interfaces and Wiring](../operation/d20-wiring.md), connect 5 "
+"V ±0.5 V power, common ground, and crossed TX/RX. Verify every pin before "
+"power-on."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:63
+msgid "6. 查看定位输出"
+msgstr "Step 6: Check positioning output"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:65
+#, python-brace-format
+msgid ""
+"串口默认 115200 bps。使用地面版固件时，按{ref}`连接 NavStarTool <connect-"
+"navstartool>`或使用串口终端确认 10 Hz NMEA 持续输出；使用无人机版固件时，通过"
+"目标飞控及其地面站确认 UBX 定位数据和 GPS 状态持续更新。"
+msgstr ""
+"The serial port defaults to 115200 bps. When using the ground firmware, "
+"follow {ref}`Connecting to NavStarTool <connect-navstartool>` or use a "
+"serial terminal to verify continuous 10 Hz NMEA output; when using the UAV "
+"firmware, verify continuous updates of UBX positioning data and GPS status "
+"through the target flight controller and its ground station."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:67
+msgid "7. 验证 RTK 固定解"
+msgstr "Step 7: Verify RTK Fixed Solution"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:69
+msgid ""
+"按[LoRa 移动站连接](../differential-links/lora.md)和[RTK 状态与固定解验证]"
+"(../operation/rtk-fixed-validation.md)检查定位输出和解状态。"
+msgstr ""
+"Follow [Connecting a LoRa Rover](../differential-links/lora.md) and "
+"[Checking RTK Status and the Fixed Solution](../operation/rtk-fixed-"
+"validation.md) to verify positioning output and solution status."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:71
+msgid "首次使用完成判据"
+msgstr "Getting Started success criteria"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:74
+msgid "**基站稳定工作，移动站持续输出定位数据并进入 RTK 固定解。**"
+msgstr ""
+"**The base station remains stable, and the rover outputs positioning data "
+"continuously and reaches an RTK fixed solution.**"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:77
+msgid ""
+"若无法进入固定解，检查基站是否被移动、两端 LoRa 天线、基站供电、链路遮挡和天"
+"空视野，再进入[故障排查](../troubleshooting/troubleshooting.md)。"
+msgstr ""
+"If the receiver does not achieve a fixed solution, check whether the base "
+"station was moved, both LoRa antennas, base-station power, link "
+"obstructions, and sky visibility, then continue to [Troubleshooting](../"
+"troubleshooting/troubleshooting.md)."
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:79
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:81
+msgid "[无人机应用 - ArduPilot](../integrations/ardupilot.md)"
+msgstr "[Drone Applications - ArduPilot](../integrations/ardupilot.md)"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:82
+msgid "[接入 PX4](../integrations/px4.md)"
+msgstr "[Connect to PX4](../integrations/px4.md)"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:83
+msgid "[接入 Viobot2](../integrations/viobot2.md)"
+msgstr "[Integrate Viobot2](../integrations/viobot2.md)"
+
+#: ../../source/rtk/getting-started/hm-d20-lora.md:84
+msgid "[常用参数配置](../maintenance/parameters.md)"
+msgstr "[Common Parameter Configuration](../maintenance/parameters.md)"
+
+#~ msgid "基站上电后保持静止。若移动过基站，需要重新上电。"
+#~ msgstr ""
+#~ "Keep the base station stationary after power-on. If it is moved, power-"
+#~ "cycle it before use."

@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 11:41+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/gnss/g51b/index.rst:12
+msgid "HM-G51B 快速开始"
+msgstr "HM-G51B Getting Started"
+
+#: ../../source/gnss/g51b/index.rst:12
+msgid "G51B:"
+msgstr "G51B:"
+
+#: ../../source/gnss/g51b/index.rst:2
+msgid "G51B"
+msgstr "G51B"
+
+#: ../../source/gnss/g51b/index.rst:4
+msgid ""
+"HM-G51B 是一款紧凑型单频多星座 GNSS 接收机模组，支持 L1 频段信号处理， 可接"
+"收 GPS L1、北斗 B1、Galileo E1、QZSS L1 和 GLONASS G1，适用于 车载 GNSS 导"
+"航、车队管理、资产追踪、AVL/LBS、无人机定位导航和紧凑型定位终端。"
+msgstr ""
+"The HM-G51B is a compact, single-band multi-constellation GNSS receiver "
+"module that supports L1 band signal processing. It can receive GPS L1, "
+"BeiDou B1, Galileo E1, QZSS L1, and GLONASS G1 signals, making it suitable "
+"for vehicle GNSS navigation, fleet management, asset tracking, AVL/LBS, "
+"drone positioning and navigation, and compact positioning terminals."
+
+#: ../../source/gnss/g51b/index.rst:8
+msgid ""
+"产品定位、核心价值和完整选型信息请查看 :doc:`HM-G51B 产品页 <../../products/"
+"models/hm-g51b>`。"
+msgstr ""
+"See the :doc:`HM-G51B product page <../../products/models/hm-g51b>` for its "
+"purpose, key benefits, and complete selection information."
+
+#: ../../source/gnss/g51b/index.rst:10
+msgid ""
+"首次连接、供电和定位检查请进入 :doc:`HM-G51B 快速开始 <getting-started>`。"
+msgstr ""
+"Open :doc:`HM-G51B Getting Started <getting-started>` for initial "
+"connection, power, and positioning checks."

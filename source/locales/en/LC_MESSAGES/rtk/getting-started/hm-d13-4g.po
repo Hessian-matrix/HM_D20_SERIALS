@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:1
+msgid "HM-D13-4G 首次使用"
+msgstr "HM-D13-4G Getting Started"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:6
+msgid ""
+"将 **HM-D13-4G** 从开箱状态运行到首次获得 **RTK 固定解**。开始前准备蜂窝网"
+"络、Nano-SIM 卡和 CORS/NTRIP 账号。"
+msgstr ""
+"Run the **HM-D13-4G** from out-of-the-box state to the first time obtaining "
+"an **RTK fixed solution**. Prepare a cellular network, Nano-SIM card, and "
+"CORS/NTRIP account before starting."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:9
+msgid "1. 核对设备与配件"
+msgstr "Step 1: Check the equipment and accessories"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:10
+msgid "产品标配："
+msgstr "Standard Product Configuration:"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:11
+msgid "HM-D13-4G 移动站。"
+msgstr "HM-D13-4G rover."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:12
+msgid "5-pin GH1.25 mm 接口线缆。"
+msgstr "5-pin GH1.25 mm interface cable."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:13
+msgid "USB-C 配置线。"
+msgstr "USB-C configuration cable."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:14
+msgid "兼容 3.3 V UART I/O 的 USB 转 UART 转接器。"
+msgstr "USB-to-UART adapter compatible with 3.3 V UART I/O."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:16
+msgid "用户自备："
+msgstr "User provides:"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:17
+msgid "5 V ±0.5 V 电源。"
+msgstr "5 V ±0.5 V power supply."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:18
+msgid "有流量的 Nano-SIM 卡。"
+msgstr "Nano-SIM card with data."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:19
+msgid ""
+"CORS/NTRIP 账号和[对应配置工具](https://github.com/myrobotproject/"
+"RTK_Interface-Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar)。"
+msgstr ""
+"CORS/NTRIP account and [corresponding configuration tool](https://github.com/"
+"myrobotproject/RTK_Interface-Description/blob/main/"
+"JR_NTRIP_Config_Tool_V1.2_EN.rar)."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:26
+msgid "HM-D13-4G 主要组件与包装"
+msgstr "HM-D13-4G major components and packaging"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:26
+msgid "HM-D13-4G 主要组件"
+msgstr "HM-D13-4G major components"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:30
+msgid ""
+"图片用于辅助识别产品和主要组件；实际交付内容以本页文字清单和随货装箱清单为"
+"准。"
+msgstr ""
+"Images are provided to help identify the product and its major components. "
+"The written list on this page and the packing list supplied with the product "
+"define the actual contents."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:33
+msgid "2. 确认输出协议"
+msgstr "Step 2: Confirm output protocol"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:35
+msgid ""
+"D13 默认输出 10 Hz NMEA，可按需求配置为 UBX。接入前按目标设备确认交付输出协"
+"议。"
+msgstr ""
+"D13 defaults to 10 Hz NMEA and can be configured for UBX on request. Confirm "
+"the delivered output protocol before connecting the target device."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:37
+msgid "3. 安装 SIM 卡并写入账号"
+msgstr "Step 3: Install the SIM card and enter the account"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:39
+msgid ""
+"HM-D13-4G 的 Nano-SIM 卡槽和 USB-C 配置口位于顶壳内部。断电后打开顶壳，安装 "
+"Nano-SIM 卡，再按[4G/CORS 配置](../differential-links/4g-ntrip.md)写入账号并"
+"确认工具返回成功。"
+msgstr ""
+"The Nano-SIM card slot and USB-C configuration port of HM-D13-4G are located "
+"inside the top cover. After powering off, open the top cover, install the "
+"Nano-SIM card, then follow [4G / CORS Setup](../differential-links/4g-ntrip."
+"md) to enter the account settings and verify a successful response."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:41
+msgid "完成配置后断开 USB-C 线，恢复顶壳并确认装配可靠。"
+msgstr ""
+"After completing the configuration, disconnect the USB-C cable, replace the "
+"top cover, and ensure the assembly is secure."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:43
+msgid "4. 安装移动站"
+msgstr "Step 4: Install rover"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:45
+msgid ""
+"将 D13 设备安装在天空视野开阔的位置，尽量避开金属遮挡、高楼、树木和强电磁干扰"
+"源。"
+msgstr ""
+"Install the D13 receiver with a clear view of the sky. Keep it away from "
+"metal obstructions, tall buildings, trees, and strong electromagnetic "
+"interference where possible."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:47
+msgid "5. 连接供电与 UART"
+msgstr "Step 5: Connect power and UART"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:49
+msgid ""
+"保持设备断电并按[D13 接口与接线](../operation/d13-wiring.md)核对 Pin 1–5。设"
+"备供电为 5 V ±0.5 V，UART/PPS I/O 为 3.3 V；TX/RX 交叉连接并共地，确认信号和"
+"极性后上电。"
+msgstr ""
+"Keep the device powered off and verify Pins 1–5 against [D13 Interfaces and "
+"Wiring](../operation/d13-wiring.md). Supply 5 V ±0.5 V; UART/PPS I/O is 3.3 "
+"V. Cross TX/RX, connect ground, and verify signals and polarity before power-"
+"on."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:51
+msgid "6. 查看定位输出"
+msgstr "Step 6: Check positioning output"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:53
+#, python-brace-format
+msgid ""
+"串口默认 115200 bps。按{ref}`连接 NavStarTool <connect-navstartool>`或使用目"
+"标设备确认当前配置的协议持续输出，常规地面版为 10 Hz NMEA。"
+msgstr ""
+"The serial port defaults to 115200 bps. Follow {ref}`Connecting to "
+"NavStarTool <connect-navstartool>` or use the target device to verify "
+"continuous output in the configured protocol. Standard ground firmware "
+"outputs 10 Hz NMEA."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:55
+msgid "7. 验证 RTK 固定解"
+msgstr "Step 7: Verify RTK Fixed Solution"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:57
+msgid ""
+"按[RTK 状态与固定解验证](../operation/rtk-fixed-validation.md)，通过与当前输"
+"出协议兼容的工具或目标设备检查定位输出和解状态。"
+msgstr ""
+"Follow [Checking RTK Status and the Fixed Solution](../operation/rtk-fixed-"
+"validation.md) and use a tool or target device compatible with the current "
+"output protocol."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:59
+msgid "首次使用完成判据"
+msgstr "Getting Started success criteria"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:62
+msgid "**定位数据持续输出，并进入 RTK 固定解。**"
+msgstr ""
+"**Positioning output remains continuous and reaches an RTK fixed solution.**"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:65
+msgid ""
+"若无法进入固定解，检查 Nano-SIM 卡、网络覆盖、CORS 账号、设备视野和供电，再进"
+"入[故障排查](../troubleshooting/troubleshooting.md)。"
+msgstr ""
+"If you are unable to achieve a fixed solution, check the Nano-SIM card, "
+"network coverage, CORS account, open-sky visibility, and power supply, then "
+"proceed to [Troubleshooting](../troubleshooting/troubleshooting.md)."
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:67
+msgid "下一步"
+msgstr "Next steps"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:69
+msgid "[上位机连接与串口调试](../operation/host-tool.md)"
+msgstr "[Host Connection and Serial Port Debugging](../operation/host-tool.md)"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:70
+msgid "[平台接入](../integrations/index.rst)"
+msgstr "[Platform Integration](../integrations/index.rst)"
+
+#: ../../source/rtk/getting-started/hm-d13-4g.md:71
+msgid "[常用参数配置](../maintenance/parameters.md)"
+msgstr "[Common Parameter Configuration](../maintenance/parameters.md)"
+
+#~ msgid ""
+#~ "**定位数据持续输出，设备显示 RTK 固定解。** 进入固定解即可判断 CORS 差分通"
+#~ "信链路正常。"
+#~ msgstr ""
+#~ "**Positioning data continues to be output, and the device shows an RTK "
+#~ "fixed solution.** Entering a fixed solution allows you to determine that "
+#~ "the CORS correction link is functioning properly."

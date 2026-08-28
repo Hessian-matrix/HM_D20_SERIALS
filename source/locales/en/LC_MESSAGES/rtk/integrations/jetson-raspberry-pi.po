@@ -1,0 +1,446 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:1
+msgid "接入 Jetson / 树莓派"
+msgstr "Integrating with Jetson / Raspberry Pi"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:3
+msgid "本页目标"
+msgstr "Goal of this page"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:6
+msgid ""
+"将 **HM-D20 或 HM-D13** 通过串口接入 Jetson、树莓派等 Linux 主控，并使用 "
+"`D20_ros_driver` 发布 ROS 定位话题。可使用产品标配的 **3.3 V USB 转 UART 转接"
+"器**，也可使用主板的 **3.3 V UART GPIO**。"
+msgstr ""
+"Connect **HM-D20 or HM-D13** to a Linux host such as Jetson or Raspberry Pi "
+"via serial port, and use `D20_ros_driver` to publish ROS localization "
+"topics. Use the supplied **3.3 V USB-to-UART adapter** or the board's **3.3 "
+"V UART GPIO**."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:10
+msgid ""
+"接入前先完成差分链路 **4G 版本**先完成 [4G/CORS 配置](../differential-"
+"links/4g-ntrip.md)；**LoRa 版本**先完成 [基站与移动站连接](../differential-"
+"links/lora.md)。差分链路由设备内部完成，驱动读取设备已输出的定位结果。"
+msgstr ""
+"Before connecting, complete the correction link first. For the **4G "
+"version**, first complete the [4G/CORS configuration](../differential-"
+"links/4g-ntrip.md); for the **LoRa version**, first complete the [base "
+"station and rover connection](../differential-links/lora.md). The correction "
+"link is completed internally by the device, and the driver reads the "
+"positioning results already output by the device."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:13
+msgid ""
+"驱动可解析 NMEA 或 UBX；接线前按[固件与输出协议选择](../operation/firmware-"
+"output.md)确认当前输出。"
+msgstr ""
+"The driver parses NMEA or UBX. Before wiring, confirm the current output in "
+"[Selecting Firmware and Output Protocol](../operation/firmware-output.md)."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:15
+msgid "接线安全边界"
+msgstr "Wiring Safety Boundary"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:17
+msgid ""
+"D20/D13 设备供电为 **5 V ±0.5 V**（4.5–5.5 V）。Jetson/树莓派 GPIO 的 3.3 V "
+"只能作为 UART 信号，不能给设备供电。"
+msgstr ""
+"The D20/D13 device is powered by **5 V ±0.5 V** (4.5–5.5 V). The 3.3 V from "
+"Jetson/Raspberry Pi GPIO can only be used as a UART signal and cannot power "
+"the device."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:18
+msgid ""
+"设备 UART I/O 电平为 **3.3 V**，产品标配的 USB 转 UART 转接器和主板 UART 均须"
+"遵守该电平；使用 5 V UART 电平可能损坏设备，禁止直接连接 RS232。"
+msgstr ""
+"The device UART I/O level is **3.3 V**. Both the supplied USB-to-UART "
+"adapter and the board UART must use this logic level. 5 V UART logic may "
+"damage the device; do not connect an RS232 interface directly."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:19
+msgid "设备与主控共地，设备 TX 接主控 RX，设备 RX 接主控 TX。"
+msgstr ""
+"Connect device ground to host ground, device TX to host RX, and device RX to "
+"host TX."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:20
+msgid ""
+"上电前必须按 Pin 顺序核对线束；不要按颜色、插头外形或其他设备线序接线。电源正"
+"极接到 TX/RX 会损坏设备。"
+msgstr ""
+"Before power-on, verify every wire by pin number. Do not rely on wire color, "
+"connector shape, or another device's pinout. Connecting supply voltage to TX "
+"or RX will damage the receiver."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:22
+msgid ""
+"完整定义请查看：[D20 接口与接线](../operation/d20-wiring.md)、[D13 接口与接"
+"线](../operation/d13-wiring.md)。"
+msgstr ""
+"For the complete definition, see: [D20 Interfaces and Wiring](../operation/"
+"d20-wiring.md), [D13 Interfaces and Wiring](../operation/d13-wiring.md)."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:24
+msgid "D20 接 Jetson / 树莓派"
+msgstr "D20 Connects to Jetson / Raspberry Pi"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:26
+msgid "D20 使用 8-pin GH1.25 mm 接口，ROS 串口接入至少需要："
+msgstr ""
+"The D20 uses an 8-pin GH1.25 mm interface, and at least the following is "
+"required to connect the ROS serial port:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "D20 Pin"
+msgstr "D20 Pin"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "信号"
+msgstr "Signal"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "连接"
+msgstr "Connection"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "1 或 7"
+msgstr "1 or 7"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "GND"
+msgstr "GND"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "主控 GND；Pin 7 是 PPS 配套地，并与 Pin 1 连通"
+msgstr ""
+"Main control GND; Pin 7 is the PPS auxiliary ground and is connected to Pin 1"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "4"
+msgstr "4"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "TX"
+msgstr "TX"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "主控 UART RX"
+msgstr "Master UART RX"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "5"
+msgstr "5"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "RX"
+msgstr "RX"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "主控 UART TX"
+msgstr "Master UART TX"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "6"
+msgstr "6"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "5 V"
+msgstr "5 V"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "独立的 5 V ±0.5 V 电源正极"
+msgstr "Independent 5 V ±0.5 V power supply positive supply lead"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:35
+msgid ""
+"Pin 2/3 为磁力计 SDA/SCL，Pin 8 为 3.3 V PPS，本页的 ROS 定位接入不使用它们。"
+msgstr ""
+"Pins 2/3 are magnetometer SDA/SCL; Pin 8 is 3.3 V PPS. This ROS integration "
+"does not use them."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:37
+msgid "D13 接 Jetson / 树莓派"
+msgstr "D13 Connect Jetson / Raspberry Pi"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:39
+msgid "D13 移动站使用 5-pin GH1.25 mm 接口："
+msgstr "D13 rover uses a 5-pin GH1.25 mm interface:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "D13 Pin"
+msgstr "D13 Pin"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "1"
+msgstr "1"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "主控 GND / 电源负极"
+msgstr "Main Control GND / Power Negative"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "2"
+msgstr "2"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "VCC"
+msgstr "VCC"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "3"
+msgstr "3"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "RXD"
+msgstr "RXD"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "TXD"
+msgstr "TXD"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "PPS"
+msgstr "PPS"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "可选 3.3 V 秒脉冲输出"
+msgstr "Optional 3.3 V pulse-per-second output"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:49
+msgid ""
+"D13 移动站按 Pin 1–5 顺序连接，不能通过颜色判断功能。D13 LoRa 基站使用配套的"
+"封装 4-pin USB 线缆进行供电或连接电脑查看串口数据；ROS 定位主控应连接 D13 "
+"LoRa 移动站。"
+msgstr ""
+"D13 rover should be connected in the order of Pin 1–5, and the function "
+"cannot be determined by color. The D13 LoRa base station uses the matching "
+"sealed 4-pin USB cable for power supply or to connect to a computer to view "
+"serial port data; the ROS positioning master controller should be connected "
+"to the D13 LoRa rover."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:51
+msgid "连接方式 A：标配 USB 转 UART 转接器"
+msgstr "Connection method A: Supplied USB-to-UART adapter"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:53
+msgid "使用产品标配的 USB 转 UART 转接器，按上表交叉连接 TX/RX 并连接 GND。"
+msgstr ""
+"Use the supplied USB-to-UART adapter, cross-connect TX/RX as shown in the "
+"table above, and connect GND."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:54
+msgid ""
+"设备 5 V 由 D20 Pin 6 或 D13 Pin 2 单独提供；转接器的 USB 口用于串口数据时，"
+"不要默认其能提供合规的设备电源。"
+msgstr ""
+"Supply 5 V to the device separately through D20 Pin 6 or D13 Pin 2. When the "
+"adapter's USB port is used for serial data, do not assume that it provides a "
+"compliant device power supply."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:55
+msgid "插入 Jetson/树莓派后查看设备名："
+msgstr "Check the device name after inserting Jetson/Raspberry Pi:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:61
+msgid ""
+"常见设备名为 `/dev/ttyUSB0` 或 `/dev/ttyACM0`。如设备名变化，优先使用 `/dev/"
+"serial/by-id/` 下的稳定路径。"
+msgstr ""
+"Common device names are `/dev/ttyUSB0` or `/dev/ttyACM0`. If the device name "
+"changes, it is preferable to use the stable path under `/dev/serial/by-id/`."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:63
+msgid "连接方式 B：主板 UART 直连"
+msgstr "Connection Method B: Direct UART Connection to Motherboard"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:65
+msgid "查阅所用 Jetson 载板或树莓派型号资料，确认目标 UART 为 3.3 V 电平。"
+msgstr ""
+"Check the documentation for the Jetson carrier board or Raspberry Pi model "
+"being used to confirm that the target UART is at 3.3 V level."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:66
+msgid "设备 TX 接主控 RX，设备 RX 接主控 TX，设备 GND 接主控 GND。"
+msgstr ""
+"Device TX connects to the main control RX, device RX connects to the main "
+"control TX, device GND connects to the main control GND."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:67
+msgid ""
+"设备 5 V 由独立电源输入，不能把 D20 Pin 6 或 D13 Pin 2 接到 3.3 V GPIO。"
+msgstr ""
+"The device's 5 V is powered by an independent power supply, and D20 Pin 6 or "
+"D13 Pin 2 cannot be connected to the 3.3 V GPIO."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:68
+msgid "确认 Linux 已启用 UART，并关闭占用该串口的登录控制台或其他服务。"
+msgstr ""
+"Make sure that UART is enabled on Linux, and disable the login console or "
+"other services that occupy this serial port."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:69
+msgid "查看串口设备名："
+msgstr "Check the serial port device name:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:75
+msgid ""
+"不同 Jetson 载板和树莓派型号的 UART 引脚、设备名和启用方式可能不同，以实际硬"
+"件资料为准。"
+msgstr ""
+"The UART pins, device names, and enabling methods of different Jetson "
+"carrier boards and Raspberry Pi models may vary, so refer to the actual "
+"hardware documentation."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:77
+msgid "安装驱动"
+msgstr "Install driver"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:79
+msgid "驱动源码：<https://github.com/Hessian-matrix/D20_ros_driver>"
+msgstr "Driver source code: <https://github.com/Hessian-matrix/D20_ros_driver>"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:81
+msgid "包名和可执行文件名均为 `d20_ros_driver`。"
+msgstr ""
+"The package name and the executable file name are both `d20_ros_driver`."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:83
+msgid "ROS1 Noetic"
+msgstr "ROS1 Noetic"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:96
+msgid "如果缺少 `empy`，安装 `python3-empy` 后重新编译。"
+msgstr "If `empy` is missing, reinstall after installing `python3-empy`."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:98
+msgid "ROS2"
+msgstr "ROS2"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:111
+msgid "配置串口"
+msgstr "Configure serial port"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:113
+msgid "复制仓库中的 `config/config.yaml`，按实际产品和串口修改："
+msgstr ""
+"Copy `config/config.yaml` from the repository and modify it according to the "
+"actual product and serial port:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:125
+msgid ""
+"`sku` 填写 `D20` 或 `D13`，`serial_port` 填写 Jetson/树莓派实际识别到的路径。"
+msgstr ""
+"`sku` should be filled in with `D20` or `D13`, and `serial_port` should be "
+"filled in with the path actually recognized by Jetson/Raspberry Pi."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:127
+msgid "话题与验证"
+msgstr "Topics and Verification"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "话题"
+msgstr "Topic"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "消息类型"
+msgstr "Message Type"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "内容"
+msgstr "Content"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "`/d20_rtk/navsatfix`"
+msgstr "`/d20_rtk/navsatfix`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "`sensor_msgs/NavSatFix`"
+msgstr "`sensor_msgs/NavSatFix`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "经纬度、椭球高、时间戳、定位状态和协方差"
+msgstr ""
+"Latitude and longitude, ellipsoidal height, timestamp, positioning status, "
+"and covariance"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "`/rtk_nmea`"
+msgstr "`/rtk_nmea`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "`std_msgs/String`"
+msgstr "`std_msgs/String`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:9
+msgid "原始 NMEA；仅在 `publish_nmea: true` 时发布"
+msgstr "Raw NMEA; only published when `publish_nmea: true`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:134
+msgid "状态约定：`-1` 无定位，`0` 普通定位，`1` RTK 浮点解，`2` RTK 固定解。"
+msgstr ""
+"Status Convention: `-1` No positioning, `0` Normal positioning, `1` RTK "
+"Float solution, `2` RTK Fixed solution."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:136
+msgid "ROS1："
+msgstr "ROS1:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:144
+msgid "ROS2："
+msgstr "ROS2:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:152
+msgid "接入完成判据"
+msgstr "Integration success criteria"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:155
+msgid ""
+"定位话题持续发布，并能被驱动按当前输出协议解析；开阔环境进入固定解时，"
+"`NavSatFix.status.status` 为 `2`。"
+msgstr ""
+"The driver publishes the positioning topic continuously and parses the "
+"current output protocol. When the receiver reaches a fixed solution with an "
+"open sky view, `NavSatFix.status.status` is `2`."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:158
+msgid ""
+"设备未固定时，先按[RTK 状态与固定解验证](../operation/rtk-fixed-validation."
+"md)排查差分链路和卫星环境。"
+msgstr ""
+"When the equipment is not fixed, first check the correction link and "
+"satellite environment according to [RTK Status and Fixed Solution Validation]"
+"(../operation/rtk-fixed-validation.md)."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:160
+msgid "Viobot2 的专用流程请查看[接入 Viobot2](viobot2.md)。"
+msgstr ""
+"For the dedicated process of Viobot2, see [Access Viobot2](viobot2.md)."
+
+#~ msgid "连接方式 A：USB-TTL"
+#~ msgstr "Connection Type A: USB-TTL"
+
+#~ msgid "输出协议"
+#~ msgstr "Output protocol"

@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:1
+msgid "RTK 状态与固定解验证"
+msgstr "RTK Status and Fixed-Solution Verification"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:3
+msgid "核心判断方法"
+msgstr "Core Judgment Method"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:6
+msgid ""
+"普通用户无需查看设备内部差分链路状态。先确认**定位数据持续输出**，再在开阔环"
+"境确认进入 **RTK 固定解**；满足这两项即可判断当前差分通信链路正常。"
+msgstr ""
+"Most users do not need to inspect the internal correction-link status. "
+"Verify **continuous positioning output**, then confirm an **RTK fixed "
+"solution** with an open sky view. Together, these results confirm that the "
+"correction link is working."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:9
+msgid ""
+"RTK 首次固定时间为 45 s。验证时应确保天空视野开阔，且差分源和通信链路正常。"
+msgstr ""
+"RTK time to first fix is 45 s. Perform the check with an open sky view and a "
+"working correction source and communication link."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:11
+msgid "验证顺序"
+msgstr "Verification order"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:13
+msgid "**确认定位输出**：数据持续刷新，协议与出厂固件一致。"
+msgstr ""
+"**Verify positioning output**: Data updates continuously and matches the "
+"factory firmware protocol."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:14
+#, python-brace-format
+msgid ""
+"**选择查看工具**：NMEA 按{ref}`连接 NavStarTool <connect-navstartool>`查看；"
+"UBX 使用飞控地面站、遥控器、QGroundControl 或其他兼容设备查看。"
+msgstr ""
+"**Select a monitoring tool**: For NMEA, follow {ref}`Connect NavStarTool "
+"<connect-navstartool>`. For UBX, use a flight-controller ground station, "
+"remote controller, QGroundControl, or another compatible device."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:15
+msgid "**检查卫星状态**：将设备置于开阔环境，确认卫星数和定位数据持续更新。"
+msgstr ""
+"**Check satellite status**: Place the receiver with an open sky view and "
+"verify continuous satellite and positioning updates."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:16
+msgid "**观察解状态**：确认进入 RTK 固定解，部分软件显示为 `Fixed`。"
+msgstr ""
+"**Check the solution status**: Verify an RTK fixed solution; some tools "
+"display `Fixed`."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:17
+msgid "**确认稳定性**：固定解和位置输出没有频繁中断。"
+msgstr ""
+"**Verify stability**: The fixed solution and positioning output do not drop "
+"repeatedly."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:19
+msgid "成功判据"
+msgstr "Success Criteria"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "RTK 链路验证通过"
+msgstr "RTK link verification passed"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:24
+msgid "定位数据持续输出。"
+msgstr "Positioning output remains continuous."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:25
+msgid "开阔环境下显示 **RTK 固定解**，且状态保持稳定。"
+msgstr ""
+"The receiver reports a stable **RTK fixed solution** with an open sky view."
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:28
+msgid "无法进入固定解时"
+msgstr "Unable to reach a steady solution"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "现象"
+msgstr "Phenomenon"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "优先检查"
+msgstr "Priority check"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "无串口数据"
+msgstr "No serial port data"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "供电、共地、TX/RX、波特率和固件输出"
+msgstr "Power supply, common ground, TX/RX, baud rate, and firmware output"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "有数据但无定位"
+msgstr "Has data but no positioning"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "GNSS 天线视野、遮挡和安装位置"
+msgstr "GNSS antenna field of view, obstructions, and installation location"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "4G 差分无效"
+msgstr "4G corrections unavailable"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "SIM 卡、网络覆盖、CORS 账号和 4G 天线"
+msgstr "SIM card, network coverage, CORS account, and 4G antenna"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "LoRa 差分无效"
+msgstr "LoRa corrections unavailable"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "基站供电、基站是否移动、两端天线和链路遮挡"
+msgstr ""
+"Base station power supply, whether the base station is mobile, antennas at "
+"both ends, and link obstruction"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "可进入浮点解但固定解不稳定"
+msgstr "Can reach float solution but fixed-point solution is unstable"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:21
+msgid "天空视野、多路径、差分链路质量和现场干扰"
+msgstr "Sky view, multipath, correction link quality, and on-site interference"
+
+#: ../../source/rtk/operation/rtk-fixed-validation.md:38
+msgid "详细处理流程见[故障排查](../troubleshooting/troubleshooting.md)。"
+msgstr ""
+"For a detailed handling process, see [Troubleshooting](../troubleshooting/"
+"troubleshooting.md)."
+
+#~ msgid "对应工具中的卫星数和定位信息持续更新。"
+#~ msgstr ""
+#~ "The number of satellites and positioning information in the corresponding "
+#~ "tool are continuously updated."
+
+#~ msgid ""
+#~ "进入 RTK 固定解即表明当前差分通信链路正常；无需查找设备内部链路状态字段。"
+#~ msgstr ""
+#~ "Entering RTK fixed solution indicates that the current correction link is "
+#~ "normal; there is no need to check the internal link status field of the "
+#~ "device."
+
+#~ msgid ""
+#~ "RTK 首次固定的标准值为 45 s，实际过程仍会受到天空视野、卫星分布、差分源、"
+#~ "网络或 LoRa 链路、基站状态和现场环境影响。"
+#~ msgstr ""
+#~ "The specified RTK first-fix time is 45 s. Actual time depends on sky "
+#~ "view, satellite geometry, the correction source, network or LoRa link, "
+#~ "base-station status, and site conditions."

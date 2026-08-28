@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Hessian Matrix
+# This file is distributed under the same license as the 黑森矩阵定位产品文档 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"PO-Revision-Date: 2026-08-27 01:00+0800\n"
+"Last-Translator: AI-assisted draft; human review required\n"
+"Language: en\n"
+"Language-Team: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rtk/operation/d13-wiring.md:1
+msgid "D13 接口与接线"
+msgstr "D13 Connector and Wiring"
+
+#: ../../source/rtk/operation/d13-wiring.md:3
+msgid "适用范围"
+msgstr "Scope"
+
+#: ../../source/rtk/operation/d13-wiring.md:6
+msgid ""
+"本页适用于 **HM-D13-4G、HM-D13-LoRa 移动站**和 LoRa 套件中的专用 D13 LoRa 基"
+"站硬件。移动站使用 5-pin GH1.25 mm 接口；基站对外仅使用封装好的 4-pin USB 线"
+"缆。"
+msgstr ""
+"This page applies to **HM-D13-4G, HM-D13-LoRa rovers** and the dedicated D13 "
+"LoRa base station hardware in the LoRa kit. The rover uses a 5-pin GH1.25 mm "
+"interface; the base station externally only uses a sealed 4-pin USB cable."
+
+#: ../../source/rtk/operation/d13-wiring.md:9
+msgid "移动站 5-pin GH1.25 mm 定义"
+msgstr "Rover 5-pin GH1.25 mm Definition"
+
+#: ../../source/rtk/operation/d13-wiring.md:11
+msgid ""
+"D13 移动站使用带防反插结构的 5-pin GH1.25 mm 接口。接线时必须按接口 Pin 1–5 "
+"顺序和信号定义核对，不能通过导线颜色判断功能。"
+msgstr ""
+"The D13 rover uses a 5-pin GH1.25 mm connector with an anti-reverse "
+"structure. When wiring, the Pin 1–5 order and signal definitions must be "
+"checked according to the connector, and the function cannot be determined by "
+"wire color."
+
+#: ../../source/rtk/operation/d13-wiring.md:14
+msgid ""
+"上电前核对 5-pin 定义 保持设备断电，只允许 Pin 2（VCC）连接 5 V ±0.5 V 电源正"
+"极、Pin 1（GND）连接电源负极。若 Pin 顺序与本文定义无法对应，请勿上电，并联系"
+"技术支持确认。"
+msgstr ""
+"Before powering on, check the 5-pin definitions. Keep the device powered "
+"off, and only connect Pin 2 (VCC) to the positive terminal of a 5 V ±0.5 V "
+"power supply, and Pin 1 (GND) to the negative terminal. If the pin sequence "
+"does not match the definitions in this document, do not power on and contact "
+"technical support for confirmation."
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "Pin"
+msgstr "Pin"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "信号"
+msgstr "Signal"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "用途"
+msgstr "Purpose"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "1"
+msgstr "1"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "GND"
+msgstr "GND"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "电源负极和信号参考地"
+msgstr "Power negative and signal reference ground"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "2"
+msgstr "2"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "VCC"
+msgstr "VCC"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "5 V ±0.5 V 电源正极"
+msgstr "5 V ±0.5 V power supply positive supply lead"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "3"
+msgstr "3"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "RXD"
+msgstr "RXD"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "接收外部 3.3 V UART TX；不得接 5 V 串口或电源"
+msgstr ""
+"Receive from external 3.3 V UART TX; do not connect to 5 V UART or power"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "4"
+msgstr "4"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "TXD"
+msgstr "TXD"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "输出 3.3 V UART 数据；连接外部 UART RX"
+msgstr "Output 3.3 V UART data; connect to external UART RX"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "5"
+msgstr "5"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "PPS"
+msgstr "PPS"
+
+#: ../../source/rtk/operation/d13-wiring.md:13
+msgid "3.3 V 秒脉冲输出；不得接 5 V 信号或电源"
+msgstr ""
+"3.3 V pulse-per-second output; do not connect a 5 V signal or power lead"
+
+#: ../../source/rtk/operation/d13-wiring.md:25
+msgid "串口与供电边界"
+msgstr "Serial and power requirements"
+
+#: ../../source/rtk/operation/d13-wiring.md:27
+msgid "必须同时满足"
+msgstr "Must be met simultaneously"
+
+#: ../../source/rtk/operation/d13-wiring.md:30
+msgid "**设备供电**：5 V ±0.5 V（4.5–5.5 V）。"
+msgstr "**Device Power Supply**: 5 V ±0.5 V (4.5–5.5 V)."
+
+#: ../../source/rtk/operation/d13-wiring.md:31
+msgid "**UART I/O 电平**：3.3 V。"
+msgstr "**UART IO level**: 3.3 V."
+
+#: ../../source/rtk/operation/d13-wiring.md:32
+msgid "**PPS I/O 电平**：3.3 V。"
+msgstr "**PPS I/O level**: 3.3 V."
+
+#: ../../source/rtk/operation/d13-wiring.md:33
+msgid "**默认串口**：115200 bps、8 数据位、1 停止位、无校验、无流控。"
+msgstr ""
+"**Default serial port**: 115200 bps, 8 data bits, 1 stop bit, no parity, no "
+"flow control."
+
+#: ../../source/rtk/operation/d13-wiring.md:34
+msgid ""
+"**接口限制**：禁止向 UART 或 PPS 接入 5 V 信号，禁止直接连接 RS232 接口。"
+msgstr ""
+"**Interface restrictions**: Do not apply 5 V to UART or PPS, and do not "
+"connect RS232 directly."
+
+#: ../../source/rtk/operation/d13-wiring.md:38
+msgid "**5 V 供电不等于 5 V 串口电平。**"
+msgstr "**5 V power is not 5 V UART logic.**"
+
+#: ../../source/rtk/operation/d13-wiring.md:40
+msgid ""
+"Pin 2（VCC）的 **5 V** 仅用于设备供电；Pin 3（RXD）、Pin 4（TXD）和 Pin "
+"5（PPS）的 I/O 电平均为 **3.3 V**。禁止使用 5 V UART 转接器或把任何 5 V 信号"
+"接入 RXD、TXD、PPS，否则可能造成设备永久性损坏。请使用标配 USB 转 UART 转接"
+"器，或在接线前确认飞控、主控的 UART/PPS 电平兼容 3.3 V。"
+msgstr ""
+"Pin 2 (VCC, **5 V**) is for device power only. Pin 3 (RXD), Pin 4 (TXD), and "
+"Pin 5 (PPS) all use **3.3 V** I/O. Do not use a 5 V UART adapter or apply "
+"any 5 V signal to RXD, TXD, or PPS; doing so may permanently damage the "
+"device. Use the supplied USB-to-UART adapter, or verify that the flight-"
+"controller or host UART/PPS interface supports 3.3 V logic before wiring."
+
+#: ../../source/rtk/operation/d13-wiring.md:43
+msgid "移动站首次接线"
+msgstr "First wiring of the rover"
+
+#: ../../source/rtk/operation/d13-wiring.md:45
+msgid "设备断电，按 Pin 1–5 顺序和信号定义确认电源电压与极性。"
+msgstr ""
+"Power off the device, and verify the power voltage and polarity according to "
+"the order and signal definitions of Pin 1–5."
+
+#: ../../source/rtk/operation/d13-wiring.md:46
+msgid "Pin 2（VCC）接 5 V，Pin 1（GND）接电源地。"
+msgstr ""
+"Pin 2 (VCC) is connected to 5 V, and Pin 1 (GND) is connected to the power "
+"ground."
+
+#: ../../source/rtk/operation/d13-wiring.md:47
+msgid "Pin 4（TXD）接外部设备 RX，Pin 3（RXD）接外部设备 TX。"
+msgstr ""
+"Pin 4 (TXD) connects to the RX of the external device, and Pin 3 (RXD) "
+"connects to the TX of the external device."
+
+#: ../../source/rtk/operation/d13-wiring.md:48
+msgid ""
+"D13 与标配 USB 转 UART 转接器、飞控或主控共地，并确认对方 UART 为 3.3 V I/O "
+"电平。"
+msgstr ""
+"When using the supplied USB-to-UART adapter, a flight controller, or a host "
+"controller, connect its ground to D13 ground and verify that its UART uses "
+"3.3 V I/O."
+
+#: ../../source/rtk/operation/d13-wiring.md:49
+msgid "需要时间同步时连接 Pin 5（PPS），并确认目标输入兼容 3.3 V。"
+msgstr ""
+"Connect Pin 5 (PPS) for time synchronization and verify that the target "
+"input supports 3.3 V."
+
+#: ../../source/rtk/operation/d13-wiring.md:50
+msgid "确认连接后上电。"
+msgstr "Power on after confirming the connection."
+
+#: ../../source/rtk/operation/d13-wiring.md:52
+msgid "接线完成判据"
+msgstr "Wiring success criteria"
+
+#: ../../source/rtk/operation/d13-wiring.md:55
+msgid "上电后设备持续输出定位数据，供电稳定，线缆和连接器无异常发热或松动。"
+msgstr ""
+"After powering on, the device continuously outputs positioning data, the "
+"power supply is stable, and the cables and connectors show no abnormal "
+"heating or looseness."
+
+#: ../../source/rtk/operation/d13-wiring.md:58
+msgid "专用 D13 LoRa 基站 USB 连接"
+msgstr "Dedicated D13 LoRa base-station USB connection"
+
+#: ../../source/rtk/operation/d13-wiring.md:60
+msgid ""
+"套件基站对外仅使用封装好的 4-pin USB 线缆，不向用户暴露内部接口线。将配套线缆"
+"连接基站后，可以直接插入 USB 电源为基站供电；连接电脑时，除供电外还可进行 "
+"USB 串口通信。"
+msgstr ""
+"The kit base station exposes only its sealed 4-pin USB cable, with no "
+"internal wires accessible to the user. Connect the cable to a USB power "
+"source for power, or to a computer for both power and USB serial "
+"communication."
+
+#: ../../source/rtk/operation/d13-wiring.md:62
+msgid ""
+"基站日常架设只需连接配套 USB 线缆和外置 LoRa 天线。不要拆开线缆、改接内部导线"
+"或使用非配套转接线。"
+msgstr ""
+"Daily setup of the base station only requires connecting the supplied USB "
+"cable and external LoRa antenna. Do not disassemble the cable, reconnect "
+"internal wires, or use non-matching adapter cables."
+
+#: ../../source/rtk/operation/d13-wiring.md:64
+msgid ""
+"连接基站外置 LoRa 天线后再上电。基站上电后保持静止，具体要求见[LoRa 基站架设]"
+"(../differential-links/d13-base-station.md)。"
+msgstr ""
+"Connect the external LoRa antenna to the base station before powering on. "
+"Keep the base station stationary after powering on; for specific "
+"requirements, see [Setting Up the LoRa Base Station](../differential-links/"
+"d13-base-station.md)."
+
+#: ../../source/rtk/operation/d13-wiring.md:66
+msgid "4G 版本维护接口"
+msgstr "4G Version Maintenance Interface"
+
+#: ../../source/rtk/operation/d13-wiring.md:68
+msgid ""
+"HM-D13-4G 的 Nano-SIM 卡槽和 USB-C 配置口位于顶壳内部。安装 SIM 卡或配置 "
+"CORS/NTRIP 账号前应断开外部电源，完成操作后恢复顶壳并确认装配可靠。"
+msgstr ""
+"The Nano-SIM card slot and USB-C configuration port of the HM-D13-4G are "
+"located inside the top cover. The external power should be disconnected "
+"before installing the SIM card or configuring the CORS/NTRIP account. After "
+"completing the operation, restore the top cover and ensure the assembly is "
+"secure."
+
+#~ msgid "D13 接收外部串口数据"
+#~ msgstr "D13 receives external serial port data"
+
+#~ msgid "D13 向外部输出定位数据"
+#~ msgstr "D13 outputs positioning data to the external device"
+
+#~ msgid "秒脉冲输出"
+#~ msgstr "Pulse output per second"

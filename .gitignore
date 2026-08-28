@@ -8,6 +8,7 @@ source/_build/
 .local-server.log
 # Internal product evidence and generated sales materials must stay local.
 Specification/
+ai_doc/
 
 # 2026-08-04: Ignore local Python caches used when previewing documentation.
 .venv/
