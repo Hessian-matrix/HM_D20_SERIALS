@@ -28,6 +28,7 @@ help:
 	@echo "  make i18n-update Update English PO catalogs"
 	@echo "  make i18n-check Validate English translation catalogs"
 	@echo "  make i18n-check-html Validate rendered English contains no Chinese text"
+	@echo "  make i18n-check-switches Validate paired language controls and alternate links"
 	@echo "  make html-zh Build strict Chinese HTML into build/zh-cn/html"
 	@echo "  make html-en Build strict English HTML into build/en/html"
 	@echo "  make bilingual Build and link-check both languages"
@@ -78,6 +79,9 @@ i18n-check:
 i18n-check-html:
 	@$(PYTHON) i18n/check_rendered_english.py "$(BUILDDIR)/en/html"
 
+i18n-check-switches: html-zh html-en
+	@$(PYTHON) i18n/check_language_switches.py "$(BUILDDIR)" "$${READTHEDOCS_VERSION:-latest}"
+
 html-zh:
 	@DOCS_LANGUAGE=zh_CN $(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)/zh-cn" -W --keep-going $(SPHINXOPTS)
 
@@ -90,9 +94,9 @@ linkcheck-zh:
 linkcheck-en:
 	@DOCS_LANGUAGE=en $(SPHINXBUILD) -M linkcheck "$(SOURCEDIR)" "$(BUILDDIR)/en" -W --keep-going $(SPHINXOPTS)
 
-bilingual: i18n-check html-zh html-en i18n-check-html linkcheck-zh linkcheck-en
+bilingual: i18n-check html-zh html-en i18n-check-html i18n-check-switches linkcheck-zh linkcheck-en
 
-.PHONY: help deps dev-deps serve watch serve-zh serve-en watch-zh watch-en gettext i18n-update i18n-check i18n-check-html html-zh html-en linkcheck-zh linkcheck-en bilingual Makefile
+.PHONY: help deps dev-deps serve watch serve-zh serve-en watch-zh watch-en gettext i18n-update i18n-check i18n-check-html i18n-check-switches html-zh html-en linkcheck-zh linkcheck-en bilingual Makefile
 
 # 2026-08-04: 将 html/linkcheck/clean 等目标转发给 Sphinx 的 make-mode。
 %: Makefile

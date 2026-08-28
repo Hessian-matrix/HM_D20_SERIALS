@@ -19,5 +19,8 @@ The public translation workflow is:
 approved terminology, and the English step-heading form required by Sphinx/MyST.
 After building English, `make i18n-check-html` rejects any Chinese text that
 survives in rendered HTML.
+`make i18n-check-switches` validates that every rendered Chinese and English
+page links to its corresponding translation and publishes matching `hreflang`
+metadata. Both checks run as part of `make bilingual`.
 
 Files in this directory are intentionally public-safe. Internal evidence, unreleased product details, customer data, and AI-provider credentials must not be added here.

@@ -9,6 +9,15 @@ from pathlib import Path
 
 
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
+LANGUAGE_SWITCH_RE = re.compile(
+    r'<a\b[^>]*class="[^"]*\bhm-language-switch\b[^"]*"[^>]*>.*?</a>',
+    re.DOTALL,
+)
+
+
+def remove_language_switches(html: str) -> str:
+    """忽略语言控件中的目标语言名称，同时保留原始行号。"""
+    return LANGUAGE_SWITCH_RE.sub(lambda match: "\n" * match.group(0).count("\n"), html)
 
 
 def main() -> int:
@@ -20,7 +29,9 @@ def main() -> int:
 
     errors: list[str] = []
     for html_path in html_files:
-        for line_number, line in enumerate(html_path.read_text(encoding="utf-8").splitlines(), 1):
+        html = html_path.read_text(encoding="utf-8")
+        rendered_content = remove_language_switches(html)
+        for line_number, line in enumerate(rendered_content.splitlines(), 1):
             match = CJK_RE.search(line)
             if match:
                 excerpt = line[max(0, match.start() - 30):match.end() + 50].strip()

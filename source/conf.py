@@ -15,7 +15,7 @@ project = "Hessian Matrix Positioning Documentation" if language == "en" else "�
 author = "Hessian Matrix"
 copyright = "2026, Hessian Matrix"
 version = "2026.08"
-release = "2026.08.0"
+release = "2026.08.1"
 
 # 2026-08-04: 同时支持 RST 目录页和 Markdown 正文页，便于后续迁移现有资料。
 extensions = [
@@ -33,11 +33,18 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 locale_dirs = ["locales/"]
 gettext_compact = False
 
+# 中英文项目共用同一套页面路径；模板据此生成当前页面的对应语言链接。
+html_context = {
+    "hm_docs_base_url": "https://hm-rtk-serials.readthedocs.io",
+    "hm_rtd_version": os.environ.get("READTHEDOCS_VERSION", "latest"),
+}
+
 # 2026-08-11: 使用 Sphinx Book Theme，保持 Read the Docs 页面风格清晰易读。
 html_theme = "sphinx_book_theme"
 html_title = "Hessian Matrix Positioning Documentation" if language == "en" else "黑森矩阵定位产品文档"
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
+html_js_files = ["language-switcher.js"]
 html_show_sourcelink = False
 html_theme_options = {
     "repository_url": "",
@@ -46,6 +53,7 @@ html_theme_options = {
     "use_edit_page_button": False,
     "home_page_in_toc": True,
     "show_navbar_depth": 2,
+    "navbar_persistent": ["language-switcher", "search-button-field"],
 }
 
 latex_engine = "xelatex"
