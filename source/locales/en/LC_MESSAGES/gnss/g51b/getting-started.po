@@ -65,9 +65,8 @@ msgstr ""
 "device's UART serial port."
 
 #: ../../source/gnss/g51b/getting-started.md:18
-#, python-brace-format
-msgid "PC 端 {ref}`NavStarTool <software-tools>` 上位机。"
-msgstr "PC-side {ref}`NavStarTool <software-tools>` host PC."
+msgid "可联网的 PC，以及 [NavStarTool 下载包](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。"
+msgstr "An internet-connected PC and the [NavStarTool download package](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)."
 
 #: ../../source/gnss/g51b/getting-started.md:19
 msgid "能够保证天空视野的安装位置。"
@@ -129,9 +128,8 @@ msgid "连接上位机"
 msgstr "Connect to the host PC"
 
 #: ../../source/gnss/g51b/getting-started.md:37
-#, python-brace-format
-msgid "下载并打开 {ref}`NavStarTool <software-tools>`。"
-msgstr "Download and open {ref}`NavStarTool <software-tools>`."
+msgid "[下载并打开 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。"
+msgstr "[Download and open NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)."
 
 #: ../../source/gnss/g51b/getting-started.md:38
 msgid "选择 G51B 对应的串口号。"

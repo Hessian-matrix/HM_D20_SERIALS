@@ -59,8 +59,8 @@ msgid "产品标配的 USB-C 配置线。"
 msgstr "The product comes standard with a USB-C configuration cable."
 
 #: ../../source/rtk/differential-links/4g-ntrip.md:15
-msgid "HM-D20-4G、HM-D13-4G 共用的 JR_NTRIP_Config_Tool_V1.2。"
-msgstr "JR_NTRIP_Config_Tool_V1.2 shared by HM-D20-4G and HM-D13-4G."
+msgid "HM-D20-4G、HM-D13-4G 共用的 [JR_NTRIP_Config_Tool_V1.2 下载包](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar)。"
+msgstr "The [JR_NTRIP_Config_Tool_V1.2 download package](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar) is shared by HM-D20-4G and HM-D13-4G."
 
 #: ../../source/rtk/differential-links/4g-ntrip.md:16
 msgid "CORS/NTRIP 账号信息，包括服务器地址、端口、挂载点、账号和密码。"

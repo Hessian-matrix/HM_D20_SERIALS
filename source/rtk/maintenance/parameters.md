@@ -3,7 +3,7 @@
 :::{admonition} 本页范围
 :class: page-summary
 
-使用{ref}`NavStarTool <connect-navstartool>`调整**输出频率**和当前固件支持的 **NMEA / UBX 消息项**。完整功能可通过菜单栏 `Help` 查看官方使用说明。
+使用{ref}`NavStarTool <connect-navstartool>`调整**输出频率**和当前固件支持的 **NMEA / UBX 消息项**。尚未安装时可[下载 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。完整功能可通过菜单栏 `Help` 查看官方使用说明。
 :::
 
 :::{important} 修改前先记录当前配置

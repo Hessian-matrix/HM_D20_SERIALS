@@ -22,7 +22,7 @@ D20、D13 均标配 USB 转 UART 转接器，转接器与设备外部 UART 均�
 ## 连接 NavStarTool
 
 :::{tip} 获取 NavStarTool
-尚未安装时，前往{ref}`软件工具下载 <software-tools>`获取 NavStarTool，再返回本节完成连接。
+尚未安装时，可直接[下载 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)，也可前往{ref}`软件工具下载 <software-tools>`查看全部工具，再返回本节完成连接。
 :::
 
 1. 完成供电、TX/RX 交叉连接和共地。

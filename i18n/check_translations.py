@@ -100,6 +100,18 @@ def protected_fragments(text: str, configured_tokens: list[str]) -> set[str]:
     return {fragment for fragment in fragments if fragment}
 
 
+def protected_fragment_is_localized(fragment: str, translation: str) -> bool:
+    """Allow the page-language variant of a downloadable helper script.
+
+    Chinese and English pages intentionally link to the matching localized
+    script (`*_zh.sh` versus `*_en.sh`).  The rest of the path remains
+    protected, so this narrowly scoped exception does not weaken URL checks.
+    """
+    if fragment.endswith("_zh.sh"):
+        return fragment[:-6] + "_en.sh" in translation
+    return False
+
+
 def main() -> int:
     locale_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("source/locales/en/LC_MESSAGES")
     po_files = sorted(locale_dir.rglob("*.po"))
@@ -165,7 +177,7 @@ def main() -> int:
                     errors.append(f"{location}: {description}")
 
             for fragment in protected_fragments(entry.msgid, tokens):
-                if fragment not in translation:
+                if fragment not in translation and not protected_fragment_is_localized(fragment, translation):
                     errors.append(f"{location}: protected fragment changed or missing: {fragment!r}")
 
     for error in errors:

@@ -12,69 +12,72 @@
 
 驱动可解析 NMEA 或 UBX；接线前按[固件与输出协议选择](../operation/firmware-output.md)确认当前输出。
 
-## 接线安全边界
+## 接线安全边界与接入前检查
 
-1. D20/D13 设备供电为 **5 V ±0.5 V**（4.5–5.5 V）。Jetson/树莓派 GPIO 的 3.3 V 只能作为 UART 信号，不能给设备供电。
-2. 设备 UART I/O 电平为 **3.3 V**，产品标配的 USB 转 UART 转接器和主板 UART 均须遵守该电平；使用 5 V UART 电平可能损坏设备，禁止直接连接 RS232。
-3. 设备与主控共地，设备 TX 接主控 RX，设备 RX 接主控 TX。
-4. 上电前必须按 Pin 顺序核对线束；不要按颜色、插头外形或其他设备线序接线。电源正极接到 TX/RX 会损坏设备。
+请先完成以下检查，再给设备上电：
 
-完整定义请查看：[D20 接口与接线](../operation/d20-wiring.md)、[D13 接口与接线](../operation/d13-wiring.md)。
+- **供电：5 V ±0.5 V（4.5–5.5 V）**。主板直连时，使用 Jetson/树莓派 40-pin 的 5 V 电源脚。
+- **信号电平：UART 和 PPS 均为 3.3 V**。主控 GPIO UART 也必须是 3.3 V；禁止使用 5 V UART 或 RS232。
+- **接线：TX/RX 交叉，GND 共地**。必须按 Pin 顺序核对线束，不能按颜色判断；电源正极接入信号脚可能损坏设备。
 
-## D20 接 Jetson / 树莓派
+设备接口定义：[D20 接口与接线](../operation/d20-wiring.md) · [D13 接口与接线](../operation/d13-wiring.md)。
+树莓派 UART 脚位参考 [pinout.xyz UART 定义](https://pinout.xyz/pinout/uart)；Jetson 请查阅与实际型号和载板对应的官方 40-pin 定义。
 
-D20 使用 8-pin GH1.25 mm 接口，ROS 串口接入至少需要：
+:::{admonition} 接入前检查清单
+:class: check-list
 
-| D20 Pin | 信号 | 连接 |
-| --- | --- | --- |
-| 1 或 7 | GND | 主控 GND；Pin 7 是 PPS 配套地，并与 Pin 1 连通 |
-| 4 | TX | 主控 UART RX |
-| 5 | RX | 主控 UART TX |
-| 6 | 5 V | 独立的 5 V ±0.5 V 电源正极 |
+- [ ] 已核对设备型号及对应接口 Pin 定义。
+- [ ] 已核对主控型号、载板型号和 UART pinout。
+- [ ] 已确认 5 V ±0.5 V 供电、3.3 V UART/PPS 电平。
+- [ ] 已确认 TX/RX 交叉、GND 共地，线序而非颜色对应信号。
 
-Pin 2/3 为磁力计 SDA/SCL，Pin 8 为 3.3 V PPS，本页的 ROS 定位接入不使用它们。
+串口权限、系统占用和 GPIO UART 启用由下方平台脚本检查和处理。
+:::
 
-## D13 接 Jetson / 树莓派
+## 硬件接线
 
-D13 移动站使用 5-pin GH1.25 mm 接口：
+### 连接方式 A：主板 UART 直连
 
-| D13 Pin | 信号 | 连接 |
-| --- | --- | --- |
-| 1 | GND | 主控 GND / 电源负极 |
-| 2 | VCC | 独立的 5 V ±0.5 V 电源正极 |
-| 3 | RXD | 主控 UART TX |
-| 4 | TXD | 主控 UART RX |
-| 5 | PPS | 可选 3.3 V 秒脉冲输出 |
+5 V 直接接主控 40-pin 的 5 V 脚，UART 按下表交叉连接。D20 的完整 8-pin 定义、D13 的完整 5-pin 定义请分别查看设备接口页；PPS 不是 ROS 接入必需信号。
 
-D13 移动站按 Pin 1–5 顺序连接，不能通过颜色判断功能。D13 LoRa 基站使用配套的封装 4-pin USB 线缆进行供电或连接电脑查看串口数据；ROS 定位主控应连接 D13 LoRa 移动站。
+| 信号 | D20 设备 Pin | D13 移动站 Pin | 树莓派 40-pin（物理脚位） | Jetson 40-pin（示例） |
+| --- | ---: | ---: | --- | --- |
+| 5 V 供电 | Pin 6 | Pin 2 (VCC) | Pin 2 或 4 | Pin 2 或 4 |
+| GND | Pin 1 或 7 | Pin 1 | Pin 6、9、14、20、25、30、34 或 39 | Pin 6、9、14、20、25、30、34 或 39 |
+| 设备 RX ← 主控 TX | Pin 5 | Pin 3 (RXD) | Pin 8（GPIO14 / TXD） | Pin 8（UART TX）* |
+| 设备 TX → 主控 RX | Pin 4 | Pin 4 (TXD) | Pin 10（GPIO15 / RXD） | Pin 10（UART RX）* |
 
-## 连接方式 A：标配 USB 转 UART 转接器
+Jetson Pin 8/10 仅作 **Jetson Nano 2GB Developer Kit（J6）**和 **Jetson Orin Nano Developer Kit（J12）**官方载板的示例。其他型号、载板或第三方底板必须按实际 pinout 核对，不能直接套用。
 
-1. 使用产品标配的 USB 转 UART 转接器，按上表交叉连接 TX/RX 并连接 GND。
-2. 设备 5 V 由 D20 Pin 6 或 D13 Pin 2 单独提供；转接器的 USB 口用于串口数据时，不要默认其能提供合规的设备电源。
-3. 插入 Jetson/树莓派后查看设备名：
+### 连接方式 B：标配 USB 转 UART 转接器
 
-```bash
-ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null
-```
+使用产品随附的 USB 转 UART 转接器，按设备接口页连接 5 V、GND、TX、RX：
 
-常见设备名为 `/dev/ttyUSB0` 或 `/dev/ttyACM0`。如设备名变化，优先使用 `/dev/serial/by-id/` 下的稳定路径。
+1. 转接器 USB 端插入 Jetson 或树莓派。
+2. 转接器与设备 UART/PPS 均使用 3.3 V 电平；不要使用 5 V UART 转接器或 RS232。
+3. 确认设备供电为 5 V ±0.5 V，TX/RX 交叉且 GND 已连接。
 
-## 连接方式 B：主板 UART 直连
+## 串口检测与数据读取
 
-1. 查阅所用 Jetson 载板或树莓派型号资料，确认目标 UART 为 3.3 V 电平。
-2. 设备 TX 接主控 RX，设备 RX 接主控 TX，设备 GND 接主控 GND。
-3. 设备 5 V 由独立电源输入，不能把 D20 Pin 6 或 D13 Pin 2 接到 3.3 V GPIO。
-4. 确认 Linux 已启用 UART，并关闭占用该串口的登录控制台或其他服务。
-5. 查看串口设备名：
+完成接线后，按连接方式选择检测方法：
 
-```bash
-ls /dev/ttyTHS* /dev/ttyS* /dev/serial* 2>/dev/null
-```
+- **USB 转 UART**：插入前后分别执行 `ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null`，比较列表，新增的设备即为设备串口。
+- **主板 GPIO 直连**：下载并运行对应脚本。脚本会配置 GPIO UART、处理权限和系统占用，并提供串口读取检查。
 
-不同 Jetson 载板和树莓派型号的 UART 引脚、设备名和启用方式可能不同，以实际硬件资料为准。
+中文页面下载：
 
-## 安装驱动
+- [Jetson GPIO UART 配置脚本（中文）](scripts/jetson_gpio_uart_zh.sh)
+- [树莓派 GPIO UART 配置脚本（中文）](scripts/raspberry_pi_gpio_uart_zh.sh)
+
+脚本菜单按 **1 → 2 → 3** 顺序执行：
+
+1. 配置 GPIO 串口（USB 转 UART 已可识别时可跳过）。
+2. 选择已确认的串口路径。
+3. 读取串口数据，确认输出持续且正常。NMEA 可直接阅读；UBX 为二进制数据，终端中可能显示乱码，但持续读到数据即表示链路正常。
+
+不要让多个程序同时打开同一串口。
+
+## 安装驱动模块
 
 驱动源码：<https://github.com/Hessian-matrix/D20_ros_driver>
 
@@ -90,7 +93,6 @@ git clone https://github.com/Hessian-matrix/D20_ros_driver.git
 cd ..
 catkin_make
 source devel/setup.bash
-roslaunch d20_ros_driver d20_ros_driver.launch
 ```
 
 如果缺少 `empy`，安装 `python3-empy` 后重新编译。
@@ -105,12 +107,11 @@ git clone https://github.com/Hessian-matrix/D20_ros_driver.git
 cd ..
 colcon build --packages-select d20_ros_driver
 source install/setup.bash
-ros2 launch d20_ros_driver d20_ros_driver.launch.py
 ```
 
-## 配置串口
+## 配置驱动
 
-复制仓库中的 `config/config.yaml`，按实际产品和串口修改：
+安装完成后、执行 launch 前，必须编辑驱动仓库中的 `src/d20_ros_driver/config/config.yaml`。ROS1 和 ROS2 使用同一份配置，至少确认产品型号和 `serial_port`：
 
 ```yaml
 sku: D20
@@ -123,6 +124,26 @@ publish_nmea: true
 ```
 
 `sku` 填写 `D20` 或 `D13`，`serial_port` 填写 Jetson/树莓派实际识别到的路径。
+
+## 启动与验证
+
+完成配置后再启动节点：
+
+ROS1：
+
+```bash
+source /opt/ros/noetic/setup.bash
+source ~/d20_ros_ws/devel/setup.bash
+roslaunch d20_ros_driver d20_ros_driver.launch
+```
+
+ROS2：
+
+```bash
+source /opt/ros/<ros2-distro>/setup.bash
+source ~/d20_ros_ws/install/setup.bash
+ros2 launch d20_ros_driver d20_ros_driver.launch.py
+```
 
 ## 话题与验证
 
@@ -155,6 +176,6 @@ ros2 topic echo /rtk_nmea
 定位话题持续发布，并能被驱动按当前输出协议解析；开阔环境进入固定解时，`NavSatFix.status.status` 为 `2`。
 :::
 
-设备未固定时，先按[RTK 状态与固定解验证](../operation/rtk-fixed-validation.md)排查差分链路和卫星环境。
+设备在开阔场景，若长时间没有固定解时，先按[RTK 状态与固定解验证](../operation/rtk-fixed-validation.md)排查差分链路和卫星环境。
 
 Viobot2 的专用流程请查看[接入 Viobot2](viobot2.md)。

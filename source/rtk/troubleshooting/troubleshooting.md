@@ -38,7 +38,7 @@ D20 只能使用 5 V ±0.5 V 供电。立即断电并核对[完整 8-pin 线束�
 
 - **SIM 与网络**：确认 SIM 卡已开通数据流量，设备所在位置具有蜂窝网络覆盖。
 - **4G 天线**：HM-D20-4G 应确认外置 4G 天线安装牢靠；HM-D13-4G 的 4G 天线内置。
-- **账号配置**：使用 JR_NTRIP_Config_Tool_V1.2 检查服务器地址、端口、挂载点、用户名和密码。
+- **账号配置**：使用 [JR_NTRIP_Config_Tool_V1.2](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar) 检查服务器地址、端口、挂载点、用户名和密码。
 - **CORS 服务**：确认 CORS/NTRIP 当前可用，账号未过期且挂载点正确。
 - **重新验证**：在开阔环境重新上电，观察是否能够获得差分数据。
 

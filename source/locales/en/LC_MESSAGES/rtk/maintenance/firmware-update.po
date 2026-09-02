@@ -27,14 +27,10 @@ msgid "本页目标"
 msgstr "Goal of this page"
 
 #: ../../source/rtk/maintenance/firmware-update.md:6
-#, python-brace-format
 msgid ""
-"使用{ref}`NavStarTool <connect-navstartool>`为 **D20 或 D13** 升级固件。升级"
-"前先确认目标硬件、使用平台和所需输出协议。"
+"使用{ref}`NavStarTool <connect-navstartool>`为 **D20 或 D13** 升级固件。尚未安装时可[下载 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。升级前先确认目标硬件、使用平台和所需输出协议。"
 msgstr ""
-"Use {ref}`NavStarTool <connect-navstartool>` to upgrade the firmware for "
-"**D20 or D13**. Before upgrading, confirm the target hardware, the platform "
-"in use, and the required output protocol."
+"Use {ref}`NavStarTool <connect-navstartool>` to upgrade the firmware for **D20 or D13**. If it is not installed, [download NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip). Before upgrading, confirm the target hardware, the platform in use, and the required output protocol."
 
 #: ../../source/rtk/maintenance/firmware-update.md:10
 msgid ""

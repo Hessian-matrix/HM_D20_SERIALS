@@ -100,14 +100,10 @@ msgid "连接 NavStarTool"
 msgstr "Connect NavStarTool"
 
 #: ../../source/rtk/operation/host-tool.md:25
-#, python-brace-format
 msgid ""
-"获取 NavStarTool 尚未安装时，前往{ref}`软件工具下载 <software-tools>`获取 "
-"NavStarTool，再返回本节完成连接。"
+"获取 NavStarTool 尚未安装时，可直接[下载 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)，也可前往{ref}`软件工具下载 <software-tools>`查看全部工具，再返回本节完成连接。"
 msgstr ""
-"If NavStarTool is not installed, go to {ref}`Software Tools Download "
-"<software-tools>` to get NavStarTool, then return to this section to "
-"complete the connection."
+"If NavStarTool is not installed, [download NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip) directly, or go to {ref}`Software Tools Download <software-tools>` to view all tools, then return to this section to complete the connection."
 
 #: ../../source/rtk/operation/host-tool.md:28
 msgid "完成供电、TX/RX 交叉连接和共地。"

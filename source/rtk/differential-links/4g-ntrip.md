@@ -12,7 +12,7 @@
 - 已开通数据流量的 SIM 卡。
 - HM-D20-4G 使用的外置 SMA 4G 天线；HM-D13-4G 的 4G 天线内置。
 - 产品标配的 USB-C 配置线。
-- HM-D20-4G、HM-D13-4G 共用的 JR_NTRIP_Config_Tool_V1.2。
+- HM-D20-4G、HM-D13-4G 共用的 [JR_NTRIP_Config_Tool_V1.2 下载包](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar)。
 - CORS/NTRIP 账号信息，包括服务器地址、端口、挂载点、账号和密码。
 
 ## 产品差异

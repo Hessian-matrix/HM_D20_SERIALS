@@ -3,7 +3,7 @@
 :::{admonition} 本页目标
 :class: page-summary
 
-使用{ref}`NavStarTool <connect-navstartool>`为 **D20 或 D13** 升级固件。升级前先确认目标硬件、使用平台和所需输出协议。
+使用{ref}`NavStarTool <connect-navstartool>`为 **D20 或 D13** 升级固件。尚未安装时可[下载 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。升级前先确认目标硬件、使用平台和所需输出协议。
 :::
 
 :::{warning} 升级期间保持连接和供电

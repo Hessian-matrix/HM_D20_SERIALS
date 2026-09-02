@@ -15,7 +15,7 @@ G51B 提供独立 GNSS 定位，不需要 CORS/NTRIP 或 D13 基站。需要厘�
 - G51B 接收机模组。
 - 4.0–5.5 V 电源，典型 5 V。
 - 与 G51B 接口电平兼容的 USB 转 UART 模块，或目标设备 UART 串口。
-- PC 端 {ref}`NavStarTool <software-tools>` 上位机。
+- 可联网的 PC，以及 [NavStarTool 下载包](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。
 - 能够保证天空视野的安装位置。
 
 ## 连接供电和串口
@@ -34,7 +34,7 @@ G51B 需要接收 GNSS 卫星信号。安装时应尽量保证天线朝向天空
 
 ## 连接上位机
 
-1. 下载并打开 {ref}`NavStarTool <software-tools>`。
+1. [下载并打开 NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip)。
 2. 选择 G51B 对应的串口号。
 3. 波特率选择 `115200`。
 4. 点击连接。
