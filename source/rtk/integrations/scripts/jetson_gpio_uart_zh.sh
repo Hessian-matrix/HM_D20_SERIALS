@@ -19,12 +19,50 @@ ports(){
 }
 choose_port(){
   ports; ((${#PORTS[@]})) || die '没有发现 ttyTHS/USB/ACM 串口。'
-  say '串口候选：'; local i n
-  for i in "${!PORTS[@]}"; do printf '%d) %s\n' "$((i+1))" "${PORTS[$i]}"; done
+  say '正在自动检测串口；每个串口最多监听 2 秒，寻找 GGA 语句。'
+  local matches=() p
+  for p in "${PORTS[@]}"; do
+    printf '检测 %s ... ' "$p"
+    if probe_port "$p"; then
+      matches+=("$p"); printf '检测到 GGA\n'
+    else
+      printf '未检测到 GGA\n'
+    fi
+  done
+  if ((${#matches[@]} == 1)); then
+    save_port "${matches[0]}"; printf '已自动选择端口：%s\n' "${matches[0]}"; return 0
+  fi
+  if ((${#matches[@]} > 1)); then
+    say '检测到多个输出 GGA 的串口，请选择设备对应的端口：'
+    select_port_from "${matches[@]}"
+  else
+    say '未自动检测到 GGA，将显示所有候选串口供手动选择。'
+    select_port_from "${PORTS[@]}"
+  fi
+}
+save_port(){
+  mkdir -p -- "$STATE_DIR"; printf '%s\n' "$1" >"$PORT_FILE"
+}
+select_port_from(){
+  local candidates=("$@") i n
+  for i in "${!candidates[@]}"; do printf '%d) %s\n' "$((i+1))" "${candidates[$i]}"; done
   read -r -p '请选择端口编号（默认 1）： ' n; [[ "$n" =~ ^[0-9]+$ ]] || n=1
-  ((n>=1 && n<=${#PORTS[@]})) || die '编号无效。'
-  mkdir -p -- "$STATE_DIR"; printf '%s\n' "${PORTS[$((n-1))]}" >"$PORT_FILE"
-  printf '已保存端口：%s\n' "${PORTS[$((n-1))]}"
+  ((n>=1 && n<=${#candidates[@]})) || die '编号无效。'
+  save_port "${candidates[$((n-1))]}"
+  printf '已保存端口：%s\n' "${candidates[$((n-1))]}"
+}
+probe_port(){
+  local p="$1" saved sample result=1
+  [[ -e "$p" ]] || return 1
+  saved="$(stty -g -F "$p" 2>/dev/null || true)"
+  [[ -n "$saved" ]] || return 1
+  stty -F "$p" 115200 cs8 -cstopb -parenb raw -echo -ixon -ixoff -crtscts 2>/dev/null || return 1
+  sample="$(mktemp "${TMPDIR:-/tmp}/hm-rtk-gga.XXXXXX")" || { stty -F "$p" "$saved" 2>/dev/null || true; return 1; }
+  timeout 2s cat "$p" >"$sample" 2>/dev/null || true
+  grep -a -q -E '\$[[:alnum:]]{2}GGA,' "$sample" && result=0
+  rm -f -- "$sample"
+  stty -F "$p" "$saved" 2>/dev/null || true
+  return "$result"
 }
 gpio_port(){
   [[ -e /dev/ttyTHS1 ]] && { printf /dev/ttyTHS1; return; }
@@ -59,7 +97,7 @@ read_data(){
 }
 main(){
   printf '%s\n' 'HM-RTK Jetson GPIO UART 工具' '' 'Jetson Nano 常见 GPIO UART 为 /dev/ttyTHS1；其他型号和载板必须核对 pinout。'
-  local c; while true; do printf '\n1. 配置 GPIO 串口\n2. 选择串口路径\n3. 读取串口数据（115200 8N1）\nq. 退出\n'; read -r -p '请选择： ' c
+  local c; while true; do printf '\n1. 配置 GPIO 串口\n2. 自动识别并选择串口（检测 GGA）\n3. 读取串口数据（115200 8N1）\nq. 退出\n'; read -r -p '请选择： ' c
     case "$c" in 1) configure;; 2) choose_port;; 3) read_data;; q|Q) return 0;; *) echo '无效选项。';; esac
   done
 }

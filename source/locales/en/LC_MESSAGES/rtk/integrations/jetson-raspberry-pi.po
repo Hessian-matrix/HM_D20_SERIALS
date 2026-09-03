@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-02 15:17+0800\n"
+"POT-Creation-Date: 2026-09-03 10:27+0800\n"
 "PO-Revision-Date: 2026-08-27 01:00+0800\n"
 "Last-Translator: AI-assisted draft; human review required\n"
 "Language: en\n"
@@ -57,8 +57,8 @@ msgstr ""
 "output.md)."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:15
-msgid "接线安全边界与接入前检查"
-msgstr "Wiring Safety and Pre-connection Checklist"
+msgid "接入前准备"
+msgstr "Pre-connection Preparation"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:17
 msgid "请先完成以下检查，再给设备上电："
@@ -72,11 +72,12 @@ msgstr ""
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:20
 msgid ""
-"**信号电平：UART 和 PPS 均为 3.3 V**。主控 GPIO UART 也必须是 3.3 V；禁止使用 5 V UART 或 "
-"RS232。"
+"**信号电平匹配：设备 UART/PPS 与树莓派、Jetson 40-pin GPIO UART 均为 3.3 V "
+"电平**，可直接连接，无需额外电平转换。禁止使用 5 V UART 或 RS232。"
 msgstr ""
-"**Signal levels: UART and PPS are both 3.3 V**. The host GPIO UART must "
-"also use 3.3 V logic; do not use 5 V UART or RS232."
+"**Signal levels match: the device UART/PPS and the Raspberry Pi and "
+"Jetson 40-pin GPIO UART all use 3.3 V logic**. They can be connected "
+"directly without a level shifter. Do not use 5 V UART or RS232."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:21
 msgid "**接线：TX/RX 交叉，GND 共地**。必须按 Pin 顺序核对线束，不能按颜色判断；电源正极接入信号脚可能损坏设备。"
@@ -102,40 +103,47 @@ msgid "接入前检查清单"
 msgstr "Pre-connection checklist"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:29
+msgid "[ ] RTK 设备已完成差分链路配置：4G/CORS 或 LoRa 基站与移动站已正常连接。"
+msgstr "[ ] The RTK device has been configured with a correction link: 4G/CORS or the LoRa base-station and rover connection is working."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:30
 msgid "[ ] 已核对设备型号及对应接口 Pin 定义。"
 msgstr "[ ] The device model and corresponding pinout have been verified."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:30
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:31
 msgid "[ ] 已核对主控型号、载板型号和 UART pinout。"
 msgstr ""
 "[ ] The host model, carrier-board model, and UART pinout have been "
 "verified."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:31
-msgid "[ ] 已确认 5 V ±0.5 V 供电、3.3 V UART/PPS 电平。"
-msgstr "[ ] 5 V ±0.5 V power and 3.3 V UART/PPS logic have been confirmed."
-
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:32
+msgid "[ ] 已选择主板 UART 直连或标配 USB 转 UART 连接方式。"
+msgstr ""
+"[ ] Direct host UART or the supplied USB-to-UART connection has been "
+"selected."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:33
 msgid "[ ] 已确认 TX/RX 交叉、GND 共地，线序而非颜色对应信号。"
 msgstr ""
 "[ ] TX/RX are cross-connected, GND is shared, and signals are matched by "
 "pin order rather than wire color."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:34
-msgid "串口权限、系统占用和 GPIO UART 启用由下方平台脚本检查和处理。"
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:35
+msgid "使用主板 UART 直连时，串口权限、系统占用和 GPIO UART 启用由对应平台脚本检查和处理。"
 msgstr ""
-"The platform script below checks and handles serial permissions, system "
-"conflicts, and GPIO-UART enablement."
+"When using direct host UART wiring, the matching platform script checks "
+"and handles serial permissions, system conflicts, and GPIO-UART "
+"enablement."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:37
-msgid "硬件接线"
-msgstr "Hardware Wiring"
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:38
+msgid "硬件接线与串口检测"
+msgstr "Hardware Wiring and Serial Detection"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:39
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:40
 msgid "连接方式 A：主板 UART 直连"
 msgstr "Connection method A: Direct host UART"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:41
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:42
 msgid ""
 "5 V 直接接主控 40-pin 的 5 V 脚，UART 按下表交叉连接。D20 的完整 8-pin 定义、D13 的完整 5-pin "
 "定义请分别查看设备接口页；PPS 不是 ROS 接入必需信号。"
@@ -237,7 +245,7 @@ msgstr "Pin 10 (GPIO15 / RXD)"
 msgid "Pin 10（UART RX）*"
 msgstr "Pin 10 (UART RX)*"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:50
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:51
 msgid ""
 "Jetson Pin 8/10 仅作 **Jetson Nano 2GB Developer Kit（J6）**和 **Jetson Orin "
 "Nano Developer Kit（J12）**官方载板的示例。其他型号、载板或第三方底板必须按实际 pinout 核对，不能直接套用。"
@@ -248,98 +256,106 @@ msgstr ""
 "baseboards, verify the actual pinout and do not reuse this table without "
 "checking."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:52
-msgid "连接方式 B：标配 USB 转 UART 转接器"
-msgstr "Connection method B: Supplied USB-to-UART adapter"
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:54
-msgid "使用产品随附的 USB 转 UART 转接器，按设备接口页连接 5 V、GND、TX、RX："
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:53
+msgid ""
+"使用主板 GPIO UART 时，请下载并运行对应平台脚本。脚本会配置 GPIO UART、处理串口权限和系统占用，并通过 GGA "
+"语句自动识别设备串口。"
 msgstr ""
-"Use the supplied USB-to-UART adapter and connect 5 V, GND, TX, and RX "
-"according to the device interface page:"
+"When using the host GPIO UART, download and run the matching platform "
+"script. It configures the GPIO UART, handles serial permissions and "
+"system conflicts, and automatically identifies the device port by "
+"detecting GGA sentences."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:56
-msgid "转接器 USB 端插入 Jetson 或树莓派。"
-msgstr "Plug the adapter's USB end into the Jetson or Raspberry Pi."
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:55
+msgid "脚本下载："
+msgstr "Script downloads:"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:57
-msgid "转接器与设备 UART/PPS 均使用 3.3 V 电平；不要使用 5 V UART 转接器或 RS232。"
-msgstr ""
-"The adapter and device UART/PPS use 3.3 V logic; do not use a 5 V UART "
-"adapter or RS232 interface."
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:58
-msgid "确认设备供电为 5 V ±0.5 V，TX/RX 交叉且 GND 已连接。"
-msgstr ""
-"Confirm 5 V ±0.5 V device power, cross-connected TX/RX, and a connected "
-"GND."
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:60
-msgid "串口检测与数据读取"
-msgstr "Serial Detection and Data Readback"
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:62
-msgid "完成接线后，按连接方式选择检测方法："
-msgstr "After wiring, select the detection method for your connection:"
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:64
-msgid ""
-"**USB 转 UART**：插入前后分别执行 `ls /dev/ttyUSB* /dev/ttyACM* "
-"2>/dev/null`，比较列表，新增的设备即为设备串口。"
-msgstr ""
-"**USB-to-UART**: Run `ls /dev/ttyUSB* /dev/ttyACM* 2>/dev/null` before "
-"and after plugging in the adapter. Compare the lists; the newly added "
-"device is the serial port."
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:65
-msgid "**主板 GPIO 直连**：下载并运行对应脚本。脚本会配置 GPIO UART、处理权限和系统占用，并提供串口读取检查。"
-msgstr ""
-"**Direct host GPIO wiring**: Download and run the matching script. It "
-"configures the GPIO UART, handles permissions and system conflicts, and "
-"provides a serial readback check."
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:67
-msgid "中文页面下载："
-msgstr "Downloads for the English page:"
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:69
 msgid "[Jetson GPIO UART 配置脚本（中文）](scripts/jetson_gpio_uart_zh.sh)"
 msgstr "[Jetson GPIO UART setup script (English)](scripts/jetson_gpio_uart_en.sh)"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:70
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:58
 msgid "[树莓派 GPIO UART 配置脚本（中文）](scripts/raspberry_pi_gpio_uart_zh.sh)"
 msgstr ""
 "[Raspberry Pi GPIO UART setup script "
 "(English)](scripts/raspberry_pi_gpio_uart_en.sh)"
 
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:60
+msgid "主板直连按脚本菜单 **1 → 2 → 3** 执行："
+msgstr "For direct host wiring, use the script menu in the order **1 → 2 → 3**:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:62
+msgid "配置 GPIO 串口。"
+msgstr "Configure the GPIO UART."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:63
+msgid "自动扫描串口，每个端口监听约 2 秒，以 GGA 语句识别设备串口；无法唯一识别时再手动选择。"
+msgstr ""
+"Scan the serial ports automatically. Each port is monitored for about 2 "
+"seconds; a GGA sentence identifies the device port. If the port cannot be"
+" identified uniquely, select it manually."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:64
+msgid "读取串口数据，确认持续输出 GGA。NMEA 可直接阅读；UBX 为二进制数据，终端中可能显示乱码。"
+msgstr ""
+"Read serial data and confirm that GGA output is continuous. NMEA is "
+"human-readable; UBX is binary and may look garbled in a terminal."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:66
+msgid "连接方式 B：标配 USB 转 UART 转接器"
+msgstr "Connection method B: Supplied USB-to-UART adapter"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:68
+msgid "使用产品随附的 USB 转 UART 转接器，按设备接口页连接 5 V、GND、TX、RX："
+msgstr ""
+"Use the supplied USB-to-UART adapter and connect 5 V, GND, TX, and RX "
+"according to the device interface page:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:70
+msgid "转接器 USB 端插入 Jetson 或树莓派。"
+msgstr "Plug the adapter's USB end into the Jetson or Raspberry Pi."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:71
+msgid "转接器与设备 UART/PPS 均使用 3.3 V 电平；不要使用 5 V UART 转接器或 RS232。"
+msgstr ""
+"The adapter and device UART/PPS use 3.3 V logic; do not use a 5 V UART "
+"adapter or RS232 interface."
+
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:72
-msgid "脚本菜单按 **1 → 2 → 3** 顺序执行："
-msgstr "Use the script menu in the order **1 → 2 → 3**:"
+msgid "确认设备供电为 5 V ±0.5 V，TX/RX 交叉且 GND 已连接。"
+msgstr ""
+"Confirm 5 V ±0.5 V device power, cross-connected TX/RX, and a connected "
+"GND."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:74
-msgid "配置 GPIO 串口（USB 转 UART 已可识别时可跳过）。"
+msgid ""
+"USB 转 UART 不需要执行选项 1。插入转接器后，使用上一段对应平台脚本的选项 **2** 自动扫描串口；脚本会逐个监听候选端口约 2 "
+"秒，检测 GGA 语句并自动选择输出端口。然后使用选项 **3** 读取串口数据，确认持续输出 GGA，完成串口验证。"
 msgstr ""
-"Configure the GPIO UART (skip this step when the USB-to-UART port is "
-"already recognized)."
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:75
-msgid "选择已确认的串口路径。"
-msgstr "Select the confirmed serial-port path."
+"USB-to-UART does not require option 1. After plugging in the adapter, use"
+" option **2** in the platform script from the previous section to scan "
+"the serial ports. The script monitors each candidate port for about 2 "
+"seconds, detects a GGA sentence, and automatically selects the output "
+"port. Then use option **3** to read serial data and confirm continuous "
+"GGA output."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:76
-msgid "读取串口数据，确认输出持续且正常。NMEA 可直接阅读；UBX 为二进制数据，终端中可能显示乱码，但持续读到数据即表示链路正常。"
+msgid ""
+"即使系统已经识别出 `/dev/ttyUSB*` 或 `/dev/ttyACM*`，也必须执行选项 3 验证设备确实在输出数据。NMEA "
+"可直接阅读；UBX 为二进制数据，终端中可能显示乱码。"
 msgstr ""
-"Read serial data and confirm that output is continuous and valid. NMEA is"
-" human-readable; UBX is binary and may look garbled in a terminal, but "
-"continuous data confirms that the link is working."
+"Even when the system recognizes `/dev/ttyUSB*` or `/dev/ttyACM*`, you "
+"must still run option **3** to verify that the device is actually "
+"outputting data. NMEA is human-readable; UBX is binary and may look "
+"garbled in a terminal."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:78
 msgid "不要让多个程序同时打开同一串口。"
 msgstr "Do not let multiple programs open the same serial port at the same time."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:80
-msgid "安装驱动模块"
-msgstr "Install the Driver"
+msgid "驱动安装与配置"
+msgstr "Driver Installation and Configuration"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:82
 msgid "驱动源码：<https://github.com/Hessian-matrix/D20_ros_driver>"
@@ -353,21 +369,17 @@ msgstr "The package name and the executable file name are both `d20_ros_driver`.
 msgid "ROS1 Noetic"
 msgstr "ROS1 Noetic"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:98
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:97
 msgid "如果缺少 `empy`，安装 `python3-empy` 后重新编译。"
-msgstr "If `empy` is missing, reinstall after installing `python3-empy`."
+msgstr "If `empy` is missing, install `python3-empy` and rebuild."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:100
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:99
 msgid "ROS2"
 msgstr "ROS2"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:112
-msgid "配置驱动"
-msgstr "Configure the Driver"
-
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:114
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:110
 msgid ""
-"安装完成后、执行 launch 前，必须编辑驱动仓库中的 `src/d20_ros_driver/config/config.yaml`。ROS1"
+"安装完成后，在执行 launch 前，必须编辑驱动仓库中的 `src/d20_ros_driver/config/config.yaml`。ROS1"
 " 和 ROS2 使用同一份配置，至少确认产品型号和 `serial_port`："
 msgstr ""
 "After installation and before launching, edit "
@@ -375,33 +387,35 @@ msgstr ""
 "and ROS2 use the same configuration; at minimum, confirm the product "
 "model and `serial_port` value:"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:126
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:122
 msgid "`sku` 填写 `D20` 或 `D13`，`serial_port` 填写 Jetson/树莓派实际识别到的路径。"
 msgstr ""
 "`sku` should be filled in with `D20` or `D13`, and `serial_port` should "
 "be filled in with the path actually recognized by Jetson/Raspberry Pi."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:128
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:124
 msgid "启动与验证"
 msgstr "Launch and Verify"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:130
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:126
 msgid "完成配置后再启动节点："
 msgstr "Start the node only after the configuration is complete:"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:132
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:157
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:128
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:151
 msgid "ROS1："
 msgstr "ROS1:"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:140
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:165
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:135
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:159
 msgid "ROS2："
 msgstr "ROS2:"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:148
-msgid "话题与验证"
-msgstr "Topics and Verification"
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:142
+msgid "启动节点后，可通过以下话题确认驱动是否持续发布定位数据："
+msgstr ""
+"After starting the node, use the following topics to confirm that the "
+"driver is continuously publishing positioning data:"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:26
 msgid "话题"
@@ -441,24 +455,24 @@ msgstr "`std_msgs/String`"
 msgid "原始 NMEA；仅在 `publish_nmea: true` 时发布"
 msgstr "Raw NMEA; only published when `publish_nmea: true`"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:155
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:149
 msgid "状态约定：`-1` 无定位，`0` 普通定位，`1` RTK 浮点解，`2` RTK 固定解。"
 msgstr ""
 "Status Convention: `-1` No positioning, `0` Normal positioning, `1` RTK "
 "Float solution, `2` RTK Fixed solution."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:173
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:167
 msgid "接入完成判据"
 msgstr "Integration success criteria"
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:176
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:170
 msgid "定位话题持续发布，并能被驱动按当前输出协议解析；开阔环境进入固定解时，`NavSatFix.status.status` 为 `2`。"
 msgstr ""
 "The driver publishes the positioning topic continuously and parses the "
 "current output protocol. When the receiver reaches a fixed solution with "
 "an open sky view, `NavSatFix.status.status` is `2`."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:179
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:173
 msgid ""
 "设备在开阔场景，若长时间没有固定解时，先按[RTK 状态与固定解验证](../operation/rtk-fixed-"
 "validation.md)排查差分链路和卫星环境。"
@@ -467,7 +481,7 @@ msgstr ""
 "satellite environment according to [RTK Status and Fixed Solution "
 "Validation](../operation/rtk-fixed-validation.md)."
 
-#: ../../source/rtk/integrations/jetson-raspberry-pi.md:181
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:175
 msgid "Viobot2 的专用流程请查看[接入 Viobot2](viobot2.md)。"
 msgstr "For the dedicated process of Viobot2, see [Access Viobot2](viobot2.md)."
 
@@ -936,3 +950,65 @@ msgstr "For the dedicated process of Viobot2, see [Access Viobot2](viobot2.md)."
 #~ "bytes are being received. Do not "
 #~ "open the same serial port from "
 #~ "multiple programs."
+
+#~ msgid "接线安全边界与接入前检查"
+#~ msgstr "Wiring Safety and Pre-connection Checklist"
+
+#~ msgid "安装驱动模块"
+#~ msgstr "Install the Driver"
+
+#~ msgid "配置驱动"
+#~ msgstr "Configure the Driver"
+
+#~ msgid "话题与验证"
+#~ msgstr "Topics and Verification"
+
+#~ msgid "完成接线后，按连接方式选择检测方法："
+#~ msgstr "After wiring, select the detection method for your connection:"
+
+#~ msgid ""
+#~ "**USB 转 UART**：插入前后分别执行 `ls /dev/ttyUSB* "
+#~ "/dev/ttyACM* 2>/dev/null`，比较列表，新增的设备即为设备串口。"
+#~ msgstr ""
+#~ "**USB-to-UART**: Run `ls /dev/ttyUSB*"
+#~ " /dev/ttyACM* 2>/dev/null` before and after"
+#~ " plugging in the adapter. Compare the"
+#~ " lists; the newly added device is "
+#~ "the serial port."
+
+#~ msgid "中文页面下载："
+#~ msgstr "Downloads for the English page:"
+
+#~ msgid "选择已确认的串口路径。"
+#~ msgstr "Select the confirmed serial-port path."
+
+#~ msgid "串口检测与数据读取"
+#~ msgstr "Serial Detection and Data Readback"
+
+#~ msgid "完成接线后，按连接方式运行对应平台脚本，自动识别并验证设备串口："
+#~ msgstr ""
+#~ "After wiring, run the platform script"
+#~ " for your connection method to "
+#~ "automatically identify and verify the "
+#~ "device serial port:"
+
+#~ msgid ""
+#~ "**主板 GPIO 直连**：下载并运行对应平台脚本，先使用选项 1 配置 "
+#~ "GPIO UART，再使用选项 2 自动识别串口。脚本会处理权限和系统占用。"
+#~ msgstr ""
+#~ "**Direct host GPIO wiring**: Download "
+#~ "and run the matching platform script."
+#~ " Start with option 1 to configure "
+#~ "the GPIO UART, then use option 2"
+#~ " to automatically identify the serial "
+#~ "port. The script handles permissions and"
+#~ " system conflicts."
+
+#~ msgid "配置 GPIO 串口（USB 转 UART 已可识别时可跳过）。"
+#~ msgstr ""
+#~ "Configure the GPIO UART (skip this "
+#~ "step when the USB-to-UART port "
+#~ "is already recognized)."
+
+#~ msgid "[ ] 已确认 5 V ±0.5 V 供电、3.3 V UART/PPS 电平。"
+#~ msgstr "[ ] 5 V ±0.5 V power and 3.3 V UART/PPS logic have been confirmed."

@@ -15,7 +15,7 @@ project = "Hessian Matrix Positioning Documentation" if language == "en" else "�
 author = "Hessian Matrix"
 copyright = "2026, Hessian Matrix"
 version = "2026.09"
-release = "2026.09.0"
+release = "2026.09.1"
 
 # 2026-08-04: 同时支持 RST 目录页和 Markdown 正文页，便于后续迁移现有资料。
 extensions = [
