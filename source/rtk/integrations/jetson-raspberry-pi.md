@@ -27,6 +27,7 @@
 :class: check-list
 
 - [ ] RTK 设备已完成差分链路配置：4G/CORS 或 LoRa 基站与移动站已正常连接。
+- [ ] Jetson 或树莓派上已安装 ROS1 或 ROS2。
 - [ ] 已核对设备型号及对应接口 Pin 定义。
 - [ ] 已核对主控型号、载板型号和 UART pinout。
 - [ ] 已选择主板 UART 直连或标配 USB 转 UART 连接方式。
@@ -107,7 +108,12 @@ colcon build
 source install/setup.bash
 ```
 
-安装完成后，在执行 launch 前，必须编辑驱动仓库中的 `src/d20_ros_driver/config/config.yaml`。ROS1 和 ROS2 使用同一份配置，至少确认产品型号和 `serial_port`：
+安装完成后，在执行 launch 前，必须编辑对应 ROS 版本的配置文件。ROS1 与 ROS2 的配置内容一致，但文件路径不同：
+
+- ROS1：`~/d20_ros_ws/src/d20_ros_driver/config/config.yaml`
+- ROS2：`~/d20_ros_ws/install/d20_ros_driver/share/d20_ros_driver/config/config.yaml`
+
+至少确认产品型号和 `serial_port`：
 
 ```yaml
 sku: D20

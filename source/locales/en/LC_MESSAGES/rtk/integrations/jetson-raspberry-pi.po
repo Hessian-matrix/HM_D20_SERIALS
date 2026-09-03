@@ -107,6 +107,10 @@ msgid "[ ] RTK 设备已完成差分链路配置：4G/CORS 或 LoRa 基站与移
 msgstr "[ ] The RTK device has been configured with a correction link: 4G/CORS or the LoRa base-station and rover connection is working."
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:30
+msgid "[ ] Jetson 或树莓派上已安装 ROS1 或 ROS2。"
+msgstr "[ ] ROS1 or ROS2 has been installed on the Jetson or Raspberry Pi."
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:30
 msgid "[ ] 已核对设备型号及对应接口 Pin 定义。"
 msgstr "[ ] The device model and corresponding pinout have been verified."
 
@@ -379,13 +383,23 @@ msgstr "ROS2"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:110
 msgid ""
-"安装完成后，在执行 launch 前，必须编辑驱动仓库中的 `src/d20_ros_driver/config/config.yaml`。ROS1"
-" 和 ROS2 使用同一份配置，至少确认产品型号和 `serial_port`："
+"安装完成后，在执行 launch 前，必须编辑对应 ROS 版本的配置文件。ROS1 与 ROS2 的配置内容一致，但文件路径不同："
 msgstr ""
 "After installation and before launching, edit "
-"`src/d20_ros_driver/config/config.yaml` in the driver repository. ROS1 "
-"and ROS2 use the same configuration; at minimum, confirm the product "
-"model and `serial_port` value:"
+"the configuration file for the corresponding ROS version. ROS1 and ROS2 "
+"use the same configuration content, but the file paths are different:"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:114
+msgid "ROS1：`~/d20_ros_ws/src/d20_ros_driver/config/config.yaml`"
+msgstr "ROS1: `~/d20_ros_ws/src/d20_ros_driver/config/config.yaml`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:115
+msgid "ROS2：`~/d20_ros_ws/install/d20_ros_driver/share/d20_ros_driver/config/config.yaml`"
+msgstr "ROS2: `~/d20_ros_ws/install/d20_ros_driver/share/d20_ros_driver/config/config.yaml`"
+
+#: ../../source/rtk/integrations/jetson-raspberry-pi.md:117
+msgid "至少确认产品型号和 `serial_port`："
+msgstr "At minimum, confirm the product model and `serial_port` value:"
 
 #: ../../source/rtk/integrations/jetson-raspberry-pi.md:122
 msgid "`sku` 填写 `D20` 或 `D13`，`serial_port` 填写 Jetson/树莓派实际识别到的路径。"
