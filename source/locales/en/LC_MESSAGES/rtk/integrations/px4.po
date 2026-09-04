@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"POT-Creation-Date: 2026-09-04 17:44+0800\n"
 "PO-Revision-Date: 2026-08-27 01:00+0800\n"
 "Last-Translator: AI-assisted draft; human review required\n"
 "Language: en\n"
@@ -16,11 +16,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/rtk/integrations/px4.md:1
-msgid "接入 PX4"
-msgstr "Integrate PX4"
+msgid "无人机应用 - PX4"
+msgstr "UAV Integration - PX4"
 
 #: ../../source/rtk/integrations/px4.md:3
 msgid "本页目标"
@@ -28,21 +28,20 @@ msgstr "Goal of this page"
 
 #: ../../source/rtk/integrations/px4.md:6
 msgid ""
-"将 **D20** 接入 PX4，并通过 QGroundControl 验证定位输出。常规使用无人机版固"
-"件，通过 GPS 串口默认输出 **10 Hz UBX** 定位数据。"
+"将 **D20** 接入 PX4，并通过 QGroundControl 验证定位输出。常规使用无人机版固件，通过 GPS 串口默认输出 **10 "
+"Hz UBX** 定位数据。"
 msgstr ""
 "Connect the **D20** to PX4 and verify positioning in QGroundControl. The "
 "standard UAV firmware outputs **10 Hz UBX** over the GPS serial port."
 
 #: ../../source/rtk/integrations/px4.md:9
 msgid ""
-"根据现场条件选择 4G 或 LoRa 差分链路。固件选择见[固件与输出协议选择](../"
-"operation/firmware-output.md)，完整 Pin 定义见[D20 接口与接线](../operation/"
-"d20-wiring.md)。"
+"根据现场条件选择 4G 或 LoRa 差分链路。固件选择见[固件与输出协议选择](../operation/firmware-"
+"output.md)，完整 Pin 定义见[D20 接口与接线](../operation/d20-wiring.md)。"
 msgstr ""
-"Choose a 4G or LoRa correction link for the site. See [Selecting Firmware "
-"and Output Protocol](../operation/firmware-output.md) and [D20 Interfaces "
-"and Wiring](../operation/d20-wiring.md)."
+"Choose a 4G or LoRa correction link for the site. See [Selecting Firmware"
+" and Output Protocol](../operation/firmware-output.md) and [D20 "
+"Interfaces and Wiring](../operation/d20-wiring.md)."
 
 #: ../../source/rtk/integrations/px4.md:11
 msgid "硬件连接"
@@ -50,51 +49,65 @@ msgstr "Hardware connection"
 
 #: ../../source/rtk/integrations/px4.md:14
 msgid ""
-"先核对 D20 8-pin 线束，再连接飞控电源 保持设备和飞控断电，并按[完整 8-pin 定"
-"义](../operation/d20-wiring.md)逐线核对。D20 供电为 5 V ±0.5 V，UART/PPS I/O "
-"为 3.3 V；反接电源或把 5 V 接入信号线可能损坏设备。"
+"先核对 D20 8-pin 线束，再连接飞控电源 保持设备和飞控断电，并按[完整 8-pin "
+"定义](../operation/d20-wiring.md)逐线核对。D20 供电为 5 V ±0.5 V，UART/PPS I/O 为 3.3"
+" V；反接电源或把 5 V 接入信号线可能损坏设备。"
 msgstr ""
-"Check the D20 8-pin harness before connecting flight-controller power. Keep "
-"both devices powered off and verify every wire against the [complete 8-pin "
-"pinout](../operation/d20-wiring.md). Supply 5 V ±0.5 V; UART/PPS I/O is 3.3 "
-"V. Reversed supply polarity or 5 V on a signal pin may damage the device."
+"Check the D20 8-pin harness before connecting flight-controller power. "
+"Keep both devices powered off and verify every wire against the [complete"
+" 8-pin pinout](../operation/d20-wiring.md). Supply 5 V ±0.5 V; UART/PPS "
+"I/O is 3.3 V. Reversed supply polarity or 5 V on a signal pin may damage "
+"the device."
 
 #: ../../source/rtk/integrations/px4.md:17
-msgid "D20 安装在机体顶部开阔位置。"
-msgstr "D20 is installed in an open area on the top of the body."
+msgid "D20 5V接 PX4飞控GPS接口 5V。"
+msgstr "Connect D20 5V to the PX4 flight controller GPS port 5V pin."
 
 #: ../../source/rtk/integrations/px4.md:18
-msgid "D20 TX 接 PX4 GPS 接口 RX。"
-msgstr "D20 TX connects to PX4 GPS interface RX."
+msgid "D20 TX 接 PX4飞控GPS接口 RX。"
+msgstr "Connect D20 TX to the PX4 flight controller GPS port RX pin."
 
 #: ../../source/rtk/integrations/px4.md:19
-msgid "D20 RX 接 PX4 GPS 接口 TX。"
-msgstr "D20 RX connects to PX4 GPS interface TX."
+msgid "D20 RX 接 PX4飞控GPS接口 TX。"
+msgstr "Connect D20 RX to the PX4 flight controller GPS port TX pin."
 
 #: ../../source/rtk/integrations/px4.md:20
-msgid "D20 GND 接 PX4 GND。"
-msgstr "Connect D20 GND to PX4 GND."
+msgid "D20 GND 接 PX4飞控GPS接口 GND。"
+msgstr "Connect D20 GND to the PX4 flight controller GPS port GND pin."
 
 #: ../../source/rtk/integrations/px4.md:22
-msgid ""
-"若飞控提供明确 Pin 定义的标准 6-pin GPS/UART 接口，可以使用配套的 D20 8-pin "
-"转飞控 6-pin 转接线。连接前必须同时核对转接线两端 Pin 顺序、D20 8-pin 定义和"
-"飞控接口定义；接口外形匹配不代表线序一定匹配。"
+msgid "下图以PX4固件的CUAV 7-Nano的GPS1接口的接线为例："
 msgstr ""
-"If the flight controller has a clearly defined standard 6-pin GPS/UART port, "
-"use the supplied D20 8-pin-to-6-pin adapter cable. Before connecting, verify "
-"the pin order at both ends, the D20 8-pin pinout, and the flight-controller "
-"port definition. Matching connector shapes do not guarantee matching pin "
-"assignments."
+"The following diagram shows example wiring for the GPS1 port on a CUAV "
+"7-Nano running PX4 firmware:"
 
 #: ../../source/rtk/integrations/px4.md:24
-msgid "参数配置"
-msgstr "Parameter Configuration"
+msgid "![D20 接入 CUAV 7-Nano GPS 接口示意图](../images/ardupilot-serial.png)"
+msgstr "![D20 wiring to the CUAV 7-Nano GPS port](../images/ardupilot-serial.png)"
+
+#: ../../source/rtk/integrations/px4.md:24
+msgid "D20 接入 CUAV 7-Nano GPS 接口示意图"
+msgstr "D20 wiring to the CUAV 7-Nano GPS port"
 
 #: ../../source/rtk/integrations/px4.md:26
 msgid ""
-"以下参数用于说明常见 PX4 配置项。不同 PX4 版本和飞控硬件可能采用不同参数名称"
-"或端口编号，应以实际固件和 QGroundControl 显示为准。"
+"若飞控提供明确 Pin 定义的标准 6-pin GPS/UART 接口，可以使用配套的 D20 8-pin 转飞控 6-pin "
+"转接线。连接前必须同时核对转接线两端 Pin 顺序、D20 8-pin 定义和飞控接口定义；接口外形匹配不代表线序一定匹配。"
+msgstr ""
+"If the flight controller has a clearly defined standard 6-pin GPS/UART "
+"port, use the supplied D20 8-pin-to-6-pin adapter cable. Before "
+"connecting, verify the pin order at both ends, the D20 8-pin pinout, and "
+"the flight-controller port definition. Matching connector shapes do not "
+"guarantee matching pin assignments."
+
+#: ../../source/rtk/integrations/px4.md:28
+msgid "参数配置"
+msgstr "Parameter Configuration"
+
+#: ../../source/rtk/integrations/px4.md:30
+msgid ""
+"以下参数用于说明常见 PX4 配置项。不同 PX4 版本和飞控硬件可能采用不同参数名称或端口编号，应以实际固件和 QGroundControl "
+"显示为准。"
 msgstr ""
 "The following parameters are used to illustrate common PX4 configuration "
 "options. Different PX4 versions and flight control hardware may use "
@@ -118,24 +131,12 @@ msgid "`GPS_1_CONFIG`"
 msgstr "`GPS_1_CONFIG`"
 
 #: ../../source/rtk/integrations/px4.md:13
-msgid "选择实际连接 D20 的串口"
-msgstr "Select the serial port that is actually connected to D20"
+msgid "使能GPS1"
+msgstr "Enable GPS1"
 
 #: ../../source/rtk/integrations/px4.md:13
-msgid "按实际端口选择"
-msgstr "Select the connected port"
-
-#: ../../source/rtk/integrations/px4.md:13
-msgid "`SER_GPS1_BAUD`"
-msgstr "`SER_GPS1_BAUD`"
-
-#: ../../source/rtk/integrations/px4.md:13
-msgid "设置串口波特率"
-msgstr "Set the serial port baud rate"
-
-#: ../../source/rtk/integrations/px4.md:13
-msgid "`115200`"
-msgstr "`115200`"
+msgid "`GPS1`"
+msgstr "`GPS1`"
 
 #: ../../source/rtk/integrations/px4.md:13
 msgid "`GPS_1_PROTOCOL`"
@@ -150,6 +151,28 @@ msgid "`1`（UBX）"
 msgstr "`1` (UBX)"
 
 #: ../../source/rtk/integrations/px4.md:13
+msgid "`GPS_UBX_BAUD2`"
+msgstr "`GPS_UBX_BAUD2`"
+
+#: ../../source/rtk/integrations/px4.md:13
+msgid "设置GPS UBX协议波特率,D20默认波特率是`115200`,应与`SER_GPS1_BAUD`的波特率配置保持一致"
+msgstr ""
+"Set the GPS UBX protocol baud rate. The D20 default baud rate is "
+"`115200`; it must match the baud rate configured in `SER_GPS1_BAUD`."
+
+#: ../../source/rtk/integrations/px4.md:13
+msgid "`115200`"
+msgstr "`115200`"
+
+#: ../../source/rtk/integrations/px4.md:13
+msgid "`SER_GPS1_BAUD`"
+msgstr "`SER_GPS1_BAUD`"
+
+#: ../../source/rtk/integrations/px4.md:13
+msgid "设置串口波特率"
+msgstr "Set the serial port baud rate"
+
+#: ../../source/rtk/integrations/px4.md:13
 msgid "`EKF2_GPS_CTRL`"
 msgstr "`EKF2_GPS_CTRL`"
 
@@ -158,71 +181,132 @@ msgid "设置 GPS 融合方式"
 msgstr "Set GPS fusion method"
 
 #: ../../source/rtk/integrations/px4.md:13
-msgid "`7`"
-msgstr "`7`"
+msgid "保持默认值：`7`"
+msgstr "Keep the default value: `7`"
 
 #: ../../source/rtk/integrations/px4.md:13
 msgid "`EKF2_GPS_POS_X/Y/Z`"
 msgstr "`EKF2_GPS_POS_X/Y/Z`"
 
 #: ../../source/rtk/integrations/px4.md:13
-msgid "设置天线相对机体的安装偏移"
-msgstr "Set the installation offset of the antenna relative to the body"
+msgid "设置天线相对机体的安装偏移，一般情况也可保持默认没有偏移"
+msgstr ""
+"Set the antenna installation offset relative to the vehicle body; in most"
+" cases, the default zero offset is sufficient."
 
 #: ../../source/rtk/integrations/px4.md:13
 msgid "实测值"
 msgstr "Measured value"
 
-#: ../../source/rtk/integrations/px4.md:36
-msgid "验证"
-msgstr "Verify"
-
-#: ../../source/rtk/integrations/px4.md:38
-msgid "在 QGroundControl 中观察 GPS 状态："
-msgstr "Observe GPS status in QGroundControl:"
-
-#: ../../source/rtk/integrations/px4.md:40
-msgid "PX4 持续识别 GPS，卫星数和定位数据正常更新。"
+#: ../../source/rtk/integrations/px4.md:42
+msgid "QGroundControl 中找到GPS的配置并使能GPS1： ![alt text](../images/image-parame.png)"
 msgstr ""
-"PX4 continuously recognizes the GPS and updates satellite and positioning "
-"data."
-
-#: ../../source/rtk/integrations/px4.md:41
-msgid "HDOP/VDOP 无异常。"
-msgstr "HDOP/VDOP normal."
+"In QGroundControl, find the GPS settings and enable GPS1: "
+"![Screenshot](../images/image-parame.png)"
 
 #: ../../source/rtk/integrations/px4.md:42
-msgid "开阔环境进入 RTK 固定解。"
-msgstr "The receiver reaches an RTK fixed solution with an open sky view."
+#: ../../source/rtk/integrations/px4.md:45
+#: ../../source/rtk/integrations/px4.md:47
+#: ../../source/rtk/integrations/px4.md:50
+#: ../../source/rtk/integrations/px4.md:53
+#: ../../source/rtk/integrations/px4.md:55
+msgid "alt text"
+msgstr "Screenshot"
 
-#: ../../source/rtk/integrations/px4.md:44
-msgid "接入完成判据"
-msgstr "Integration success criteria"
+#: ../../source/rtk/integrations/px4.md:45
+msgid "![alt text](../images/image-set-gps1.png)"
+msgstr "![Screenshot](../images/image-set-gps1.png)"
 
 #: ../../source/rtk/integrations/px4.md:47
-msgid "PX4 持续识别 GPS，并在开阔环境进入 **RTK 固定解**。"
+msgid ""
+"设置成GPS1之后QGroundControl 会提示需要重启生效，按如下步骤执行一次飞控重启： ![alt text](../images"
+"/image-reboot.png)"
 msgstr ""
-"PX4 continuously recognizes the GPS and reaches an **RTK fixed solution** "
-"with an open sky view."
+"After selecting GPS1, QGroundControl prompts you to restart for the "
+"change to take effect. Restart the flight controller once as follows: "
+"![Screenshot](../images/image-reboot.png)"
 
 #: ../../source/rtk/integrations/px4.md:50
 msgid ""
-"若 PX4 无法识别 D20，请先确认 D20 当前为无人机版固件，再检查飞控串口参数、"
-"UART 电平兼容性和 TX/RX 接线，并在 QGroundControl 中观察 GPS 状态。"
+"飞控完成重启之后重新进入到`Vehicle "
+"Configuration`的`Parameters`参数列表中，找到GPS相关的配置这里就有完整的飞控GPS的配置了，D20想要正确接入飞控按照以下的配置来填写，主要的配置涉及`GPS`、`EKF2`、`Serial`:"
+" ![alt text](../images/image-gps1-params-setting.png)"
 msgstr ""
-"If PX4 cannot recognize D20, first confirm that D20 is currently running the "
-"UAV firmware, then check the flight controller's serial port parameters, "
-"UART level compatibility, and TX/RX connections, and observe the GPS status "
-"in QGroundControl."
+"After the flight controller restarts, return to the `Parameters` list "
+"under `Vehicle Configuration`. Find the GPS-related settings to view the "
+"complete flight-controller GPS configuration. To connect D20 correctly, "
+"enter the settings below; the main groups are `GPS`, `EKF2`, and "
+"`Serial`: ![Screenshot](../images/image-gps1-params-setting.png)"
 
-#: ../../source/rtk/integrations/px4.md:52
+#: ../../source/rtk/integrations/px4.md:53
+msgid "![alt text](../images/image-gps1_baud.png)"
+msgstr "![Screenshot](../images/image-gps1_baud.png)"
+
+#: ../../source/rtk/integrations/px4.md:55
 msgid ""
-"有定位输出但无法进入固定解时，按[RTK 状态与固定解验证](../operation/rtk-"
-"fixed-validation.md)检查差分配置和现场条件。"
+"`EKF2_GPS_CTRL`飞控一般就是默认值`7`,检查一下参数即可 ![alt text](../images/image-ekf2"
+"-gps-ctrl.png)"
 msgstr ""
-"If there is position output but you cannot obtain a fixed solution, check "
-"the correction setup and field conditions according to [RTK Status and Fixed "
-"Solution Validation](../operation/rtk-fixed-validation.md)."
+"`EKF2_GPS_CTRL` is normally the default value `7` on the flight "
+"controller; just check the parameter. ![Screenshot](../images/image-ekf2"
+"-gps-ctrl.png)"
+
+#: ../../source/rtk/integrations/px4.md:58
+msgid "完成以上步骤之后需要再次重启飞控确保配置生效。"
+msgstr ""
+"Restart the flight controller again after completing these steps to "
+"ensure that the settings take effect."
+
+#: ../../source/rtk/integrations/px4.md:60
+msgid "验证"
+msgstr "Verify"
+
+#: ../../source/rtk/integrations/px4.md:62
+msgid "在 QGroundControl 中观察 GPS 状态："
+msgstr "Observe GPS status in QGroundControl:"
+
+#: ../../source/rtk/integrations/px4.md:64
+msgid "PX4 持续识别 GPS，卫星数和定位数据正常更新。"
+msgstr ""
+"PX4 continuously recognizes the GPS and updates satellite and positioning"
+" data."
+
+#: ../../source/rtk/integrations/px4.md:65
+msgid "HDOP/VDOP 无异常。"
+msgstr "HDOP/VDOP normal."
+
+#: ../../source/rtk/integrations/px4.md:66
+msgid "开阔环境进入 RTK 固定解。"
+msgstr "The receiver reaches an RTK fixed solution with an open sky view."
+
+#: ../../source/rtk/integrations/px4.md:68
+msgid "接入完成判据"
+msgstr "Integration success criteria"
+
+#: ../../source/rtk/integrations/px4.md:71
+msgid "PX4 持续识别 GPS，并在开阔环境进入 **RTK 固定解**。"
+msgstr ""
+"PX4 continuously recognizes the GPS and reaches an **RTK fixed solution**"
+" with an open sky view."
+
+#: ../../source/rtk/integrations/px4.md:74
+msgid ""
+"若 PX4 无法识别 D20，请先确认 D20 当前为无人机版固件，再检查飞控串口参数、UART 电平兼容性和 TX/RX 接线，并在 "
+"QGroundControl 中观察 GPS 状态。"
+msgstr ""
+"If PX4 cannot recognize D20, first confirm that D20 is currently running "
+"the UAV firmware, then check the flight controller's serial port "
+"parameters, UART level compatibility, and TX/RX connections, and observe "
+"the GPS status in QGroundControl."
+
+#: ../../source/rtk/integrations/px4.md:76
+msgid ""
+"有定位输出但无法进入固定解时，按[RTK 状态与固定解验证](../operation/rtk-fixed-"
+"validation.md)检查差分配置和现场条件。"
+msgstr ""
+"If there is position output but you cannot obtain a fixed solution, check"
+" the correction setup and field conditions according to [RTK Status and "
+"Fixed Solution Validation](../operation/rtk-fixed-validation.md)."
 
 #~ msgid "固件版本"
 #~ msgstr "Firmware Version"
@@ -250,16 +334,18 @@ msgstr ""
 
 #~ msgid "按现场条件选择 4G 版本或 LoRa 版本"
 #~ msgstr ""
-#~ "Choose the 4G version or the LoRa version according to the on-site "
+#~ "Choose the 4G version or the LoRa"
+#~ " version according to the on-site "
 #~ "conditions"
 
-#~ msgid ""
-#~ "D20 供电为 5 V ±0.5 V，UART IO 电平为 3.3 V。连接前确认飞控端口的供电能力"
-#~ "和 UART 电平兼容。"
+#~ msgid "D20 供电为 5 V ±0.5 V，UART IO 电平为 3.3 V。连接前确认飞控端口的供电能力和 UART 电平兼容。"
 #~ msgstr ""
-#~ "The D20 is powered by 5 V ±0.5 V, and the UART IO level is 3.3 V. Confirm "
-#~ "the power supply capability and UART level compatibility of the flight "
-#~ "controller port before connecting."
+#~ "The D20 is powered by 5 V "
+#~ "±0.5 V, and the UART IO level "
+#~ "is 3.3 V. Confirm the power supply"
+#~ " capability and UART level compatibility"
+#~ " of the flight controller port before"
+#~ " connecting."
 
 #~ msgid "卫星数持续刷新。"
 #~ msgstr "The number of satellites continues to set new records."
@@ -269,3 +355,18 @@ msgstr ""
 
 #~ msgid "RTK 状态能够进入浮点解或固定解。"
 #~ msgstr "The RTK status can enter a float solution or a fixed solution."
+
+#~ msgid "D20 安装在机体顶部开阔位置。"
+#~ msgstr "D20 is installed in an open area on the top of the body."
+
+#~ msgid "选择实际连接 D20 的串口"
+#~ msgstr "Select the serial port that is actually connected to D20"
+
+#~ msgid "按实际端口选择"
+#~ msgstr "Select the connected port"
+
+#~ msgid "`7`"
+#~ msgstr "`7`"
+
+#~ msgid "接入 PX4"
+#~ msgstr "Integrate PX4"

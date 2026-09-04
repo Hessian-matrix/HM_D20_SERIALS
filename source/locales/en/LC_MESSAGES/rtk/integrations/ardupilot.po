@@ -186,7 +186,7 @@ msgstr "D20 Connection Diagram to CUAV 7-Nano GPS Interface"
 
 #: ../../source/rtk/integrations/ardupilot.md:45
 msgid ""
-"图中的彩色引导线只用于表示信号对应关系，不代表交付线束颜色。连接时仍须以 D20 "
+"图中的彩色引导线只用于表示信号对应关系，不代表配件线束颜色。连接时仍须以 D20 "
 "8-pin Pin 顺序、转接线功能标签和飞控接口定义为准。"
 msgstr ""
 "The colored guide lines in the diagram are only used to indicate signal "

@@ -1,4 +1,4 @@
-# 接入 PX4
+# 无人机应用 - PX4
 
 :::{admonition} 本页目标
 :class: page-summary
@@ -14,10 +14,14 @@
 保持设备和飞控断电，并按[完整 8-pin 定义](../operation/d20-wiring.md)逐线核对。D20 供电为 5 V ±0.5 V，UART/PPS I/O 为 3.3 V；反接电源或把 5 V 接入信号线可能损坏设备。
 :::
 
-1. D20 安装在机体顶部开阔位置。
-2. D20 TX 接 PX4 GPS 接口 RX。
-3. D20 RX 接 PX4 GPS 接口 TX。
-4. D20 GND 接 PX4 GND。
+1. D20 5V接 PX4飞控GPS接口 5V。
+2. D20 TX 接 PX4飞控GPS接口 RX。
+3. D20 RX 接 PX4飞控GPS接口 TX。
+4. D20 GND 接 PX4飞控GPS接口 GND。
+
+下图以PX4固件的CUAV 7-Nano的GPS1接口的接线为例：
+
+![D20 接入 CUAV 7-Nano GPS 接口示意图](../images/ardupilot-serial.png)
 
 若飞控提供明确 Pin 定义的标准 6-pin GPS/UART 接口，可以使用配套的 D20 8-pin 转飞控 6-pin 转接线。连接前必须同时核对转接线两端 Pin 顺序、D20 8-pin 定义和飞控接口定义；接口外形匹配不代表线序一定匹配。
 
@@ -27,11 +31,31 @@
 
 | 参数名 | 作用 | 建议值 |
 | --- | --- | --- |
-| `GPS_1_CONFIG` | 选择实际连接 D20 的串口 | 按实际端口选择 |
-| `SER_GPS1_BAUD` | 设置串口波特率 | `115200` |
+| `GPS_1_CONFIG` | 使能GPS1 | `GPS1` |
 | `GPS_1_PROTOCOL` | 设置 GPS 协议 | `1`（UBX） |
-| `EKF2_GPS_CTRL` | 设置 GPS 融合方式 | `7` |
-| `EKF2_GPS_POS_X/Y/Z` | 设置天线相对机体的安装偏移 | 实测值 |
+| `GPS_UBX_BAUD2` | 设置GPS UBX协议波特率,D20默认波特率是`115200`,应与`SER_GPS1_BAUD`的波特率配置保持一致 | `115200` |
+| `SER_GPS1_BAUD` | 设置串口波特率 | `115200` |
+| `EKF2_GPS_CTRL` | 设置 GPS 融合方式 | 保持默认值：`7` |
+| `EKF2_GPS_POS_X/Y/Z` | 设置天线相对机体的安装偏移，一般情况也可保持默认没有偏移 | 实测值 |
+
+
+QGroundControl 中找到GPS的配置并使能GPS1：
+![alt text](../images/image-parame.png)
+
+![alt text](../images/image-set-gps1.png)
+
+设置成GPS1之后QGroundControl 会提示需要重启生效，按如下步骤执行一次飞控重启：
+![alt text](../images/image-reboot.png)
+
+飞控完成重启之后重新进入到`Vehicle Configuration`的`Parameters`参数列表中，找到GPS相关的配置这里就有完整的飞控GPS的配置了，D20想要正确接入飞控按照以下的配置来填写，主要的配置涉及`GPS`、`EKF2`、`Serial`:
+![alt text](../images/image-gps1-params-setting.png)
+
+![alt text](../images/image-gps1_baud.png)
+
+`EKF2_GPS_CTRL`飞控一般就是默认值`7`,检查一下参数即可
+![alt text](../images/image-ekf2-gps-ctrl.png)
+
+完成以上步骤之后需要再次重启飞控确保配置生效。
 
 ## 验证
 
