@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hessian Matrix Positioning Documentation 2026.08.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-28 11:31+0800\n"
+"POT-Creation-Date: 2026-09-11 11:04+0800\n"
 "PO-Revision-Date: 2026-08-27 01:00+0800\n"
 "Last-Translator: AI-assisted draft; human review required\n"
 "Language: en\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.18.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/products/comparison.md:1
 msgid "产品对比与资料"
@@ -27,14 +27,12 @@ msgid "本页用途"
 msgstr "Purpose"
 
 #: ../../source/products/comparison.md:6
-msgid ""
-"这里集中提供**完整公开参数对比、软件工具和资料入口**。快速选择产品请先查看[产"
-"品选型](index.rst)；首次使用和具体操作请进入相应产品手册。"
+msgid "这里集中提供**完整公开参数对比、软件工具和资料入口**。快速选择产品请先查看[产品选型](index.rst)；首次使用和具体操作请进入相应产品手册。"
 msgstr ""
 "This page provides **complete public specification comparisons, software "
-"tools, and documentation links**. Start with [Product Selection](index.rst) "
-"to choose a product; use the corresponding user guide for getting started and "
-"operation."
+"tools, and documentation links**. Start with [Product "
+"Selection](index.rst) to choose a product; use the corresponding user "
+"guide for getting started and operation."
 
 #: ../../source/products/comparison.md:9
 msgid "产品参数对比"
@@ -42,12 +40,12 @@ msgstr "Product specifications"
 
 #: ../../source/products/comparison.md:12
 msgid ""
-"表格说明 “—”表示参数不适用于对应产品，不表示数据缺失。HM-D20-LoRa 和 HM-D13-"
-"LoRa 均为包含 D13 LoRa 基站及配件的套件，基站不单独销售。"
+"表格说明 “—”表示参数不适用于对应产品，不表示数据缺失。HM-D20-LoRa 和 HM-D13-LoRa 均为包含 D13 LoRa "
+"基站及配件的套件，基站不单独销售。"
 msgstr ""
 "Table note: \"—\" indicates that the parameter is not applicable to the "
-"corresponding product and does not indicate missing data. HM-D20-LoRa and HM-"
-"D13-LoRa are both kits that include the D13 LoRa base station and "
+"corresponding product and does not indicate missing data. HM-D20-LoRa and"
+" HM-D13-LoRa are both kits that include the D13 LoRa base station and "
 "accessories; the base station is not sold separately."
 
 #: ../../source/products/comparison.md:11
@@ -89,8 +87,7 @@ msgstr "Form Factor"
 
 #: ../../source/products/comparison.md:11
 msgid "四臂螺旋天线<br>一体化双频 RTK 接收机"
-msgstr ""
-"Quadrifilar Helix Antenna (QHA)<br>Integrated Dual-Band RTK GNSS Receiver"
+msgstr "Quadrifilar Helix Antenna (QHA)<br>Integrated Dual-Band RTK GNSS Receiver"
 
 #: ../../source/products/comparison.md:11
 msgid "紧凑型内置天线<br>一体化双频 RTK 接收机"
@@ -188,11 +185,11 @@ msgstr "Supported Frequencies"
 
 #: ../../source/products/comparison.md:11
 msgid ""
-"GPS：L1/L5<br>北斗：B1/B2A/B2I<br>Galileo：E1/E5<br>QZSS：L1/L5<br>GLONASS："
-"G1<br>IRNSS：L5<br>支持 SBAS"
+"GPS：L1/L5<br>北斗：B1/B2A/B2I<br>Galileo：E1/E5<br>QZSS：L1/L5<br>GLONASS：G1<br>IRNSS：L5<br>支持"
+" SBAS"
 msgstr ""
-"GPS: L1/L5<br>BeiDou: B1/B2A/B2I<br>Galileo: E1/E5<br>QZSS: L1/"
-"L5<br>GLONASS: G1<br>IRNSS: L5<br>Supports SBAS"
+"GPS: L1/L5<br>BeiDou: B1/B2A/B2I<br>Galileo: E1/E5<br>QZSS: "
+"L1/L5<br>GLONASS: G1<br>IRNSS: L5<br>Supports SBAS"
 
 #: ../../source/products/comparison.md:11
 msgid "GPS：L1<br>北斗：B1<br>Galileo：E1<br>QZSS：L1<br>GLONASS：G1"
@@ -327,8 +324,8 @@ msgstr ""
 #: ../../source/products/comparison.md:11
 msgid "CORS/NTRIP<br>Nano-SIM<br>内置 4G 天线<br>USB-C 配置口位于顶壳内部"
 msgstr ""
-"CORS/NTRIP<br>Nano-SIM<br>Built-in 4G antenna<br>USB-C configuration port "
-"located inside the top shell"
+"CORS/NTRIP<br>Nano-SIM<br>Built-in 4G antenna<br>USB-C configuration port"
+" located inside the top shell"
 
 #: ../../source/products/comparison.md:11
 msgid "LTE 频段"
@@ -491,30 +488,26 @@ msgstr ""
 #: ../../source/products/comparison.md:11
 msgid "测绘<br>精准农业<br>智能驾驶<br>固定区域作业<br>自建基站 / 多移动站"
 msgstr ""
-"Surveying and mapping<br>Precision agriculture<br>Intelligent "
-"driving<br>Fixed-area operations<br>Self-built base station / multiple rovers"
+"Surveying and mapping<br>Precision agriculture<br>Intelligent driving<br"
+">Fixed-area operations<br>Self-built base station / multiple rovers"
 
 #: ../../source/products/comparison.md:11
 msgid "车载导航<br>车队管理<br>资产追踪 / AVL/LBS<br>无人机<br>紧凑终端"
 msgstr ""
-"In-vehicle Navigation<br>Fleet Management<br>Asset Tracking / AVL/"
-"LBS<br>Drone<br>Compact Terminal"
+"In-vehicle Navigation<br>Fleet Management<br>Asset Tracking / "
+"AVL/LBS<br>Drone<br>Compact Terminal"
 
 #: ../../source/products/comparison.md:11
 msgid "文档入口"
 msgstr "Documentation"
 
 #: ../../source/products/comparison.md:11
-msgid ""
-"[HM-D20-4G](models/hm-d20-4g.md)<br>[HM-D20-LoRa](models/hm-d20-lora.md)"
-msgstr ""
-"[HM-D20-4G](models/hm-d20-4g.md)<br>[HM-D20-LoRa](models/hm-d20-lora.md)"
+msgid "[HM-D20-4G](models/hm-d20-4g.md)<br>[HM-D20-LoRa](models/hm-d20-lora.md)"
+msgstr "[HM-D20-4G](models/hm-d20-4g.md)<br>[HM-D20-LoRa](models/hm-d20-lora.md)"
 
 #: ../../source/products/comparison.md:11
-msgid ""
-"[HM-D13-4G](models/hm-d13-4g.md)<br>[HM-D13-LoRa](models/hm-d13-lora.md)"
-msgstr ""
-"[HM-D13-4G](models/hm-d13-4g.md)<br>[HM-D13-LoRa](models/hm-d13-lora.md)"
+msgid "[HM-D13-4G](models/hm-d13-4g.md)<br>[HM-D13-LoRa](models/hm-d13-lora.md)"
+msgstr "[HM-D13-4G](models/hm-d13-4g.md)<br>[HM-D13-LoRa](models/hm-d13-lora.md)"
 
 #: ../../source/products/comparison.md:11
 msgid "[HM-G51B](models/hm-g51b.md)"
@@ -529,24 +522,24 @@ msgid ""
 "[HM-D20 独立站购买](https://myrobotproject.com/product/helical-antenna-rtk-"
 "module-hm-d20/)"
 msgstr ""
-"[HM-D20 Independent Site Purchase](https://myrobotproject.com/product/"
-"helical-antenna-rtk-module-hm-d20/)"
+"[HM-D20 Independent Site Purchase](https://myrobotproject.com/product"
+"/helical-antenna-rtk-module-hm-d20/)"
 
 #: ../../source/products/comparison.md:11
 msgid ""
 "[HM-D13 独立站购买](https://myrobotproject.com/product/multiband-rtk-survey-"
 "module-hm-d13/)"
 msgstr ""
-"[HM-D13 Independent Site Purchase](https://myrobotproject.com/product/"
-"multiband-rtk-survey-module-hm-d13/)"
+"[HM-D13 Independent Site Purchase](https://myrobotproject.com/product"
+"/multiband-rtk-survey-module-hm-d13/)"
 
 #: ../../source/products/comparison.md:11
 msgid ""
 "[HM-G51B 独立站购买](https://myrobotproject.com/product/gnss-antenna-module-"
 "hm-g51b/)"
 msgstr ""
-"[HM-G51B Independent Site Purchase](https://myrobotproject.com/product/gnss-"
-"antenna-module-hm-g51b/)"
+"[HM-G51B Independent Site Purchase](https://myrobotproject.com/product"
+"/gnss-antenna-module-hm-g51b/)"
 
 #: ../../source/products/comparison.md:64
 msgid "产品图片"
@@ -601,16 +594,16 @@ msgstr "NavStarTool"
 #: ../../source/products/comparison.md:11
 msgid "上位机软件，可用于调试、状态查看、参数配置"
 msgstr ""
-"Host PC software, can be used for debugging, status viewing, and parameter "
-"configuration"
+"Host PC software, can be used for debugging, status viewing, and "
+"parameter configuration"
 
 #: ../../source/products/comparison.md:11
 msgid ""
-"[NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/"
-"blob/main/NavStarTool_260703_cust_En.zip)"
+"[NavStarTool](https://github.com/myrobotproject/RTK_Interface-"
+"Description/blob/main/NavStarTool_260703_cust_En.zip)"
 msgstr ""
-"[NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/"
-"blob/main/NavStarTool_260703_cust_En.zip)"
+"[NavStarTool](https://github.com/myrobotproject/RTK_Interface-"
+"Description/blob/main/NavStarTool_260703_cust_En.zip)"
 
 #: ../../source/products/comparison.md:11
 msgid "JR_NTRIP_Config_Tool_V1.2"
@@ -634,15 +627,15 @@ msgstr "D20_ros_driver"
 
 #: ../../source/products/comparison.md:11
 msgid ""
-"Jetson/树莓派接入 D20/D13 的 ROS1/ROS2 驱动，解析 NMEA 或 UBX 并发布 "
-"`NavSatFix` 与原始 NMEA 话题"
+"Jetson/树莓派接入 D20/D13 的 ROS1/ROS2 驱动，解析 NMEA 或 UBX 并发布 `NavSatFix` 与原始 "
+"NMEA 话题"
 msgstr ""
-"Jetson/Raspberry Pi access D20/D13 ROS1/ROS2 drivers, parse NMEA or UBX and "
-"publish `NavSatFix` and raw NMEA topics"
+"Jetson/Raspberry Pi access D20/D13 ROS1/ROS2 drivers, parse NMEA or UBX "
+"and publish `NavSatFix` and raw NMEA topics"
 
 #: ../../source/products/comparison.md:11
-msgid "[D20_ros_driver](https://github.com/Hessian-matrix/D20_ros_driver)"
-msgstr "[D20_ros_driver](https://github.com/Hessian-matrix/D20_ros_driver)"
+msgid "[D20_ros_driver](https://github.com/myrobotproject/RTK_ROS_Driver.git)"
+msgstr "[D20_ros_driver](https://github.com/myrobotproject/RTK_ROS_Driver.git)"
 
 #: ../../source/products/comparison.md:83
 msgid "配置和说明文档"
@@ -658,11 +651,11 @@ msgstr "RTK Interface Description, NavStarTool Related Configuration Data"
 
 #: ../../source/products/comparison.md:11
 msgid ""
-"[RTK Interface Description](https://github.com/myrobotproject/RTK_Interface-"
-"Description)"
+"[RTK Interface Description](https://github.com/myrobotproject"
+"/RTK_Interface-Description)"
 msgstr ""
-"[RTK Interface Description](https://github.com/myrobotproject/RTK_Interface-"
-"Description)"
+"[RTK Interface Description](https://github.com/myrobotproject"
+"/RTK_Interface-Description)"
 
 #: ../../source/products/comparison.md:11
 msgid "GNSS_NavStarTool User Guide"
@@ -675,11 +668,13 @@ msgstr "NavStarTool Function Description and Operation Guide"
 #: ../../source/products/comparison.md:11
 #, python-format
 msgid ""
-"[GNSS_NavStarTool User Guide](https://github.com/myrobotproject/"
-"RTK_Interface-Description/blob/main/GNSS_NavStarTool%20User%20Guide%20en.pdf)"
+"[GNSS_NavStarTool User Guide](https://github.com/myrobotproject"
+"/RTK_Interface-"
+"Description/blob/main/GNSS_NavStarTool%20User%20Guide%20en.pdf)"
 msgstr ""
-"[GNSS_NavStarTool User Guide](https://github.com/myrobotproject/"
-"RTK_Interface-Description/blob/main/GNSS_NavStarTool%20User%20Guide%20en.pdf)"
+"[GNSS_NavStarTool User Guide](https://github.com/myrobotproject"
+"/RTK_Interface-"
+"Description/blob/main/GNSS_NavStarTool%20User%20Guide%20en.pdf)"
 
 #~ msgid "20 ns"
 #~ msgstr "20 ns"

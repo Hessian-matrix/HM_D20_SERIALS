@@ -77,7 +77,7 @@
 | --- | --- | --- |
 | NavStarTool | 上位机软件，可用于调试、状态查看、参数配置 | [NavStarTool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/NavStarTool_260703_cust_En.zip) |
 | JR_NTRIP_Config_Tool_V1.2 | HM-D20-4G、HM-D13-4G 的 CORS/NTRIP 配置工具 | [JR_NTRIP_Config_Tool](https://github.com/myrobotproject/RTK_Interface-Description/blob/main/JR_NTRIP_Config_Tool_V1.2_EN.rar) |
-| D20_ros_driver | Jetson/树莓派接入 D20/D13 的 ROS1/ROS2 驱动，解析 NMEA 或 UBX 并发布 `NavSatFix` 与原始 NMEA 话题 | [D20_ros_driver](https://github.com/Hessian-matrix/D20_ros_driver) |
+| D20_ros_driver | Jetson/树莓派接入 D20/D13 的 ROS1/ROS2 驱动，解析 NMEA 或 UBX 并发布 `NavSatFix` 与原始 NMEA 话题 | [D20_ros_driver](https://github.com/myrobotproject/RTK_ROS_Driver.git) |
 
 
 ### 配置和说明文档
