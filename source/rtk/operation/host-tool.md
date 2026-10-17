@@ -32,7 +32,9 @@ D20、D13 均标配 USB 转 UART 转接器，转接器与设备外部 UART 均�
 
 ![NavStarTool主界面](../images/navstar-main.png)
 
-使用星空图查看卫星分布、CN0 窗口查看信号强度、轨迹图查看定位变化、NMEA 信息窗口检查输出。UBX 输出使用目标飞控、地面站或其他兼容工具验证。
+上图是在室内伸出去的D20演示的，Fix Type=2, 所以并未进入固定解状态, 通常室外空旷环境可以很快进入固定解Fix Type=4；
+
+使用星空图(Sky)查看卫星分布、Measurement 窗口查看信号强度、轨迹图(Trajectory)查看定位变化、NMEA 信息窗口检查输出。UBX 输出使用目标飞控、地面站、U-Center软件或其他兼容工具验证。
 
 ## 串口控制台
 

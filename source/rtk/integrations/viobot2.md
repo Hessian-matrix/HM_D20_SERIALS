@@ -6,7 +6,7 @@
 将 **D20** 作为外部 RTK 定位终端接入 Viobot2，完成硬件连接、驱动启动、RTK 模式配置和数据验证。常规使用地面版固件，默认输出 **10 Hz NMEA**。
 :::
 
-开始集成前，先按[固件与输出协议选择](../operation/firmware-output.md)确认输出，并按[D20 接口与接线](../operation/d20-wiring.md)完成硬件连接。根据现场条件选择 4G 或 LoRa 差分链路。
+开始集成前，先按[配置输出消息](../maintenance/parameters.md)配置NMEA协议的GGA、RMC消息输出，D20默认刷的是UBX,如果无法配置消息输出请参考[固件与输出协议选择](../operation/firmware-output.md)重新刷入合适的固件，并按[D20 接口与接线](../operation/d20-wiring.md)完成硬件连接。根据现场条件选择 4G 或 LoRa 差分链路。
 
 ## 使用要求
 
